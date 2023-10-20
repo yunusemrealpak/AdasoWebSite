@@ -1,0 +1,47 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@using Helper
+@model PageItem
+
+<ul class="list-group">
+    <li><h3><a href="/" style="color:black !important;text-decoration:underline" target="_blank">ANASAYFA</a></h3></li>
+    @Html.Raw(KategoriSelectGet(Convert.ToInt32(Model.SayfalarTumliste.Data.FirstOrDefault().ID), 1, 1))
+</ul>
+
+
+                @*<select id="selectYaziTipi" name="selectYaziTipi" class="form-control">    </select>*@
+
+                @{
+    string KategoriSelectGet(int SeciliKategoriID, int UstKategoriID, int Katman)
+    {
+        string result = "", bosluk = "";
+        for (int i = 1; i < Katman; i++)
+        {
+            bosluk += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        }
+
+
+
+        foreach (var item in Model.SayfalarTumliste.Data.Where(x => x.UstID == UstKategoriID).OrderBy(x => x.SiraNo))
+        {
+            if (item.UstID == 1)
+            {
+                   result += "<li><h3>" + bosluk + item.Baslik + "</h3></li>";  
+            }
+ 
+            else
+            {
+                result += "<li><a href='/" + @Helper.UrlHelper_.SeoAdress(item.Baslik) + "-" + item.ID.ToString()+"' target='_blank'>" + bosluk + item.Baslik + "</a></li>";
+            }
+
+
+            if (Model.SayfalarTumliste.Data.Where(x => x.UstID == item.ID).Count() > 0)
+            {
+                result += KategoriSelectGet(SeciliKategoriID, item.ID, Katman + 1);
+            }
+        }
+
+        return result;
+    }
+}

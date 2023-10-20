@@ -1,0 +1,216 @@
+﻿@using Entities.Dtos.Filter
+@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@using Helper
+ 
+@model PageItem
+
+ @{
+    string MenuGet(int UstMenuID)
+    {
+        string result = "";
+
+        foreach (var itemMenu in @Model.GetListPageTitle.Data.Where(x => x.UstID == UstMenuID && x.Etkin == true).OrderBy(x => x.SiraNo))
+        {
+            result += "<li class='nav-item'>";
+
+            if (@Model.GetListPageTitle.Data.Where(x => x.UstID == itemMenu.ID && x.Etkin == true).Count() > 0)
+            {
+
+                result += "<a class='nav-link collapsed text-truncate subMenuPasive' href='/" + @Helper.UrlHelper_.SeoAdress(itemMenu.Baslik) + "-" + itemMenu.ID.ToString() + "' data-toggle='collapse' data-target='#" + itemMenu.ID + "'><i class='fa fa-list-ul'></i> <span class=' d-sm-inline'>" + itemMenu.Baslik + "</span></a>";
+
+            }
+            else
+            {
+                if (itemMenu.Baslik.ToLower() == @Model.YaziTipi.ToLower() || itemMenu.ID == @Model.SayfaIdSec)
+                    result += "<a class='nav-link collapsed text-truncate subMenuActive' href=''/" + @Helper.UrlHelper_.SeoAdress(itemMenu.Baslik) + "-" + itemMenu.ID.ToString() + "'  data-target='#" + itemMenu.ID + "'> <span class=' d-sm-inline'>" + itemMenu.Baslik + "</span></a>";
+                else
+                    result += "<a class='nav-link collapsed text-truncate subMenuPasive' href='/" + @Helper.UrlHelper_.SeoAdress(itemMenu.Baslik) + "-" + itemMenu.ID.ToString() + "'  data-target='#" + itemMenu.ID + "'> <span class=' d-sm-inline'>" + itemMenu.Baslik + "</span></a>";
+
+            }
+
+            if (@Model.GetListPageTitle.Data.Where(x => x.UstID == itemMenu.ID && x.Etkin == true).Count() > 0)
+            {
+                result += "<div class='collapse' id='" + itemMenu.ID + "' aria-expanded='false'>";
+                result += "<ul class='flex-column pl-2 nav'>";
+                result += MenuGet(itemMenu.ID);
+                result += "  </ul>";
+                result += "  </div>";
+
+            }
+            result += "</li>";
+        }
+
+        return result;
+    }
+
+}
+
+<div class="right-sidebar">
+
+    <div class="ts-grid-box widgets category-widget">
+        <h2 class="widget-title"> @Model.GetListPageTitle.Data.Where(x=>x.ID==Model.UstIdSec).FirstOrDefault().Baslik     </h2>
+        @*subnavbar*@
+
+        <ul class="nav flex-column flex-nowrap overflow-hidden">
+            <li class="nav-item"><a class="nav-link text-truncate" href="/"><i class="fa fa-home"></i> <span class=" d-sm-inline">Anasayfa</span></a></li>
+
+
+            @Html.Raw(MenuGet(Model.UstIdSec))
+
+            @*<li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-bar-chart"></i> <span class=" d-sm-inline">Analytics</span></a></li>
+            <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span class=" d-sm-inline">Export</span></a></li>*@
+        </ul>
+
+        @*subnavbar*@
+    </div>
+    @*TEBLİĞLER VE DUYURULAR*@
+    <div class="post-list-item  widgets category-widget duyurularTebliglermaxHeight">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation">
+                <a href="#profile" class="active" aria-controls="profile" role="tab" data-toggle="tab">
+                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                    DUYURULAR
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#home" class="MevzuatDuyurulari" aria-controls="home" role="tab" data-toggle="tab">
+                    <i class="fa fa-flag" aria-hidden="true"></i>
+                    MEVZUAT DUYURULARI
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane   ts-grid-box   post-tab-list_cust TebDuyTabStyle" id="home">
+                @await Component.InvokeAsync("TebliglerTab")
+            </div>
+            <!--ts-grid-box end -->
+
+            <div id="profile" role="tabpanel" class="active tab-pane  ts-grid-box   post-tab-list_cust TebDuyTabStyle">
+                @await Component.InvokeAsync("Duyurular")
+            </div>
+            <!--ts-grid-box end -->
+        </div>
+        <!-- tab content end-->
+    </div>
+    @*TEBLİĞLER VE DUYURULAR*@
+    <div class="widgets ts-grid-box post-tab-list ts-col-box">
+        <h3 class="widget-title">Adaso Youtube</h3>
+        <div class="ts-overlay-style">
+            <div class="item">
+                <div class="ts-post-thumb">
+                    <a href="@Model.YoutubeList.Data.FirstOrDefault().VideoURL" target="_blank">
+                        <img class="img-fluid" src="@Model.YoutubeList.Data.FirstOrDefault().ResimURL.Replace("..","")" alt="">
+                    </a>
+                </div>
+                <div class="overlay-post-content">
+                    <div class="post-content">
+                        <h3 class="post-title">
+                            <a href="@Model.YoutubeList.Data.FirstOrDefault().VideoURL" target="_blank">@Model.YoutubeList.Data.FirstOrDefault().Baslik</a>
+                        </h3>
+                        <ul class="post-meta-info">
+                            <li>
+                                <i class="fa fa-clock-o"></i>
+                                @Model.YoutubeList.Data.FirstOrDefault().Tarih.ToShortDateString()
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ts-overlay-style  end-->
+        @foreach (var yItem in @Model.YoutubeList.Data.ToList().Where(x => x.ID != Model.YoutubeList.Data.FirstOrDefault().ID).Take(2))
+        {
+
+            <div class="post-content media">
+                <img class="d-flex sidebar-img" src="@yItem.ResimURL.Replace("..","")" alt="">
+                <div class="media-body align-self-center">
+                    <h4 class="post-title">
+                        <a href="@yItem.VideoURL" target="_blank" title="@yItem.Baslik">@yItem.Baslik.Substring(0, Math.Min(yItem.Baslik.Length, 70)) ...</a>
+                    </h4>
+                </div>
+            </div>
+        }
+
+
+
+        <!-- post content end-->
+
+    </div>
+
+
+
+    <div id='rightcalendar' style="background-color:#e9eaea !important"></div>
+
+
+
+    @await Component.InvokeAsync("Gazeteler")
+	<div class="widgets widgets-item widget-banner">
+@*		<a href="/TNBKep/TNBKep" class="mb-5">
+			<img style="-webkit-user-select: none;margin-bottom: 10px;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;"
+				 src="~/Content/images/banner/tnb.jpg">
+		</a>*@
+		<a href="#">
+			<img style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;"
+				 src="~/Content/images/banner/DikeyReklamAlani.jpg">
+		</a>
+	</div>
+</div>
+
+<script>
+
+    $('#dergi').owlCarousel({
+        loop: true,
+        items: 1,
+        dots: false,
+        nav: true,
+        responsiveClass: true,
+        autoplayTimeout: 5000,
+        autoplay: true,
+        animateOut: 'fadeOut',
+        center: true,
+        autoplayHoverPause: true
+
+    });
+
+    $(document).ready( function() {
+                    var now = new Date();
+                    var day = ("0" + now.getDate()).slice(-2);
+                    var month = ("0" + (now.getMonth() + 1)).slice(-2);
+                    var today = now.getFullYear()-1+"-"+(month)+"-"+(day);
+                    $('#from').val(today);
+                });
+
+         $('#rightcalendar').fullCalendar({
+             timeZone: 'UTC',
+            initialView: 'dayGridMonth',
+            displayEventTime: false,
+            aspectRatio: 350,
+            height: 250,
+            width:500,
+            contentHeight: 250,
+            events: '/Home/GetEtkinlikTakvim',
+              loading: function (isLoading) {
+                if (isLoading) {
+                    $('#loading').show();
+                }
+                else {
+                    $('#loading').hide();
+                }
+            },
+            selectable: true,
+            selectHelper: true,
+            eventRender: function(event, element){
+            element.popover({
+            animation:true,
+            delay: 300,
+            content: 'Açıklama : '+event.title+"",
+            trigger: 'hover'
+            });
+            }});
+</script>

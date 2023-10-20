@@ -1,0 +1,188 @@
+﻿@{
+    Layout = null;
+}
+
+@using WebApplication1.Models
+@using WebUI.Models.Api
+@using Helper
+
+@model PageItem
+
+<div class="modal-content">
+    <div class="modal-header ">
+        <h5 class="modal-title">@Model.viewUyeBilgileri.Data.UNVAN</h5>
+        <div class="clearfix"></div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+
+        <div class="row">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-button active btn-secondary" id="v-pills-home-tab" data-toggle="tab" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> <i class="fa fa-users"></i> Üye Bilgileri</a>
+                    <a class="nav-button btn-secondary" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fa fa-tasks"></i> Temsilciler</a>
+                    <a class="nav-button btn-secondary" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fa fa-handshake"></i> Ortaklar</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="d-flex bd-highlight ">
+                            <div class="p-2 d-flex  bd-highlight w-30"><b>Ünvan:</b></div>
+                            <div class="d-flex  w-70 bd-highlight p-2 ">@Model.viewUyeBilgileri.Data.UNVAN</div>
+                        </div>
+                        <hr />
+                        <div class="d-flex bd-highlight ">
+                            <div class="p-2 d-flex  bd-highlight w-30"><b>Meslek&nbsp;Grubu:</b></div>
+                            <div class="d-flex  w-70 bd-highlight p-2 ">@Model.viewUyeBilgileri.Data.MESLEK_GRUBU_ADI</div>
+                        </div>
+                        <hr />
+
+                        <div class="d-flex bd-highlight ">
+                            <div class="p-2 d-flex  bd-highlight w-30"><b>Tescil&nbsp;Tarihi:</b></div>
+                            <div class="d-flex  w-70 bd-highlight p-2">@Model.viewUyeBilgileri.Data.ODA_TESCIL_TARIHI.ToDateTime().ToShortDateString()</div>
+                        </div>
+                        <hr />
+
+                        <div class="d-flex bd-highlight ">
+                            <div class="p-2 d-flex  bd-highlight w-30"><b>Ticaret&nbsp;Sicil&nbsp;No:</b></div>
+                            <div class="d-flex  w-70 bd-highlight p-2">@Model.viewUyeBilgileri.Data.strID</div>
+                        </div>
+                        <hr />
+
+                        <div class="d-flex bd-highlight ">
+                            <div class="p-2 d-flex  bd-highlight w-30"><b>Bütünleşik&nbsp;Adres:</b></div>
+                            <div class="d-flex  w-70 bd-highlight p-2">@Model.viewUyeBilgileri.Data.BUTUNLESIK_ADRES</div>
+                        </div>
+                        <hr />
+                        <div class="d-flex bd-highlight ">
+                            <div class="p-2 d-flex  bd-highlight w-30"><b>Üyelik&nbsp;Karar&nbsp;Tarihi:</b></div>
+                            <div class="d-flex  w-70 bd-highlight p-2">@Model.viewUyeBilgileri.Data.UYELIK_KARAR_TARIHI.ToDateTime().ToShortDateString()</div>
+                        </div>
+                        <hr />
+
+                        <div class="d-flex bd-highlight ">
+                            <div class="p-2 d-flex  bd-highlight w-30"><b>Oda&nbsp;Sicil&nbsp;No:</b></div>
+                            <div class="d-flex  w-70 bd-highlight p-2">@Model.viewUyeBilgileri.Data.UYE_ODA_SICIL_NO</div>
+                        </div>
+                        <hr />
+                        @if (Model.viewUyeBilgileri.Data.UYELIK_DURUM == "1")
+                        {
+                            <div class="d-flex bd-highlight ">
+                                <div class="p-2 d-flex  bd-highlight w-30"><b>Durum</b></div>
+                                <div class="d-flex  w-70 bd-highlight p-2">FAAL</div>
+                            </div>
+                        }
+                        @if (Model.viewUyeBilgileri.Data.UYELIK_DURUM == "2")
+                        {
+                            <div class="d-flex bd-highlight ">
+                                <div class="p-2 d-flex  bd-highlight w-30"><b>Durum</b></div>
+                                <div class="d-flex  w-70 bd-highlight p-2">ASKI</div>
+                            </div>
+                        }
+                        @if (Model.viewUyeBilgileri.Data.UYELIK_DURUM == "3")
+                        {
+                            <div class="d-flex bd-highlight ">
+                                <div class="p-2 d-flex  bd-highlight w-30"><b>Durum</b></div>
+                                <div class="d-flex  w-70 bd-highlight p-2">TERK</div>
+                            </div>
+                        }
+                        @if (Model.viewUyeBilgileri.Data.UYELIK_DURUM == "4")
+                        {
+                            <div class="d-flex bd-highlight ">
+                                <div class="p-2 d-flex  bd-highlight w-30"><b>Durum</b></div>
+                                <div class="d-flex  w-70 bd-highlight p-2">TASFİYE</div>
+                            </div>
+                        }
+                        <hr />
+                       <div class="d-flex bd-highlight ">
+                            <div class="p-2 d-flex  bd-highlight w-30"><b>Telefon:</b></div>
+                            @foreach(var telefon in @Model.view_UyeUyelikSabitTelefon.Data){
+                                    <div class="d-flex  w-70 bd-highlight p-2"> <i class="fa fa-phone mt-2"></i>&nbsp; <b>@telefon.TELEFON_NO</b></div>
+                            }
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Adı</th>
+                                    <th scope="col">Soyadı</th>
+                                    <th scope="col">Yetki Başlangıç Tarihi</th>
+                                    <th scope="col">Yetki Bitiş Tarihi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int siraNo = 0;
+                                    foreach (var item in @Model.view_Temsilciler_list.Data)
+                                    {
+                                        siraNo++;
+                                        <tr>
+                                            <th scope="row">@siraNo</th>
+                                            <td>@item.ADI</td>
+                                            <td>@item.SOYADI</td>
+                                            <td>@item.YETKI_BASLANGIC_TARIHI.ToDateTime().ToShortDateString()</td>
+                                            <td>@if(@item.YETKI_BITIS_TARIHI==null){<span>-</span>}
+                                            else{@item.YETKI_BITIS_TARIHI.ToDateTime().ToShortDateString()}</td>
+
+                                        </tr>
+                                    }
+                                }
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        
+                    <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Adı</th>
+                                    <th scope="col">Soyadı</th>
+                                    @*<th scope="col">Sermaye</th>*@
+                                    <th scope="col">Ortaklık  Başlangıç Tarihi</th>
+                                    <th scope="col">Ortaklık Bitiş Tarihi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int siraNoOrtak = 0;
+                                    foreach (var item in @Model.view_ortaklik_list.Data)
+                                    {
+                                        siraNoOrtak++;
+                                        <tr>""
+                                            <th scope="row">@siraNoOrtak</th>
+                                            <td>@item.ADI</td>
+                                            <td>@item.SOYADI</td>
+                                            @*<td>@item.TAAHHUT_EDILEN_SERMAYE</td>*@
+                                            <td>@item.ORTAKLIK_BASLANGIC_TARIHI.ToDateTime().ToShortDateString()</td>                                            
+                                            <td>@if(@item.ORTAKLIK_BITIS_TARIHI==null){<span>-</span>}
+                                            else{@item.ORTAKLIK_BITIS_TARIHI.ToDateTime().ToShortDateString()}</td>
+                                        </tr>
+                                    }
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn btn-sm" data-dismiss="modal">
+                <i class="ace-icon fa fa-times"></i>
+                Kapat
+            </button>
+        </div>
+    </div>
+</div>

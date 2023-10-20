@@ -1,0 +1,177 @@
+﻿@using WebApplication1.Models;
+@using WebUI.Models.Api;
+@model List<MKUyeler>
+
+
+@{
+    ViewData["Title"] = "Youtube";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">keyboard</i>
+                        </div>
+                        <h4 class="card-title">Meclis Sıralama Yönetimi</h4>
+                    </div>
+                    <div class="card-body">
+           
+
+                
+
+                            <div class="d-flex">
+                                
+                                    <div class="col-md-4">
+                                <select name="filter" id="membership" class="form-control">
+                                    <option value="all">Filtrele </option>
+                                    <option value="meclis">Meclis</option>
+                                    <option value="meslek">Meslek</option>
+                                    <option value="yönetim kurulu">Yönetim Kurulu</option>
+                                </select>
+                                </div>
+                                <div class="col-md-8">                                
+                                    <input type="text" id="Search" class="form-control" placeholder="Ara">
+                                </div>
+                            
+                            </div>
+
+                            <style>
+                                #no {
+                                    width: 70px;
+                                    height: 37.6px;
+                                }
+
+                                img {
+                                    width: 100px;
+                                }
+
+                                td {
+                                    vertical-align: middle;
+                                }
+                            </style>
+                        
+                                    <div class="col-12">
+                                        <table class="table table-image">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">No</th>
+                                                    <th scope="col">Fotoğraf</th>
+                                                    <th scope="col">İsim</th>
+                                                    <th scope="col">Üyelik</th>
+                                                    <th scope="col">Sıra No</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                    @foreach(var item in Model)
+                                    {
+                                        <tr class="kisi">
+                                            <td>@item.ID</td>
+                                            <td>
+                                                <a tabindex="0" role="button" class="mt-10 d-flex flex-row-reverse justify-content-center" data-toggle="popover" data-trigger="focus" title="O&#x11F;uz Tekstil Sanayi Ve Ticaret Anonim &#x15E;irketi&#xD;&#xA;" data-content="Adana Hac&#x131; Sabanc&#x131; Organize Sanayi B&#xF6;lgesiosb Vatan Cad. No: 4 Merkez/Adana 0(322) 444 49 74">
+                                                    <img src="data:image/jpg;base64, @(Convert.ToBase64String(@item.Resim))" width="120" />
+                                                </a>
+                                            </td>
+                                            <td>
+
+                                                <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="O&#x11F;uz Tekstil Sanayi Ve Ticaret Anonim &#x15E;irketi&#xD;&#xA;" data-content="Adana Hac&#x131; Sabanc&#x131; Organize Sanayi B&#xF6;lgesiosb Vatan Cad. No: 4 Merkez/Adana 0(322) 444 49 74">
+                                                    <h5 class="mt-15 title">@item.Ad @item.Soyad </h5>
+                                                </a>
+
+                                            </td>
+                                            <td>
+
+                                                <h6 class="">@item.Gorev</h6>
+
+                                            </td>
+                                            <td>
+                                                <input type="number" name="sirano" id="no" value="@item.MeclisSira"/>
+                                            
+
+                                                <a href="#" name="kaydet" class="btn btn-success" data-id="">Kaydet</a>
+
+                                            </td>
+
+                                        </tr>
+                                        
+                                    }
+                                   
+                                            </tbody>
+                                        </table>
+                                    </div>
+                          
+
+
+          
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section AdminScripts{
+
+    <script>
+        $("a[name=kaydet]").click(function () {
+            var dataid = $(this).parent('td').children('input').val();
+
+
+            $.ajax({
+
+                url: '/Home/SortProcess',
+                type: 'POST',
+                data: {
+                    sort: dataid
+                },
+                dataType: 'json',
+                success: function (data) {
+                    alert('Data: ' + dataid + data);
+                },
+                error: function (request, error) {
+                    alert("Request: " + JSON.stringify(request));
+                }
+            });
+        });
+
+        const membershipSelect = document.getElementById("membership");
+        const ara = document.getElementById("Search");
+        const uyelik = document.getElementsByClassName("kisi");
+        function toTurkishLowerCase(str) {
+            const turkishMapping = {
+                "İ": "i",
+                "I": "ı",
+            };
+            return str.replace(/[\u0130\u0049]/g, char => turkishMapping[char] || char).toLowerCase();
+        }
+        function filtrele() {
+            const selectedMembership = membershipSelect.value;
+            const searchText = ara.value.toLowerCase();
+
+            for (let i = 0; i < uyelik.length; i++) {
+
+                const uye = toTurkishLowerCase(uyelik[i].querySelector("h6").textContent);
+                const isim = toTurkishLowerCase(uyelik[i].querySelector("h5").textContent);
+
+
+                if (
+                    (selectedMembership === "all" || uye.includes(selectedMembership)) &&
+                    isim.startsWith(searchText)
+                ) {
+                    uyelik[i].style.display = "table-row";
+                } else {
+                    uyelik[i].style.display = "none";
+                }
+            }
+        }
+
+        membershipSelect.addEventListener("change", filtrele);
+        ara.addEventListener("input", filtrele);
+    </script>
+
+} 	

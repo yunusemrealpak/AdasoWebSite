@@ -1,0 +1,161 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@using Helper
+@model PageItem
+<style>
+    #sortable {      
+         list-style-type: none;     
+          margin: 0;
+          padding: 0;
+          width: 850px; 
+      }
+            #sortable li {
+                margin: 3px 3px 3px 0;
+                padding: 1px;
+                float: left;
+                width: auto;
+                height: 150px;
+                font-size: 4em;
+                text-align: center;
+            }
+</style>
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">Yazı Düzenle</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row" id="mdlForm">
+                <input type="hidden" ID="hdnGosterimSayisi" name="hdnGosterimSayisi" value="@Model.Haberler.Data.GosterimSayisi"  />
+                <input type="hidden" ID="hdnEkleyen" name="hdnEkleyen" value="@Model.Haberler.Data.Ekleyen"  />
+                <input type="hidden" ID="hdnEklemeTarihi" name="hdnEklemeTarihi" value="@Model.Haberler.Data.EklemeTarihi"  />
+            <div class="col-md-2 col-sm-3">
+                <label class="control-label">Etkin</label>
+                <input class="form-control" type="checkbox" name="chckEtkin" checked="@Model.Haberler.Data.Etkin" />
+            </div>
+            <div class="col-md-6 col-sm-9">
+                <label class="control-label">Lütfen Yazı Tipini Seçiniz</label>
+                <select id="selectYaziTipi" name="selectYaziTipi" class="form-control">
+                    <option value="1">Haber</option>
+                    <option value="2" selected="selected">Duyurular</option>
+                    <option value="3">Başkandan</option>
+                    <option value="4">İleti</option>
+                </select>
+            </div>
+            <div class="col-md-3 col-sm-4" id="chckPopupdiv">
+                <label class="control-label">Anasayfada popup olarak görünsün</label>
+                <input class="form-control" type="checkbox" name="chckPopup"  checked="@Model.Haberler.Data.Popup" />
+            </div>
+ 
+            <div class="col-md-6 col-sm-12  mt-5">
+                <label class="control-label">Anasayfa Haber Görseli (.jpg)</label>
+                <a href="" target="_blank"><i class="fa fa-file"></i></a>
+                <input type="hidden" name="hdnDosyaUrl" value="" />
+                <input type="file" class="form-control" name="fileDosyaUrl" />
+                <a href="#" class="pop">
+                @if  (@Model.Haberler.Data.ResimUrl  !=  "0")
+                {
+                    <img src="@Model.Haberler.Data.ResimUrl.Replace("..","")" width="300" class="imageresource" name="haberBanner"  />
+                }
+                else
+                {<span></span>}
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-5">
+                <label class="control-label">Başlangıç Tarihi</label>
+                <input type="datetime-local" class="form-control" name="txtBasTarih" value="@Model.Haberler.Data.BaslangicTarihi.ToDateTimeLocal()" />
+            </div>
+            <div class="col-md-3 col-sm-6 mt-5">
+                <label class="control-label">Bitiş Tarihi</label>
+                <input type="datetime-local" class="form-control" name="txtBitTarih" value="@Model.Haberler.Data.BitisTarihi.ToDateTimeLocal()" />
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <label class="control-label">Başlık</label>
+                <input class="form-control" name="txtBaslik" data-required='true' data-group_name='ModalForm' data-message_type='formmessage' value="@Model.Haberler.Data.Baslik" />
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <label class="control-label">Alt Başlık</label>
+                <input class="form-control" name="txtAltBaslik" data-required='true' data-group_name='ModalForm' data-message_type='formmessage' value="@Model.Haberler.Data.AltBaslik" />
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <label class="control-label">Metin</label>
+                <textarea id="ckeditor" class="form-control ckeditor" rows="7" name="txtMetin" data-required='true' data-group_name='ModalForm' data-message_type='formmessage'>@Model.Haberler.Data.Metin</textarea>
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <label class="control-label"><i class="fa fa-image"></i> Yazıya Fotoğraf Galerisi Ekle</label>
+
+                <input type="hidden" name="hdnDosyaUrlAlbum" value="" />
+                <input type="file" class="form-control" name="fileAlbum" multiple />
+                <br />
+                @if  (@Model.albumGorselleri.Data.Count  >  0)
+                {
+                    <h4>Yazıya Ait Galeri</h4>
+                        <ul id="sortable">
+                               @foreach (var item in @Model.albumGorselleri.Data.OrderBy(x=>x.Sira))
+                                {
+     
+                                    <li class="ui-state-default">
+                                            <a href="#" class="pop">
+                                                <img src="@item.ResimURL.Replace("..","")" width="200" class="m-2 YaziGalery imageresource" name="YaziGalery" data-Imgid="@item.ID" data-ImgOrder="@item.Sira">
+                                            </a>
+                                    </li>
+                                }
+                        </ul>
+                 }
+                 <input type="hidden" ID="hdnImgSira" value="null_"/>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-sm" data-dismiss="modal">
+            <i class="ace-icon fa fa-times"></i>
+            Kapat
+        </button>
+        <a class="btn btn-success" data-mode="GetYaziIslemler" data-type="Kaydet" data-id="@Model.Haberler.Data.ID" data-required='true' data-moving_scroll_bar='1' data-group_name='ModalForm'>Kaydet</a>
+    </div>
+</div>
+
+<script src="~/Admin/Content/js/ckeditor/ckeditor.js"></script>
+<script>
+        
+    selectOptionsSelected(@Model.Haberler.Data.Grup, "selectYaziTipi");
+    initCKEditor();
+
+            function initCKEditor() {
+                try {
+                    var editor1 = CKEDITOR.instances["ckeditor"];
+                    if (editor1) {
+                        editor1.destroy(true);
+                    }
+                    CKEDITOR.replace('ckeditor');
+                } catch (e) {
+                    console.log(e);
+                }
+            }
+
+            $(".pop").on("click", function() {
+
+                $('#imagepreview').attr('src', $(this).find('img').attr('src'));
+
+                $('#imagemodal').modal('show');
+            });
+
+            $("#sortable").sortable({
+                update: function(event, ui) {
+                    $('#sortable li a img').each(function(i) {
+                        $(this).attr('data-ImgOrder', i + 1);
+                    });
+                }
+            });
+
+            $("#selectYaziTipi").change(function(){
+                    var val_ = $(this).val();                    
+                    if(val_!=2)                        
+                        $("#chckPopupdiv").fadeOut(1);                    
+                    else if(val_==2)
+                        $("#chckPopupdiv").fadeIn(1);
+            });
+</script>

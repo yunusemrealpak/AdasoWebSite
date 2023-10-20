@@ -1,0 +1,82 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models.Api
+@using WebUI.Models
+@using Helper
+@model PageItem
+
+
+@foreach (var item in Model.organizations.ToList().Where(o => o.YSira == 1).OrderBy(s => s.YSira))
+{
+    <div class="d-flex flex-row-reverse justify-content-center">
+        <div class="d-flex justify-content-center">
+            <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="@CharacterHelper.StartWithUppercase(item.unvan.ToLower())" data-content="@CharacterHelper.StartWithUppercase(item.adres.ToLower()) @item.telefon">
+                <img src="data:image/png;base64, @item.resim" class="m-10" width="120" />
+            </a>
+            <br>
+
+        </div>
+    </div>
+    <div class="d-flex flex-row-reverse justify-content-center">
+        <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="@CharacterHelper.StartWithUppercase(item.unvan.ToLower())" data-content="@CharacterHelper.StartWithUppercase(item.adres.ToLower()) @item.telefon">
+            <h5 class="mt-15">@item.ad @item.soyad</h5>
+        </a>
+    </div>
+    <div class="d-flex flex-row-reverse justify-content-center">
+        <h6 class="">@item.gorev</h6>
+    </div>
+
+
+}
+<div class="d-flex  justify-content-center flex-wrap">
+    @foreach (var item in Model.organizations.Where(o => o.YSira == 2).OrderBy(x=>x.ad.Trim()))
+    {
+        <div class="p-2 flex-fill">
+
+            <a tabindex="0" role="button" class="mt-10 d-flex flex-row-reverse justify-content-center" data-toggle="popover" data-trigger="focus" title="@CharacterHelper.StartWithUppercase(item.unvan.ToLower())" data-content="@CharacterHelper.StartWithUppercase(item.adres.ToLower()) @item.telefon">
+                <img src="data:image/jpg;base64, @item.resim" width="120" />
+            </a>
+            <div class="d-flex flex-row-reverse justify-content-center">
+                <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="@CharacterHelper.StartWithUppercase(item.unvan.ToLower())" data-content="@CharacterHelper.StartWithUppercase(item.adres.ToLower()) @item.telefon">
+                    <h5 class="mt-15">@item.ad @item.soyad</h5>
+                    @*<h4 class="mt-15">@item.adsoyad </h4>*@
+
+                </a>
+            </div>
+            <div class="d-flex flex-row-reverse justify-content-center">
+                <h6 class="">@item.gorev</h6>
+            </div>
+        </div>
+
+    }
+</div>
+<div class="d-flex  justify-content-center  flex-wrap">
+    @foreach (var item in Model.organizations.ToList().Where(o => o.YSira >= 3).OrderBy(s => s.ad))
+    {
+        <div class="p-2 flex-fill">
+
+            <a tabindex="0" role="button" class="mt-10 d-flex flex-row-reverse justify-content-center" data-toggle="popover" data-trigger="focus" title="@CharacterHelper.StartWithUppercase(item.unvan.ToLower())" data-content="@CharacterHelper.StartWithUppercase(item.adres.ToLower()) @item.telefon">
+                <img src="data:image/jpg;base64, @item.resim" width="120" />
+            </a>
+            <div class="d-flex flex-row-reverse justify-content-center">
+                <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="@CharacterHelper.StartWithUppercase(item.unvan.ToLower())" data-content="@CharacterHelper.StartWithUppercase(item.adres.ToLower()) @item.telefon">
+                    <h4 class="mt-15">@item.ad @item.soyad</h4>
+                </a>
+            </div>
+            <div class="d-flex flex-row-reverse justify-content-center">
+                <h6 class="">@item.gorev</h6>
+            </div>
+        </div>
+
+    }
+</div>
+
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+
+
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+    });
+</script>

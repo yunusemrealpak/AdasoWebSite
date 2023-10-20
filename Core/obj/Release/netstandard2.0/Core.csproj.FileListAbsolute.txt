@@ -1,0 +1,10 @@
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\bin\Release\netstandard2.0\Core.deps.json
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\bin\Release\netstandard2.0\Core.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\bin\Release\netstandard2.0\Core.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Release\netstandard2.0\Core.csproj.AssemblyReference.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Release\netstandard2.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Release\netstandard2.0\Core.AssemblyInfoInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Release\netstandard2.0\Core.AssemblyInfo.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Release\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Release\netstandard2.0\Core.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Release\netstandard2.0\Core.pdb

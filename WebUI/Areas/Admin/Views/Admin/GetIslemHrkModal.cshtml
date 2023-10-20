@@ -1,0 +1,22 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@model ResponseMessage<List<IslemGecmisHareketleri>>
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hareket Dökümü</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="modal-body">
+        <ul class="list-group">
+            @foreach (var item in @Model.Data)
+            {
+                <li class="list-group-item list-group-item-primary">@item.Aciklama (@item.IslemTarihi)</li>
+            }
+        </ul>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-outline-secondary" type="button" data-dismiss="modal">Kapat</button>
+        @*<a class="btn btn-danger" data-mode="GetYaziIslemler" data-type="Sil" data-id="">SİL</a>*@
+    </div>
+</div>

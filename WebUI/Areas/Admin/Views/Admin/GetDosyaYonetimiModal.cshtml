@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Dosya Yönetimi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Adaso FileManager</title>
+
+
+    <script src="~/Admin/Content/js/dropzone.js"></script>
+    <link rel="stylesheet" href="~/Admin/Content/css/dropzone.css" type="text/css" />
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header card-header-danger card-header-icon">
+                            <div class="card-icon">
+                                <i class="material-icons">folder</i>
+                            </div>
+                            <h4 class="card-title">Dosya Yönetimi</h4>
+                        </div>
+                        <div class="card-body">
+                            <form id="form2" method="post" enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left">
+
+                                <div class="form-group">
+                                    <div class="toolbar">
+                                        <a class="btn btn-link" href="/Admin/Admin/FileManager"><i class="material-icons">list</i> Tüm Dosyalar </a>
+
+                                    </div>
+
+
+                                    <div class="col-md-12" id="dropzone">
+
+                                        <div action="/Admin/Admin/Upload" class="dropzone" id="uploader">
+
+                                            <br>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>

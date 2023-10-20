@@ -1,0 +1,60 @@
+﻿@{
+    Layout = null;
+}
+@using System.Globalization
+@using WebApplication1.Models
+@using WebUI.Models.Api
+@using WebUI.Models
+@using Helper
+@model PageItem
+  <style>
+    .presantionDate {
+        color: #d60505;
+        word-wrap: break-word !important;
+    }
+
+    a.sunumlink {
+        font-size: 10.5pt;
+        color: #0755ab;
+        cursor: pointer;
+    }
+
+    ol.sunumlarList li {
+        list-style: square;
+    }
+</style>
+
+
+        
+         <div class="row">
+            <div class="container">
+                <ul id="sunumlist">
+                    @{
+                        var SunumSonucList = Model.SunumlarSonucList.Data.Where(s => s.Sira != 0);
+                        HashSet<string> unique = new HashSet<string>();
+
+                        foreach (var Sonuc in SunumSonucList)
+                        {
+                            <li class="typography-line">
+                                @if (unique.Add(Sonuc.SunumTarihi.ToString("yyy") + "-" + Sonuc.SunumTarihi.ToString("MMMM")))
+                                {
+                                    <br />
+                                    <h2>@Sonuc.SunumTarihi.ToString("yyy") - @Sonuc.SunumTarihi.ToString("MMMM")</h2>
+                                    <hr>
+                                }
+
+                                <h4 class="presantionDate"> @Sonuc.AnaBaslik (<i>@Sonuc.SunumTarihi.ToString("D")</i>) </h4>
+                                    <ol class="sunumlarList">
+                                        @foreach (var sonucItems in Model.SunumlarSonucList.Data.Where(s => s.Sira == 0 && s.AnaBaslik == Sonuc.AnaBaslik))
+                                        {
+                                            <li><a href="@sonucItems.DosyaURL" target="_blank" class="bold sunumlink"> <b>@sonucItems.baslik.FirstCharToUpper()</b></a> <label><b>@sonucItems.Hazirlayan</b></label>&nbsp;</li>
+                                        }
+                                    </ol>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+  
+  

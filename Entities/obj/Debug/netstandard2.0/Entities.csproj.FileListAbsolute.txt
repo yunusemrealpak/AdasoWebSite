@@ -1,0 +1,96 @@
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\bin\Debug\netstandard2.0\snappy32.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\bin\Debug\netstandard2.0\snappy64.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\bin\Debug\netstandard2.0\libzstd.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\bin\Debug\netstandard2.0\Entities.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\bin\Debug\netstandard2.0\Entities.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\bin\Debug\netstandard2.0\Core.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\bin\Debug\netstandard2.0\Core.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\obj\Debug\netstandard2.0\Entities.csproj.AssemblyReference.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\obj\Debug\netstandard2.0\Entities.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\obj\Debug\netstandard2.0\Entities.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\Entities\obj\Debug\netstandard2.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\snappy32.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\snappy64.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\libzstd.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Core.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Core.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.AssemblyReference.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.pdb
+D:\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\snappy32.dll
+D:\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\snappy64.dll
+D:\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\libzstd.dll
+D:\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+D:\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.dll
+D:\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.pdb
+D:\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Core.dll
+D:\AdasoProjeler\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Core.pdb
+D:\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.AssemblyReference.cache
+D:\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+D:\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+D:\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+D:\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+D:\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.dll
+D:\AdasoProjeler\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\bin\Debug\netstandard2.0\snappy32.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\bin\Debug\netstandard2.0\snappy64.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\bin\Debug\netstandard2.0\libzstd.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.AssemblyReference.cache
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\bin\Debug\netstandard2.0\snappy32.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\bin\Debug\netstandard2.0\snappy64.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\bin\Debug\netstandard2.0\libzstd.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.AssemblyReference.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\bin\Debug\netstandard2.0\snappy32.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\bin\Debug\netstandard2.0\snappy64.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\bin\Debug\netstandard2.0\libzstd.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Core.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\bin\Debug\netstandard2.0\Core.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.AssemblyReference.cache
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.pdb

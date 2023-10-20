@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewData["Title"] = "Duyurular";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">keyboard</i>
+                        </div>
+                        <h4 class="card-title">Tebliğ Yönetimi</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="toolbar">
+                            <a class="btn btn-link" data-mode="GetHaberFormModal" data-data1="0"><i class="material-icons">save</i> Ekle</a>
+                            <a href="#" class="btn btn-link" data-data1=""><i class="material-icons">edit</i> İşlem</a>
+                        </div>
+                        <input type="text" id="baslikAra" />
+                        <div data-id="SehirId" data-name="SehirId" data-selected_id="12089" data-select="true" data-placeholder="Şehir Seçiniz" data-anagrupkod="YaziTip" data-groupkod="0" data-class="form-control" data-style="width:100%;"></div>
+                        <button onclick="kendo_reload('#tblTebligler','&baslik='+$('#baslikAra').val())">Arama</button>
+                        <table id="tblTebligler"
+                        data-filter="baslik="
+                        data-url="/Admin/Admin/DuyurularJson"
+                        data-pagesize="5"
+                        data-paging="true"
+                        data-searching="true"
+                        data-ordering="false"
+                        data-serverpaging="true"
+                        data-serversearching="true"
+                        data-serverordering="false"
+                        data-excelname="Excel İndir">
+                            <thead>
+                                <tr>
+                                    @*<th data-column="personelTc" data-header="Resim" data-column-type="button"><img id="_#:personelTc#" class="_#:personelTc#" style='width:70px; height:90px;' src="#:foto#" onerror="$('._#:personelTc#').attr('src', '/photos/calisan_foto/adam.png');" /></th>*@
+                                    <th data-column="baslik" data-header="Baslik"></th>
+                                    <th data-column="tarih" data-header="Tarih" data-type="date" data-format="{0:dd/MM/yyyy}"></th>
+                                    <th data-column="metin" data-header="Metin" data-type="date" data-format="{0:dd/MM/yyyy}"></th>
+@*                                    <th data-column="personelTc" data-header="#" data-column-type="button" data-width="7%">
+                                        <img src="#:resimUrl#" style="width:100px;" />
+                                    </th>*@
+                                    <th data-column="personelTc" data-header="#" data-column-type="button" data-width="7%">
+                                     <a class="btn btn-outline-default btn-sm" title="Detay" data-id='#:id#'><i class="fa fa-search"></i></a>
+                                     <a class="btn btn-outline-default btn-sm" title="Detay" data-id='#:id#'><i class="fa fa-eye"></i></a>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                    </div>
+                    <!-- end content-->
+                </div>
+                <!--  end card  -->
+            </div>
+            <!-- end col-md-12 -->
+        </div>
+        <!-- end row -->
+    </div>
+</div>
+
+@section AdminScripts{
+    <script>
+        datatable_init("#tblYazilar","");
+        parameter_init(".card-body");
+        
+    </script>
+}

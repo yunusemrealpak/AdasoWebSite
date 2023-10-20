@@ -1,0 +1,29 @@
+﻿    @using Helper
+    @using WebApplication1.Models
+    @using WebUI.Models
+    @using WebUI.Models.Api
+
+    @model PageItem
+
+<ol class="breadcrumb">
+    @foreach (var category in @Model.listSayfalar.OrderBy(x => x.ID))
+    {
+        if (category.UstID == 0)
+        {
+            <li>
+                <a href="/">
+                    <i class="fa fa-home"></i>@category.Baslik
+                </a>
+            </li>   
+        }
+        else
+        {
+            <li>
+                <a href="/@category.Baslik-@category.ID">
+                    @category.Baslik
+                </a>
+            </li>
+        }
+    }
+
+</ol> 

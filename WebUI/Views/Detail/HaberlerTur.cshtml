@@ -1,0 +1,109 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@model PageItem
+
+<section class="single-post-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="/">
+                            <i class="fa fa-home"></i>
+                            Anasayfa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/AdasoDetay/TumHaberler">HABERLER</a>
+                    </li>
+                    <li>Haberler</li>
+                </ol>
+                <!-- breadcump end-->
+                <div class="ts-grid-box content-wrapper single-post">
+                    <div class="entry-header">
+                        <h2 class="  lg">@Model.Haberler.Data.Baslik</h2>
+                        <ul class="post-meta-info">
+                            <li>
+                                <a href="#" class="post-cat ts-yellow-bg">@Model.Haberler.Data.KategoriAdi</a>
+                            </li>
+                            <li class="author">
+                                <a href="#">
+                                    <img src="~/Admin/Content/img/default-avatar.png" alt="">
+                                    @Model.Haberler.Data.Ekleyen
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o"></i>
+                                @Model.Haberler.Data.EklemeTarihi.ToString("f")
+                            </li>
+                            <li class="active">
+                                <i class="icon-fire"></i>
+                                @Model.Haberler.Data.GosterimSayisi
+                            </li>
+                            <li class="share-post">
+                                <a href="#">
+                                    <i class="fa fa-share"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- single post header end-->
+                    <div class="post-content-area">
+                        <div class="post-media post-featured-image">
+                            <a href="~/Content/@Model.Haberler.Data.ResimUrl.Replace("..","")" class="gallery-popup">
+                                <img src="~/Content/@Model.Haberler.Data.ResimUrl.Replace("..","")" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="entry">
+                            @Html.Raw(Model.Haberler.Data.Metin)
+
+                            <div class="gallery-img">
+                                @if (@Model.albumGorselleri.Data.Count > 0)
+                                {
+
+                                    @foreach (var item in Model.albumGorselleri.Data)
+                                    {
+
+                                        <a href="@item.ResimURL.Replace("..","")" class="gallery-popup ">
+                                            <img src="@item.ResimURL.Replace("..","")" alt="@item.Aciklama" class="m-3">
+                                        </a>
+                                    }
+                                }
+
+
+                            </div>
+                             
+                        </div>
+                        <!-- entry content end-->
+                    </div>
+                    <!-- post content area-->
+                    <!-- post navigation end-->
+                   
+                </div>
+ 
+                        @await Component.InvokeAsync("TumHaberler",new {kategoriAdi=@Model.YaziTipi})
+                  
+            
+                @*                     <div class="entry-header">
+                    <h2 class="  lg">Tüm Haberler</h2>
+                    </div>
+                    @await Component.InvokeAsync("TumHaberler")*@
+
+
+            </div>
+            <!-- col end -->
+            <div class="col-lg-3">
+                <!--RIGHT SIDE BAR-->
+                @await Component.InvokeAsync("RightSideBar", new {YazilarGrup=1,UstID=42,SayfaID=0})
+
+                <!--RIGHT SIDE BAR-->
+            </div>
+            <!-- right sidebar end-->
+            <!-- col end-->
+        </div>
+        <!-- row end-->
+    </div>
+    <!-- container-->
+</section>
+

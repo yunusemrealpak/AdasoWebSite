@@ -1,0 +1,36 @@
+﻿@using Entities.Dtos.Filter
+@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@using Helper
+    @model PageItem
+<div class="col-lg-3">
+    <div class="right-sidebar">
+
+
+        <div class="ts-grid-box most-populer-item" style="max-height:550px">
+            <h2 class="ts-title mb-15"><a href="/adaso-uyesi-ihracatci-firmalar-exporter-companies-6232" class="ts-title" style="text-decoration:none;color:#8a8a8a"> Bilgi Bankası</a></h2>
+ 
+            <!-- ts-overlay-style  end-->
+            @foreach (var item in Model.SayfalarTumliste.Data.Where(x => x.Etkin == true && x.UstID == 7).Take(9))
+            {
+                     <hr>
+
+                @*<img class="d-flex sidebar-img" src="~/Content/images/icon/bilgibankasiGorseli.jpg" alt="">
+                *@
+                <div class="media-body align-self-center " >
+                    <h4 class="post-title">
+                        <a href="/@Helper.UrlHelper_.SeoAdress(item.Baslik)  - @item.ID">
+                            <i class="fa fa-circle"></i>&nbsp; @item.Baslik.ToUpper()
+                        </a>
+                    </h4>
+                </div>
+           
+            }
+    
+        </div>
+
+
+    </div>
+
+</div>

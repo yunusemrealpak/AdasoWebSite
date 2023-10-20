@@ -1,0 +1,81 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@using Helper;
+@model PageItem
+
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">Yeni Sunum Ekle</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row" id="mdlForm">
+            <input type="hidden" ID="hdnEkleyen" name="hdnEkleyen" value="@Model.Sunumlar.Data.Ekleyen" />
+            <input type="hidden" ID="hdnEklemeTarihi" name="hdnEklemeTarihi" value="@Model.Sunumlar.Data.EklemeTarihi" />
+            <div class="col-md-2 col-sm-3">
+                <label class="control-label">Etkin</label>
+                <input class="form-control" type="checkbox" name="chckEtkin" checked="@Model.Sunumlar.Data.Etkin" />
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label">Sunum eki (.pdf)</label>
+                <a href="@Model.Sunumlar.Data.DosyaURL" target="_blank"><i class="fa fa-file"></i></a>
+                <input type="hidden" name="hdnDosyaUrl" value="@Model.Sunumlar.Data.DosyaURL" />
+                <input type="file" class="form-control" name="fileDosyaUrl" />
+            </div>
+            <div class="col-md-7 col-sm-9">
+                <label class="control-label">Veya Sunuma ait Url</label>
+                <input type="text" class="form-control" name="txtSunumURL" value="@Model.Sunumlar.Data.DosyaURL"  />
+            </div>
+            <div class="col-md-9 col-sm-12">
+                <label class="control-label">Ana Başlık</label>
+                <input type="text" class="form-control" name="txtAnaBaslik" value="@Model.Sunumlar.Data.AnaBaslik" data-required='true' data-group_name='ModalForm' data-message_type='formmessage' data-error_message="Ana Başlık Alanı Boş Geçilemez." />
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label">Sunum Tarihi</label>
+                <input class="form-control" type="datetime-local" name="txtSunumTarih" value="@Model.Sunumlar.Data.SunumTarihi.ToDateTimeLocal()" data-group_name='mdlForm' data-message_type='formmessage' data-error_message="Tarih Alanı Boş Geçilemez."/>
+                
+            </div>
+            <div class="col-md-9 col-sm-12">
+                <label class="control-label">Başlık</label>
+                <input type="text" class="form-control" name="txtBaslik" value="@Model.Sunumlar.Data.Baslik" data-required='true' data-group_name='ModalForm' data-message_type='formmessage' data-error_message="Başlık Alanı Boş Geçilemez." />
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <label class="control-label">Sunumu Hazırlayan Kişi</label>
+                <input type="text" class="form-control" name="txtHazirlayan" value="@Model.Sunumlar.Data.Hazirlayan" data-required='true' data-group_name='ModalForm' data-message_type='formmessage' data-error_message="Bu Alan Boş Geçilemez." />
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <label class="control-label">Metin</label>
+                <textarea id="ckeditor" class="form-control ckeditor" rows="7" name="txtMetin" data-required='true' data-group_name='ModalForm' data-message_type='formmessage'>@Model.Sunumlar.Data.Metin</textarea>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-sm" data-dismiss="modal">
+            <i class="ace-icon fa fa-times"></i>
+            Kapat
+        </button>
+        <a class="btn btn-success" data-mode="GetSunumlarIslemler" data-type="Kaydet" data-id="@Model.Sunumlar.Data.ID" data-required='true' data-moving_scroll_bar='1' data-group_name='ModalForm'>Kaydet</a>
+    </div>
+</div>
+<script src="~/Admin/Content/js/ckeditor/ckeditor.js"></script>
+<script>
+          initCKEditor();
+    function initCKEditor() {
+        try {
+            var editor1 = CKEDITOR.instances["ckeditor"];
+            if (editor1) {editor1.destroy(true);}
+            CKEDITOR.replace('ckeditor');
+
+
+
+        } catch (e) {
+            console.log(e);
+        }
+                    }
+
+</script>

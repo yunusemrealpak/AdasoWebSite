@@ -1,0 +1,111 @@
+﻿    @using Helper
+    @using WebApplication1.Models
+    @using WebUI.Models
+    @using WebUI.Models.Api
+
+    @model ResponseMessage<List<Youtube>>
+
+<div class="row">
+    <div class="col-lg-7">
+        <div class="tab-content featured-post" id="nav-tabContent">
+
+            @foreach (var yItem in Model.Data)
+            {
+
+                @if (yItem.Sira == 1)
+                {
+                    <div class="tab-pane ts-overlay-style fade show active" id="@yItem.ID" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="item" style="background-image: url(@yItem.ResimURL)">
+                            <a class="post-cat bg-danger" href="#">Tüm Videolar</a>
+                            <a href="@yItem.VideoURL" class="ts-video-btn">
+                                <i class="fa fa-play-circle-o"></i>
+                            </a>
+                            <div class="overlay-post-content">
+                                <div class="post-content">
+                                    <h3 class="post-title md">
+                                        <a href="#">@yItem.Baslik</a>
+                                    </h3>
+                                    <ul class="post-meta-info">
+                                        <li>
+                                            <i class="fa fa-clock-o"></i>
+                                            @yItem.Tarih.ToShortDateString()
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="tab-pane ts-overlay-style fade " id="@yItem.ID" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="item" style="background-image: url(@yItem.ResimURL)">
+                            <a class="post-cat bg-danger" href="#">Tüm Videolar</a>
+                            <a href="@yItem.VideoURL" class="ts-video-btn">
+                                <i class="fa fa-play-circle-o"></i>
+                            </a>
+                            <div class="overlay-post-content">
+                                <div class="post-content">
+                                    <h3 class="post-title md">
+                                        <a href="#">@yItem.Baslik</a>
+                                    </h3>
+                                    <ul class="post-meta-info">
+                                        <li>
+                                            <i class="fa fa-clock-o"></i>
+                                            @yItem.Tarih.ToShortDateString()
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+    <div class="col-lg-5">
+        <div class="nav post-list-box" id="nav-tab" role="tablist">
+
+            @foreach (var yItem in Model.Data)
+            {
+                @if (yItem.Sira == 1)
+                {
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#@yItem.ID" role="tab" aria-controls="nav-home"
+               aria-selected="true">
+                        <div class="post-content media">
+                            <img class="d-flex" src="@yItem.ResimURL" alt="@yItem.Baslik">
+                            <div class="media-body align-self-center">
+                                <h4 class="post-title">
+                                    @yItem.Baslik
+                                </h4>
+                                <span class="post-date-info">
+                                    <i class="fa fa-clock-o"></i>
+                                    @yItem.Tarih.ToShortDateString()
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                }
+                else 
+                {
+                  <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#@yItem.ID" role="tab" aria-controls="nav-home"
+               aria-selected="true">
+                        <div class="post-content media">
+                            <img class="d-flex" src="@yItem.ResimURL" alt="@yItem.Baslik">
+                            <div class="media-body align-self-center">
+                                <h4 class="post-title">
+                                    @yItem.Baslik
+                                </h4>
+                                <span class="post-date-info">
+                                    <i class="fa fa-clock-o"></i>
+                                    @yItem.Tarih.ToShortDateString()
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                }
+            }
+        </div>
+    </div>
+</div>

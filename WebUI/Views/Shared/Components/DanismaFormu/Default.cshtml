@@ -1,0 +1,118 @@
+﻿<div id="DanismanForm">
+  <div class="form-group row">
+    <label for="selectDanismaTipi" class="col-4 col-form-label"></label> 
+    <div class="col-8">
+      <select id="selectDanismaTipi" name="selectDanismaTipi" class="custom-select form-control">
+        <option value="yusuf.akyuz1@outlook.com">Çalışma Danışmanı</option>
+        <option value="gokturkmevlut@ttmail.com">Yeminli Mali Müşavir</option>
+        <option value="bengisu.h@hotmail.com">İş Sağlığı ve Güvenliği Uzmanı</option>
+        <option value="ilkermengu@hotmail.com">Hakuk Danışmanı</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtTCKN" class="col-4 col-form-label">Yetkili T.C. Kimlik No</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+     
+          </div>
+        </div> 
+        <input id="txtTCKN" name="txtTCKN" placeholder="T.C: Kimlik No" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtYetkiliAdiSoyadi" class="col-4 col-form-label">Yetkili Ad Soyad (*)</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+ 
+          </div>
+        </div> 
+        <input id="txtYetkiliAdiSoyadi" name="txtYetkiliAdiSoyadi" type="text" class="form-control" data-required='true' data-group_name='DanismanForm' data-message_type='formmessage' data-error_message="Yetkili Ad Soyad Alanı Boş Geçilemez." >
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtEposta" class="col-4 col-form-label">Eposta (*)</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+ 
+          </div>
+        </div> 
+        <input id="txtEposta" name="txtEposta" placeholder="Eposta (*)" type="text" class="form-control" data-required='true'  data-group_name='DanismanForm' data-message_type='formmessage' data-error_message="E posta Alanı Boş Geçilemez.">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtTelefon" class="col-4 col-form-label">Telefon</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+ 
+          </div>
+        </div> 
+        <input id="txtTelefon" name="txtTelefon" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtFirmaUnvan" class="col-4 col-form-label">Firma Ünvan</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+ 
+          </div>
+        </div> 
+        <input id="txtFirmaUnvan" name="txtFirmaUnvan" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 col-form-label" for="txtAdres">Adres</label> 
+    <div class="col-8">
+      <textarea id="txtAdres" name="txtAdres" cols="40" rows="2" class="form-control"></textarea>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4">Hangi Yolla Cevap Almak İstediği</label> 
+    <div class="col-8">
+      <div class="form-check custom-control custom-radio custom-control-inline">
+        <input type="radio" class="form-check-input" id="radioEposta">
+        <label class="form-check-label" for="radioEposta">Eposta</label>
+      </div>
+      <div class="form-check custom-control custom-radio custom-control-inline">
+        <input type="radio" class="form-check-input" id="radioYazili">
+        <label class="form-check-label" for="radioYazili">Yazılı</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="textareaAciklama" class="col-4 col-form-label">Açıklama</label> 
+    <div class="col-8">
+      <textarea id="ckeditor" name="textareaAciklama" cols="40" rows="5" class="form-control ckeditor"></textarea>
+    </div>
+  </div> 
+      
+    <div class="form-group row">
+    <div class="offset-4 col-8">
+        
+      <div class="g-recaptcha" data-sitekey="6Lf3QFcdAAAAAFLzwfmcEQ0_RrRFSb8B1WrfWSDN"></div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="offset-4 col-8 text-right">        
+      <a data-mode="DanismanFormIslem" class="btn btn-primary" data-type="Kaydet" data-id="0" data-required='true' data-moving_scroll_bar='1' data-group_name='DanismanForm'>Gönder</a>
+    </div>
+  </div>
+  </div>
+ 
+ 
+  <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>

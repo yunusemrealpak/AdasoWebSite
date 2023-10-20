@@ -1,0 +1,218 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models.Api
+@using WebUI.Models
+@using Helper
+
+@model PageItem
+<div class="clearfix"></div><br />
+
+<div id="example">
+    
+    <div class="row">
+        
+         <input type="text" id="lisViewSearch" class="form-control text-left col-md-12" placeholder="Kurum bilgilerinize erişmek için Vergi Numaranızı giriniz." aria-label="Ünvan" aria-describedby="basic-addon1">
+
+    </div>
+
+    <div class="demo-section k-content wide">
+        <div class="row">
+            <div id="listView" data-role="listView" data-layout="template" data-model="dataSource" data-zoom="true" data-reload="true"></div>
+        </div>
+        <div id="pager" class="k-pager-wrap" data-role="listView" data-layout="template" data-model="dataSource" data-zoom="true" data-reload="true"> </div>
+    </div>
+
+ 
+    <script id="template" type="text/x-kendo-template">
+        #if(uyeliK_DURUM==1){#
+            <div class="d-flex bd-highlight">
+                <div class="p-2 w-100 bd-highlight  mt-2">#:unvan#
+                    <div class='clearfix'></div>
+                    <a href='#= url_(weB_ADRESI) #' target='_blank' class='mt-10'>#:weB_ADRESI#</a>
+                        
+                    <div class='clearfix'></div>
+
+                         <div class="d-flex bd-highlight">
+                             <div class="p-1 w-30 bd-highlight  mt-2"><b>Vergi Durumu :</b> </div>
+                             <div class="p-1 flex-shrink-1 bd-highlight mt-2">#:vergI_DURUMU#</div>
+                         </div>
+                    
+                         <div class="d-flex bd-highlight">
+                             <div class="p-1 w-30 bd-highlight"><b>Vergi Dairesi :</b> </div>
+                             <div class="p-1 flex-shrink-1 bd-highlight">#:vergI_DAIRESI#</div>
+                         </div>     
+
+                         <div class="d-flex bd-highlight">
+                             <div class="p-1 w-30 bd-highlight"><b>Vergi Numarası :</b> </div>
+                                 <div class="p-1 flex-shrink-1 bd-highlight">#:vergI_NO#</div>
+                         </div>                              
+
+                        <div class="d-flex bd-highlight">
+                             <div class="p-1 w-30 bd-highlight"><b>Meslek Grubu :</b> </div>
+                                 <div class="p-1 flex-shrink-1 bd-highlight">#:mesleK_GRUBU_ADI#</div>
+                         </div>   
+ 
+                </div>
+                <div class="p-2 flex-shrink-1 bd-highlight mt-2"><b>FAAL</b></div>
+            </div>
+         #}#
+
+        #if(uyeliK_DURUM==2){#
+            <div class="d-flex bd-highlight bg-secondary">
+                <div class="p-2 w-100 bd-highlight mt-2">#:unvan#
+                    <div class='clearfix'></div>
+                    <a href='#= url_(weB_ADRESI) #' target='_blank' class='mt-10'>#:weB_ADRESI#</a>
+                    <div class='clearfix'></div>
+                    <span>Vergi Durumu : </span>#:vergI_DURUMU#
+                    <div class='clearfix'></div>
+                    <span>Vergi Numarası : </span>#:vergI_NO#
+                    <div class='clearfix'></div>
+                    <span>Vergi Dairesi : </span>#:vergI_DAIRESI#
+                    <div class='clearfix'></div>
+                    <span>Meslek Grubu : </span>#:mesleK_GRUBU_ADI#
+                    <div class='clearfix'></div>
+                </div>
+                <div class="p-2 flex-shrink-1 bd-highlight mt-2">ASKI</div>    
+            </div>
+        #}# 
+    <hr>
+
+    </script>
+
+    <script>
+
+        $("body").on("click", "a[data-mode]", function() {
+            var mode = $(this).data("mode");
+            var formData = new FormData();
+            var buton = $(this);
+
+            if (mode === "KendoTemplateLink") {
+                var id_ = $(buton).data("id");
+                var baslik_ = $(buton).data("baslik");
+                location.href = "/Tebligler/" + toSeoUrl(baslik_) + "/" + id_;
+            }
+        });
+
+        var search_ = $('#lisViewSearch').val();
+        var selectTip_ = $('#selectMeslekGruplari').val();
+
+        if (selectTip_ == 0 && search_ == "") {
+            listViewFiltering(search_, selectTip_)
+        }
+
+ 
+
+        //meslek gruplarını seçer
+
+        //Üye Durumlarını Seçer
+ 
+
+        //Üye Durumlarını Seçer
+        $('#lisViewSearch').on('keyup', function() {
+            var sLen = $('#lisViewSearch').val().length;
+            
+            if (sLen==10){
+                
+                $('#listView').empty();
+                listViewFiltering();
+            }
+            else{
+                
+                $('#listView').empty();
+                
+            }
+            
+        });
+
+        function listViewFiltering() {
+
+            var dataSource = new kendo.data.DataSource({
+                transport: {
+                    read: {
+                        url: "/Admin/TumUyeler/view_Uye_BilgileriJSON",
+                        processData: false,
+                        dataType: "json"
+
+                    },
+                    parameterMap: function(options, operation) {
+                        var urlColumnFilter = '';
+                        urlColumnFilter += "&kendotable.filter[0]._field=''";
+                        urlColumnFilter += "&kendotable.filter[0]._operator=contains";
+                        urlColumnFilter += "&kendotable.filter[0]._value=''";
+                        urlColumnFilter += "&kendotable.filter[0]._ignoreCase=true";
+                        urlColumnFilter += "&kendotable.filter[0]._logic=and";
+                        urlColumnFilter += "&kendotable.VERGI_NO=" + $('#lisViewSearch').val();
+                        urlColumnFilter += "&kendotable.DOGRULAMA=true";
+                        
+
+                        return "kendotable.page=" + options.page + "&kendotable.pageSize=" + options.pageSize + "&kendotable.skip=" + options.skip + "&kendotable.take=" + options.take + urlColumnFilter;
+                    }
+                },
+                pageSize: 24,
+                page: 1,
+                serverPaging: true,
+                serverFiltering: false,
+                schema: {
+                    data: "data",
+                    total: "total_length"
+                }
+            });
+
+            if (search_ != "")
+                $('#listView').empty();
+
+            $("#listView").kendoListView({
+                dataSource: dataSource,
+                dataReload: true,
+                dataLayout: "template",
+                dataModel: "dataSource",
+                dataZoom: "true",
+                template: kendo.template($("#template").html())
+
+            });
+
+            $("#pager").kendoPager({
+                autoBind: false,
+                dataSource: dataSource
+            });
+
+        }
+
+        function url_(link) {
+            link_ = link.indexOf("http");            
+            if (link_==0) 
+                return link;
+            else if (link_==-1) 
+                return '//'+link;
+        }
+    </script>
+
+
+    <style>
+        .k-content{
+      
+        }
+        #listView {
+            padding: 5px 5px;
+            margin-bottom: -1px;
+            width: 100% !important;
+            
+        }
+
+        .p-content_ {
+            margin: 15px !important;
+           
+        }
+
+        .k-listview-content {
+            overflow: hidden;
+        }
+
+        .k-listview:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    </style>
+</div>

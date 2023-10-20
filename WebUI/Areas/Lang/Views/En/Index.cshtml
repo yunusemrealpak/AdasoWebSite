@@ -1,0 +1,17 @@
+﻿ 
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_En_Layout.cshtml";
+}
+@{
+    if (TempData["link"].ToString() == "")
+    {
+        @await Component.InvokeAsync("Index");
+    }
+    else
+    {
+        @await Component.InvokeAsync(TempData["link"].ToString());
+    }
+}
+
+

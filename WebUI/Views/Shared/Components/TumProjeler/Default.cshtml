@@ -1,0 +1,178 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models.Api
+@using WebUI.Models
+@using Helper
+@model PageItem
+
+ 
+
+<div id="example">
+    <div class="input-group mb-3">
+
+        <select id="selectProjeTipleri" name="selectProjeTipleri" class="form-control col-md-3">
+            <option value='0'>Tüm Projeler</option>
+            <option value='1'>Devam Eden Projeler</option>
+            <option value='2'>Tamamlanan Projeler</option>
+ 
+
+        </select>
+ 
+        <input type="text" id="lisViewSearch" class="form-control text-left col-md-9" placeholder="Ara..." aria-label="Ünvan" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="demo-section k-content wide">
+        <div class="row">
+            <div id="listView" data-role="listView" data-layout="template" data-model="dataSource" data-zoom="true" data-reload="true"></div>
+
+        </div>
+            <div id="pager" class="k-pager-wrap"  data-role="listView" data-layout="template" data-model="dataSource" data-zoom="true" data-reload="true"> </div>
+    </div>
+
+
+    @*Template ekle*@
+    @*<p>#:kendo.toString(UnitPrice, "c")#</p>
+        <img src="../content/web/foods/#= resimUrl #.jpg" alt="#: ProductName # image" />*@
+
+ 
+        <script id="template" type="text/x-kendo-template">
+       
+            <div class="d-flex bd-highlight">
+            <div class="p-2 w-100 bd-highlight  mt-2">#:baslik#</div>
+              <div class="p-2 flex-shrink-1 bd-highlight"><a class="btn btn-link btn-sm" data-mode='ProjeDetayModal' data-id='#:id#'  ><i class="fa fa-list" style='color:white !important'></i></a></div>
+            </div>
+       
+             <hr>
+        </script>
+  
+
+    <script>
+
+                $("body").on("click", "a[data-mode]", function () {
+                    var mode = $(this).data("mode");
+                    var formData = new FormData();
+                    var buton = $(this);
+
+                    if (mode === "KendoTemplateLink") {
+                        var id_ = $(buton).data("id");
+                        var baslik_ = $(buton).data("baslik");
+                        location.href = "/Tebligler/" + toSeoUrl(baslik_) + "/" + id_;
+                    }
+                });
+
+                var search_ = $('#lisViewSearch').val();
+                var selectTip_=$('#selectProjeTipleri').val();
+    
+                if(selectTip_==0  && search_==""){
+                    listViewFiltering(search_, selectTip_) 
+                }
+                
+            //Proje tİplerini seçer
+                    $('#selectProjeTipleri').on('change', function () {
+                        
+                        var thisSelectTip_ =$(this).val();
+                        
+                        if( thisSelectTip_==0){
+                            $('#listView').empty(); 
+                            listViewFiltering($('#lisViewSearch').val(), $('#selectMeslekGruplari').val());
+                        }
+
+                         if(thisSelectTip_!='0' && search_==''){
+                            
+                            $('#listView').empty();                            
+                            listViewFiltering($('#lisViewSearch').val(), $('#selectMeslekGruplari').val());
+                            
+                        }
+                        
+                    });
+
+            //Proje tİplerini seçer
+
+ 
+               $('#lisViewSearch').on('keyup', function () {
+                    
+                        $('#listView').empty(); 
+                        listViewFiltering();
+                    
+                    });
+
+        function listViewFiltering() {
+
+            var dataSource = new kendo.data.DataSource({
+                transport: {
+                    read: {
+                        url: "/Admin/Projeler/ProjelerJson",
+                        processData: false,
+                        dataType: "json"
+
+                    },
+                    parameterMap: function (options,operation) {                        
+                    var urlColumnFilter = '';
+                        urlColumnFilter += "&kendotable.filter[0]._field=Durum";
+                        urlColumnFilter += "&kendotable.filter[0]._operator=contains";
+                        urlColumnFilter += "&kendotable.filter[0]._value="+$('#selectProjeTipleri').val();
+                        urlColumnFilter += "&kendotable.filter[0]._ignoreCase=true";
+                        urlColumnFilter += "&kendotable.filter[0]._logic=and";
+                        urlColumnFilter += "&kendotable.Baslik="+$('#lisViewSearch').val();                        
+                        urlColumnFilter += "&kendotable.sort[0]._field=baslangicTarihi" ;
+                        urlColumnFilter += "&kendotable.sort[0]._dir=desc";
+                        return "kendotable.page=" + options.page + "&kendotable.pageSize=" + options.pageSize + "&kendotable.skip=" + options.skip + "&kendotable.take=" + options.take + urlColumnFilter;
+                    }
+                },
+                pageSize: 24,
+                page: 1,
+                serverPaging: true,
+                serverFiltering: false,
+                schema: {
+                    data: "data",
+                    total: "total_length"
+                } 
+            }); 
+
+                    if (search_ != "")
+                        $('#listView').empty();  
+
+                    $("#listView").kendoListView({
+                        dataSource: dataSource,
+                        dataReload: true,
+                        dataLayout: "template",
+                        dataModel: "dataSource",
+                        dataZoom: "true",
+                        template: kendo.template($("#template").html())
+                    });
+                    
+                    $("#pager").kendoPager({                   
+                        autoBind: false,
+                        dataSource: dataSource 
+                    });
+
+            }
+ 
+    </script>
+
+
+    <style>
+        #listView {
+            padding: 5px 5px;
+            margin-bottom: -1px;
+            width: 100% !important;
+        }
+
+        .p-content_ {
+            margin: 15px !important;
+        }
+
+        .k-listview-content {
+            overflow: hidden;
+        }
+
+
+        .k-listview:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    </style>
+</div>
+

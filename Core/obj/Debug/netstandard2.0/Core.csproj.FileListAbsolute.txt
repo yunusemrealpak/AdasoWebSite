@@ -1,0 +1,60 @@
+D:\Adaso_Source\AdasoWebSiteCore_V1\Core\bin\Debug\netstandard2.0\Core.deps.json
+D:\Adaso_Source\AdasoWebSiteCore_V1\Core\bin\Debug\netstandard2.0\Core.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Core\bin\Debug\netstandard2.0\Core.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\Core\obj\Debug\netstandard2.0\Core.csproj.AssemblyReference.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\Core\obj\Debug\netstandard2.0\Core.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Core\obj\Debug\netstandard2.0\Core.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\Core\obj\Debug\netstandard2.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.deps.json
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.csproj.AssemblyReference.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.pdb
+D:\AdasoProjeler\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.deps.json
+D:\AdasoProjeler\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.dll
+D:\AdasoProjeler\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.pdb
+D:\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.csproj.AssemblyReference.cache
+D:\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+D:\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+D:\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+D:\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.dll
+D:\AdasoProjeler\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\ismail\source\repos\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.csproj.AssemblyReference.cache
+C:\Users\ismail\source\repos\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ismail\source\repos\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\ismail\source\repos\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\ismail\source\repos\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\ismail\source\repos\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.csproj.AssemblyReference.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Repos\ismailgundogan\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.csproj.AssemblyReference.cache
+C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.pdb

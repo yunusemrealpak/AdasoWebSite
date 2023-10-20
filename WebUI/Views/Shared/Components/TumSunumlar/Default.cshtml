@@ -1,0 +1,42 @@
+﻿
+<a id="btnSunumgetir" data-mode="sunumAraParitial" class="d-none">sunumgetir</a>
+
+<div class="page-content page-container" id="pagecontent">
+    <div class="padding">
+
+        <div class="row">
+            <select Id="sunumYear" class="form-control col-md-2 sunumDate" name="sunumYear" data-mode="sunumYear">
+                <option value="0">Yıl Seçiniz</option>
+                @{
+                    int year = DateTime.Now.Year;
+                    for (var i = 0; i < 11; i++)
+                    {
+                        <option value="@(year-i)">@(year-i)</option>
+                    }
+                }
+            </select>
+
+            <select Id="sunumMounth" class="form-control col-md-2 sunumDate" name="sunumMounth" data-mode="sunumYear" disabled>
+                <option value="0">Ay Seçiniz</option>
+                @{
+                    for (var i = 1; i <= 12; i++)
+                    {
+                        <option value="@i"> @Helper.VariableConvertHelper.getFullMonthName(i)</option>
+                    }
+                }
+            </select>
+
+            <input Id="txtContainsSearch" class="form-control col-md-8" name="txtContainsSearch" placeholder="Aramak için en az 3 karakter giriniz." data-mode="txtContainsSearch" />
+
+        </div>
+
+
+        <div class="clearfix"></div><br />
+        <div id="dvParitialSunum"></div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+    $("#btnSunumgetir").trigger("click");
+    });
+</script>

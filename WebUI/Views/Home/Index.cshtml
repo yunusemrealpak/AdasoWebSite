@@ -1,0 +1,503 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models.Api
+@using WebUI.Models
+@using Helper
+@model PageItem
+
+@{
+    ViewBag.Title = "Adana Sanayi Odası";
+}
+<section class="block-wrapper mt-15">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-12">
+
+                <div id="featured-slider" class="owl-carousel ts-overlay-style ts-featured">
+
+                    @foreach (var item in Model.sliders.Data.Where(b=>b.BaslangicTarihi<=DateTime.Now))
+                    {
+                        @*var base64 = Convert.ToBase64String();
+                            var imgSrc = String.Format("data:image/gif;base64,{0}", base64);*@
+                        <div class="item" style="background-image: url('../Content/@item.ResimUrl')">
+
+                            <div class="overlay-post-content">
+                                <div class="post-content">
+                                    <h2 class="h2_1">
+                                        <a href="/Haberler/@Helper.UrlHelper_.SeoAdress(@item.Baslik)/@item.ID">
+                                            @item.Baslik
+                                        </a>
+                                    </h2>
+                                    <ul class="post-meta-info">
+
+                                        <li>
+                                            <i class="fa fa-clock-o"></i>
+                                            @item.BaslangicTarihi.ToShortDateString()
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/ Featured post end -->
+                    </div>
+                    }
+
+
+                </div>
+                <a href="/haber-arsivi-51" class="text-right position-relative d-block mt-2" style="cursor:pointer !important;color:#000 !important;font-weight:600;text-decoration:underline;">Tüm Haberler</a>
+                <div class="clearfix"></div>
+                <div class="container-fluid mt-20  ml-auto">
+                    <div>
+                        <div class="col-xs-2 plr-r ml-auto adasoIkons hvr-push"
+                             data-toggle="tooltip"
+                             data-placement="left"
+                             title="Odamızın geliştirmiş olduğu teşvik sihirbazi ile teşviklerle ilgili
+                        değişikliklerden haberdar olabilir veya mevcut teşvikleri görüntüleyebilirsiniz.">
+
+                            <a href="https://tesvik.adasoportal.com/anasayfa" class="HM_Tesvik " target="_blank"> <img src="~/Content/images/icon/Tesvik.png" class="img-thumbnai mt-15 pb-2" alt="TEŞVİK SİHİRBAZI" />TEŞVİK SİHİRBAZI</a>
+
+                        </div>
+                        <div class="col-xs-2 plr-r ml-auto adasoIkons hvr-push"
+                             data-toggle="tooltip"
+                             data-placement="right"
+                             title="Odamıza bağlı üye bilgileri.">
+
+                            <a href="/uye-arama-3101" class="HM_UyeAra" > <img src="~/Content/images/icon/UyeAra.png" class="img-thumbnai  mt-15 pb-2" alt="ÜYE ARAMA" /><div class="clearfix"></div> ÜYE ARAMA</a>
+
+                        </div>
+                        <div class="col-xs-2 plr-r ml-auto adasoIkons hvr-push"
+                             data-toggle="tooltip"
+                             data-placement="right"
+                             title="Odamızda Yapılan Sunumlar">
+
+                            <a href="/odamizda-yapilan-sunumlar-4149" class="HM_Sunum">
+                                <img src="~/Content/images/icon/Sunum.png" class="img-thumbnai  mt-15 pb-2" alt="ODAMIZDA YAPILAN SUNUMLAR" />
+                                SUNUMLAR
+                            </a>
+
+                        </div>
+@*                        <div class="col-xs-2 plr-r ml-auto adasoIkons hvr-push"
+                             data-toggle="tooltip"
+                             data-placement="right"
+                             title="Adana Sanayi Odası  da bu  kavrama önem vererek ; Yeşil Mütabakat ,enerji verimliliği , atık yönetimi, su ve atık su , kaynak verimliliği , karbon ayak izi gibi konularda çalışmalarını sürdürmektedir.">
+
+                            <a href="https://surdurulebilirlik.adasoportal.com/" class="HM_Sunum" target="_blank"><img src="~/Content/images/icon/YesilSanayi.png" class="img-thumbnai  mt-15 pb-2" alt="YEŞİN SANAYİ (SÜRDÜRÜLEBİLİRLİK)" /><div class="clearfix"></div>YEŞİL SANAYİ</a>
+
+                        </div>*@
+                        <div class="col-xs-2 plr-r ml-auto adasoIkons hvr-push"
+                             data-toggle="tooltip"
+                             data-placement="right"
+                             title="ADANA SANAYİ ODASI BELGELENDİRME KURULUŞU olarak 19/04/2021 tarihli 10312 sayılı Ticaret Sicil Gazetesinde yayınlanarak resmen kurmuş olup, Sınav ve Belgelendirme süreçleri, Merkez’in Kalite Yönetim Sistemi’ne göre etkin bir biçimde yürütülmektedir. Personel yeterliliklerinin belgelendirilmesinde sürekli gelişimi esas almaktadır. Mesleki gelişimin öneminin farkındadır.">
+
+                            <a href="https://adasobelgelendirme.com/" class="HM_Sunum" target="_blank"><img src="~/Content/images/icon/Belgelendirme.png" class="img-thumbnai  mt-15 pb-2" alt="Adana Sanayi Odası Belgelendirme Kuruluşu" /><div class="clearfix"></div>BELGELENDİRME</a>
+
+                        </div>
+                        <div class="col-xs-2 plr-r ml-auto adasoIkons hvr-push"
+                             data-toggle="tooltip"
+                             data-placement="right"
+                             title="Adana Sanayi Odası’nın (ADASO) nitelikli işgücü ihtiyacını karşılamak, yalın üretim ve dijitalleşme odağında işletmelerin rekabet gücünü artırmak, kurumsal kapasiteyi geliştirmek ve inovasyon odaklı üretim modellerini teşvik etmek amacıyla kuruldu.">
+
+                            <a href="http://www.sanayikampusu.com/" class="HM_Sunum" target="_blank"><img src="~/Content/images/icon/SanayiKampusu.png" class="img-thumbnai mt-10" alt="ADANA SANAYİ KAMPÜSÜ" />ADANA SANAYİ KAMPÜSÜ</a>
+
+                        </div>
+
+                        <div class="col-xs-2 plr-r ml-auto adasoIkons hvr-push"
+                             data-toggle="tooltip"
+                             data-placement="right"
+                             title="TOBBUYUM Adana Sanayi Odası / ARABULUCULUK VE UYUŞMAZLIK ÇÖZÜM MERKEZİ">
+
+                            <a href="https://www.tobbuyum.com.tr/" class="HM_Rapor" target="_blank"><img src="~/Content/images/icon/arabuluculuk.png" class="img-thumbnai mt-15 pb-2" alt="ARABULUCULUK UYUŞMAZLIK ÇÖZÜM MERKEZİ" /> <div class="clearfix"></div>ARABULUCULUK</a>
+
+                        </div>
+
+                        @*<div class="col-xs-2 plr-r ml-auto adasoIkons hvr-push" data-toggle="tooltip" data-placement="top" title="Üyeler oda veya borsaya kayıt sırasında kayıt ücreti ve her yıl için yıllık aidat ve munzam aidat ödemekle yükümlüdür.">
+
+                            <a href="#" class="HM_Aidat"><img src="~/Content/images/icon/Aidat.png" class="img-thumbnai" />AİDAT İŞLEMLERİ</a>
+
+                            </div>*@
+                    </div>
+                </div>
+
+
+                <!--BURAYA İKONLAR GELECEK-->
+
+            </div>
+            <!-- col end-->
+            <!--<div class="col-lg-2">
+            <div class="ts-grid-box ts-grid-content">
+             <a class="post-cat ts-orange-bg" href="#">RAPORLAR</a>
+             <div class="ts-post-thumb">
+              <a href="#">
+               <img class="img-fluid img-thumbnai" src="images/news/travel/travel10.jpg" alt="">
+              </a>
+             </div>
+             <div class="post-content">
+              <h3 class="post-title">
+               <a href="#">The clock is ticking for e-cig companies underage users</a>
+              </h3>
+              <span class="post-date-info">
+               <i class="fa fa-clock-o"></i>
+               March 21, 2019
+              </span>
+             </div>
+
+
+            </div>-->
+            <!-- ts single post item end-->
+            <!-- ts single post item end-->
+            <!--</div>-->
+            <!-- col end-->
+
+            <div class="col-lg-3 duyurularveTebligler">
+                <div class="post-list-item duyurularTebligler">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation">
+                            <a href="#profile" class="active" aria-controls="profile" role="tab" data-toggle="tab">
+                                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                DUYURULAR
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#home" class="MevzuatDuyurulari" aria-controls="home" role="tab" data-toggle="tab">
+                                <i class="fa fa-flag" aria-hidden="true"></i>
+                                MEVZUAT DUYURULARI
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane ts-grid-box post-tab-list_cust TebDuyTabStyle" id="home" data-tab="tebligler-2087">
+                            @await Component.InvokeAsync("TebliglerTab")
+                        </div>
+                        <!--ts-grid-box end -->
+
+                        <div id="profile" role="tabpanel" class="active tab-pane  ts-grid-box   post-tab-list_cust TebDuyTabStyle" data-tab="duyuru-arsivi-48">
+                            @await Component.InvokeAsync("Duyurular")
+
+                        </div>
+                        <!--ts-grid-box end -->
+
+                    </div>
+                    <!-- tab content end-->
+                </div>
+                <!-- post-list-item end-->
+                <a class="detayaGit btn" data-mode="lnkDuyurularTebligler"> <i class="fa fa-external-link" aria-hidden="true"></i> Tümünü Gör </a>
+            </div>
+            <!-- col end-->
+        </div>
+        <!-- row end-->
+    </div>
+    <!-- container end-->
+</section>
+<section class="block-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-8">
+                @await Component.InvokeAsync("Raporlar")
+
+            </div>
+
+            <div class="col-lg-3  col-md-2" style="background-color: whitesmoke;">
+                @*ADASO GERGİ*@
+                @await Component.InvokeAsync("Gazeteler")
+                @*ADASO GERGİ*@
+                <a href="/adaso-dergi-46" class=" detayaGit btn btn-sm bg-secondary"><i class="fa fa-external-link" aria-hidden="true"></i> Tümünü Gör</a>
+            </div>
+            @*<div class="col-lg-3 col-md-4">
+                <div class="posts-ad">
+                <a href="#" class="hvr-float-shadow">
+                <img src="~/Content/images/banner/sidebar-banner2.jpg" alt="">
+                </a>
+                </div></div>*@
+        </div>
+    </div>
+</section>
+<section class="block-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="banner-img text-center">
+
+                    <img style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="/Content/images/banner/YatayReklamAlani.jpg">
+
+                </div>
+            </div>
+            <!-- col end -->
+        </div>
+        <!-- row  end -->
+    </div>
+    <!-- container end -->
+</section>
+
+<section class="block-wrapper">
+    <div class="container">
+        <div class="row">
+            @*bilgi bankası*@
+
+            @await Component.InvokeAsync("BilgiBankasi")
+
+            @*bilgi bankası*@
+            <div class="col-lg-6 col-md-6 etkinlikler">
+                <div class="ts-grid-box most-populer-item">
+                    <h2 class="ts-title">Etkinlik Takvimi</h2>
+
+                    <ul class="nav nav-tabs mt-1">
+                        <li><a class="btn btn-smm" data-toggle="tab" href="#duzMetin">Son 1 Yıllık Etkinlik</a></li>
+                        <li class="ml-2 active">  <a class="btn btn-smm" data-toggle="tab" href="#takvimUzerinde">Takvim Üzerinde</a></li>
+                        <li class="ml-2">  <a href="/etkinlikler-2085" style="color:#000;text-decoration:underline;padding:5px 5px;position:relative;display:inline-block">Tüm Etkinlikler <i class="fa fa-external-link"></i></a></li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <div id="duzMetin" class="tab-pane">
+                            @*                             <div class="input-group input-daterange">
+                                <input class="form-control fromTo" type="datetime" id="from" name="from" data-mode="ActivesChangeFrom">
+                                <label for="to">-</label>
+                                <input class="form-control fromTo" type="datetime" id="to" name="to" data-mode="ActivesChangeFrom">
+
+                                </div>*@
+
+                            <h4 class="mt-15"> @DateTime.Now.AddYears(-1).ToShortDateString() - @DateTime.Now.ToShortDateString() Tarih aralığındaki Etkinlikler</h4>
+                            @*HABER LİSTESİ*@
+                            <div id="EtkinlikListesi">
+                               @await Component.InvokeAsync("EtkinlikListesi")
+                            </div>
+                            @*HABER LİSTESİ*@
+                        </div>
+                        <div id="takvimUzerinde" class="tab-pane fade in active">
+                            <div id='calendar'></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- most-populers end-->
+            </div>
+            <div class="col-lg-3">
+                <!--<div class="widgets widgets-item">
+
+                 <img class="img-fluid" src="images/avater/adasoDergi.jpg" alt="">
+                </div>-->
+                <!--widgets end-->
+                <div class="widgets widgets-item widget-banner">
+                    <!--<a href="/TNBKep/TNBKep" class="mb-5">
+                        <img style="-webkit-user-select: none;margin-bottom: 10px;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;"
+                             src="~/Content/images/banner/tnb.jpg">
+                    </a>-->
+                    <a href="#">
+                        <img style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;"
+                             src="~/Content/images/banner/DikeyReklamAlani.jpg">
+                    </a>
+                </div>
+                <!--widgets end-->
+                <!-- widgets end-->
+                <!--</div>-->
+                <!-- col end-->
+            </div>
+            <!-- ts-populer-post-box end-->
+        </div>
+        <!-- col end-->
+    </div>
+    <!-- row end-->
+    <!-- container end-->
+</section>
+
+<section class="block-wrapper">
+
+    <div class="container">
+
+        <div class="row">
+            <hr />
+            <div class="col-lg-12">
+                <div class="ts-grid-box watch-post mb-30">
+                    <h2 class="ts-title">Adaso Youtube</h2>
+                    @await Component.InvokeAsync("Youtube")
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- container end-->
+</section>
+
+<section class="block-wrapper">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12"><h3 class="ts-title">Adaso B2B Platformu</h3></div>
+            <div class="col-md-4">
+                <div class="card card-testimonia">
+
+                    <div class="card-body text-center">
+                        <i class="fa fa-bookmark fa-3x"></i>
+                        Dünya standartlarında üretim yapan ve 70'den fazla ülkeye ihracat yapan Adana / Türkiye merkezli firmalar. Firmalar ile iletişime geçebilir, ürünlerini inceleyebilir ve B2B görüşme etkinliklerimiz hakkında bilgi alabilirsiniz.
+                    </div>
+                    <div class="card-footer">
+                        <h4 class="card-title">Gıda Sektörü</h4>
+                        <h6 class="card-category"><a href="https://gida.adasoportal.com/" target="_blank">Siteye Git</a></h6>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-testimonial">
+                    <div class="card-body text-center">
+                        <i class="fa fa-cogs fa-3x"></i>
+                        Metal & Makine Sektörümüzün geniş ürün yelpazesini incelemek ister misiniz? Güçlü makine parkuru ile 70'den fazla ülkeye ihracat yapan bölgenin lider firmalarına göz atın.
+                        <br /><br />
+                    </div>
+                    <div class="card-footer">
+                        <h4 class="card-title">Metal Sektörü</h4>
+                        <h6 class="card-category"><a href="https://metal.adasoportal.com/" target="_blank">Siteye Git</a></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-testimonial">
+
+                    <div class="card-body text-center">
+                        <i class="fa fa-cubes fa-3x"></i>
+                        Dünya standartlarında üretim yapan ve 70'den fazla ülkeye ihracat yapan Adana / Türkiye merkezli firmalar. Firmalar ile iletişime geçebilir, ürünlerini inceleyebilir ve B2B görüşme etkinliklerimiz hakkında bilgi alabilirsiniz.
+                    </div>
+                    <div class="card-footer">
+                        <h4 class="card-title">Plastik Sektörü</h4>
+                        <h6 class="card-category"><a href="https://plastik.adasoportal.com/" target="_blank">Siteye Git</a></h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- container end-->
+</section>
+
+
+@section Scripts{
+    <script>
+        //$(document).ready(function() {
+        //      $.get("/Home/_Index", function(data, status){
+        //          if(data.success)
+        //          {
+        //              console.log(data.message);
+        //          }
+        //          else
+        //          {
+        //              console.log(data.message);
+        //              //Hatalı
+        //          }
+        //          });
+
+        //      });
+        $(document).ready(function () {
+            $.post("/Paritial/popupGetModal", function (data, status) {
+    
+
+                if (data != null) {
+                    $("body").load("body[data-mode]", function () {
+                        var mode = $(this).data("mode");
+                        var formData = new FormData();
+                        var buton = $(this);
+                        $(buton).data('url', "/Paritial/popupGetModal");
+                        formData.append("id", $(buton).data("id"));
+                        var url = location.href.slice(location.href.indexOf('.'));
+                        
+                        if (url == '.adaso.org.tr/') {
+                            console.log(url);
+                            /*if (url == '.adaso.org.tr/') {*/
+                            ButtonExecute("partial", "", buton, formData, function () {
+                                $("#mdl").modal("show");
+                            }, function () { }, "false", "#dvMdlDialog");
+                        }
+
+
+                        /*  if (localStorage['popupGetModal'] != 'popup') { }*/
+                    });
+
+                } else {
+                    console.log(data.message);
+                    //Hatalı
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            var now = new Date();
+            var day = ("0" + now.getDate()).slice(-2);
+            var month = ("0" + (now.getMonth() + 1)).slice(-2);
+            var today = now.getFullYear() - 1 + "-" + (month) + "-" + (day);
+            $('#from').val(today);
+
+            $('#calendar').fullCalendar({
+                timeZone: 'UTC',
+                initialView: 'dayGridMonth',
+                displayEventTime: false,
+                aspectRatio: 1.370,
+                height: 310,
+                contentHeight: 370,
+                events: '/Home/GetEtkinlikTakvim',
+                loading: function (isLoading) {
+                    if (isLoading) {
+                        $('#loading').show();
+                    }
+                    else {
+                        $('#loading').hide();
+                    }
+                },
+                eventClick: function (calEvent, jsEvent, view) {
+                    var buton = $(this);
+                    var formData = new FormData();
+                    $(buton).data('url', "/Paritial/EtkinliklerModal");
+                    formData.append("ID", calEvent.id);
+
+                    ButtonExecute("partial", "", buton, formData, function () {
+                        $("#mdl").modal("show");
+                    }, function () { }, "false", "#dvMdlDialog");
+                    // change the border color just for fun
+                    $(this).css('border-color', 'red');
+                    $(this).css('color', 'white');
+
+                },
+                selectable: true,
+                selectHelper: true,
+                eventRender: function (event, element) {
+                    element.popover({
+                        animation: true,
+                        delay: 300,
+                        content: 'Açıklama : ' + event.title + "",
+                        trigger: 'hover'
+                    });
+                }
+            });
+
+            $("body").on("click", "a[data-mode]", function (e) {
+                e.preventDefault();
+                var mode = $(this).data("mode");
+                var formData = new FormData();
+                var buton = $(this);
+
+                if (mode === "KendoTemplateLink") {
+
+                    var id_ = $(buton).data("id");
+                    var buton = $(this);
+                    var formData = new FormData();
+
+                    $(buton).data('url', "/Paritial/EtkinliklerModal");
+
+                    formData.append("ID", id_);
+
+                    ButtonExecute("partial", "", buton, formData, function () {
+                        $("#mdl").modal("show");
+                    }, function () { }, "false", "#dvMdlDialog");
+                }
+            });
+        });
+    </script>
+}

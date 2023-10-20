@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+
+@using WebApplication1.Models
+@using WebUI.Models.Api
+@using Helper
+@model PageItem
+ 
+<div class="modal-content">
+    <div class="modal-header ">
+        <h5 class="modal-title">@Model.popup.Data.Baslik</h5>
+        <div class="clearfix"></div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+
+        <div class="row">
+            <div class="col-12">
+                <div class=WordSection1>
+
+                    @Html.Raw(Model.popup.Data.Metin)
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

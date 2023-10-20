@@ -1,0 +1,18 @@
+﻿@using Helper
+@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+
+@model ResponseMessage<List<TebliglerUI>>
+ 
+	<div class="list-group">
+    @foreach (var Tebligler in Model.Data)
+	{
+		<a href="/Tebligler/@Helper.UrlHelper_.SeoAdress(@Tebligler.Baslik)/@Tebligler.ID" class="list-group-item_spec1 list-group-item-action duyuruTab">
+			
+			<div class="d-flex w-100 align-items-stretch">
+				<h6 > @StringHelper.FirstCharToUpper(Tebligler.Baslik.Substring(0, Math.Min(Tebligler.Baslik.Length, 70))).Trim()...</h6>
+			</div>
+		</a>
+	}
+	</div>

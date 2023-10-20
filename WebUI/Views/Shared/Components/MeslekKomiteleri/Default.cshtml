@@ -1,0 +1,88 @@
+﻿@using System.Globalization
+@using WebApplication1.Models
+@using WebUI.Models.Api
+@using WebUI.Models
+@using Helper
+@model PageItem
+
+<style>
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+</style>
+
+
+@*@{
+    HashSet<string> unique = new HashSet<string>();
+
+
+
+    foreach (var item in Model.organizations.ToList().OrderBy(s => s.MeslekGrubuKodu))
+    {
+
+        @if (unique.Add(item.MeslekGrubuAdi))
+        {
+            <h5>@item.MeslekGrubuAdi</h5>
+        }
+        <div class="p-2 flex-fill">
+            <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="@CharacterHelper.StartWithUppercase(item.unvan.ToLower())" data-content="@CharacterHelper.StartWithUppercase(item.adres.ToLower()) @item.telefon">
+                        <img src="data:image/png;base64, @item.resim" class="m-10" width="150" />
+                    </a>
+                    <br>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="@CharacterHelper.StartWithUppercase(item.unvan.ToLower())" data-content="@CharacterHelper.StartWithUppercase(item.adres.ToLower()) @item.telefon">
+                    <h4 class="mt-15">@item.ad @item.soyad</h4>
+                </a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h6 class="">@item.gorev</h6>
+            </div>
+        </div>
+    }
+
+
+}*@
+
+
+@{
+
+    HashSet<string> unique = new HashSet<string>();
+    <div class="d-flex flex-wrap justify-content-center ">
+        @foreach (var item in Model.organizations.ToList().OrderBy(s => ( s.MeslekGrubuKodu.ToString() + s.MKSira.ToString() )))
+        {
+            @if (unique.Add(item.MeslekGrubuAdi))
+            {
+                <div class="break"></div>
+                <h4 class="justify-content-center mt-30 mb-10 text-dark border-bottom border-dark">@item.MeslekGrubuAdi</h4>
+                <div class="break"></div>
+            }
+            <div class="p-2 m-10 justify-content-center">
+                <a tabindex="0" role="button" class="mt-10 d-flex flex-row-reverse justify-content-center" data-toggle="popover" data-trigger="focus" title="@CharacterHelper.StartWithUppercase(item.unvan.ToLower())" data-content="@CharacterHelper.StartWithUppercase(item.adres.ToLower()) @item.telefon">
+                    <img src="data:image/png;base64, @item.resim" class="m-10" width="120" />
+                </a>
+                
+
+                <div class="break"></div>
+                <h6 class="text-center"><b>@item.ad @item.soyad  </b> <div class="break"></div> @item.gorev</h6>
+            </div>
+        }
+    </div>
+
+}
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+
+
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+    });
+</script>

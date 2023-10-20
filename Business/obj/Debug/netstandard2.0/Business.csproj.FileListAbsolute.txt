@@ -1,0 +1,120 @@
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\snappy32.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\snappy64.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\libzstd.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\Business.deps.json
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\Business.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\Business.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\Core.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\DataAccess.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\Entities.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\DataAccess.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\Entities.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\bin\Debug\netstandard2.0\Core.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\obj\Debug\netstandard2.0\Business.csproj.AssemblyReference.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\obj\Debug\netstandard2.0\Business.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\obj\Debug\netstandard2.0\Business.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\Business\obj\Debug\netstandard2.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\snappy32.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\snappy64.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\libzstd.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.deps.json
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Core.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\DataAccess.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Entities.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\DataAccess.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Entities.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Core.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.AssemblyReference.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.pdb
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\snappy32.dll
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\snappy64.dll
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\libzstd.dll
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.deps.json
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.dll
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.pdb
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Core.dll
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\DataAccess.dll
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Entities.dll
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\DataAccess.pdb
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Entities.pdb
+D:\AdasoProjeler\AdasoWebSite\Business\bin\Debug\netstandard2.0\Core.pdb
+D:\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.AssemblyReference.cache
+D:\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
+D:\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
+D:\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
+D:\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
+D:\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.dll
+D:\AdasoProjeler\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\snappy32.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\snappy64.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\libzstd.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.deps.json
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\Business\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.AssemblyReference.cache
+C:\Users\ismail\source\repos\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ismail\source\repos\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
+C:\Users\ismail\source\repos\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
+C:\Users\ismail\source\repos\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\ismail\source\repos\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
+C:\Users\ismail\source\repos\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.dll
+C:\Users\ismail\source\repos\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\snappy32.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\snappy64.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\libzstd.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.deps.json
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.AssemblyReference.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\snappy32.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\snappy64.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\libzstd.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.deps.json
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\Business.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\Core.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\Entities.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\Entities.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Business\bin\Debug\netstandard2.0\Core.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.AssemblyReference.cache
+C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
+C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
+C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
+C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
+C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.dll
+C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.pdb

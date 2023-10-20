@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# Default severity for all analyzer diagnostics
+dotnet_analyzer_diagnostic.severity = suggestion
+
+# IDE0047: Gereksiz parantezleri kaldırın
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity

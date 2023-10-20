@@ -1,0 +1,15 @@
+﻿@using Helper
+@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+
+@model PageItem
+
+
+@foreach(var item in Model.UstDuyurular.Data){
+<div class="breaking-post-content">
+    <p>
+        <a href="/Haberler/@Helper.UrlHelper_.SeoAdress(@item.Baslik)/@item.ID"> @StringHelper.FirstCharToUpper(item.Baslik.Substring(0, Math.Min(item.Baslik.Length, 100)).ToLower().Trim())...</a>
+    </p>
+</div>
+}

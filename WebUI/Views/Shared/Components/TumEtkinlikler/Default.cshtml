@@ -1,0 +1,222 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models.Api
+@using WebUI.Models
+@using Helper
+@model PageItem
+
+ 
+ 
+<div id="example">
+<div class="post-list-item widgets">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation">
+            <a class="active" href="#takvimUzerinde" aria-controls="takvimUzerinde" role="tab" data-toggle="tab" aria-selected="true">
+                <i class="fa fa-calendar"></i>
+                Etkinlik Takvimi
+            </a>
+        </li>
+        <li role="presentation">
+            <a href="#ListeUzerinde" aria-controls="ListeUzerinde" role="tab" data-toggle="tab" class="" aria-selected="false">
+                <i class="fa fa-list"></i>
+                Tüm Etkinlik Listesi
+            </a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane ts-grid-box post-tab-list active" id="takvimUzerinde">
+ 
+            <div id='calendar' style="background-color:#e9eaea !important"></div>
+ 
+        </div>
+        <!--ts-grid-box end -->
+
+        <div role="tabpanel" class="tab-pane ts-grid-box post-tab-list" id="ListeUzerinde">
+    <div class="input-group mb-3">
+        <input type="text" id="lisViewSearch" class="form-control text-align-right" placeholder="Ara" aria-label="Ara" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="demo-section k-content wide">
+        
+    <div id="listView" data-role="listView" data-layout="template" data-model="dataSource"  data-reload="true"></div>
+        <div id="pager" class="k-pager-wrap"> </div>
+    </div>
+
+ 
+
+        </div>
+        <!--ts-grid-box end -->
+    </div>
+    <!-- tab content end-->
+</div>
+
+
+
+
+
+
+    @*Template ekle*@
+    @*<p>#:kendo.toString(UnitPrice, "c")#</p>
+        <img src="../content/web/foods/#= resimUrl #.jpg" alt="#: ProductName # image" />*@
+    <script id="template" type="text/x-kendo-template">
+        <div class='post-content_ p-2'>
+                                    <h5 class='display-5 md'>
+                                        <a data-mode="KendoTemplateLinkEtkinlikler" data-id='#=id#' data-baslik='#:hedefTekrarBaslik#'> #:hedefTekrarBaslik#</a>
+                                    </h5>
+                                    <ul class='post-meta-info'>
+                                              <li class='active'>
+                                        <label class='lbl lbl-danger'> #:hedefTekrarFaaliyetYer# </label>
+                                        </li>
+                             
+                                        <li>
+                                            <i class='fa fa-clock-o'></i>
+                                             #= kendo.toString(kendo.parseDate(hedefTekrarFaaliyetBasTarih), "dd.MM.yyyy") #
+                                        </li>
+                                                                            <li>
+                                            <i class='fa fa-clock-o'></i>
+                                             #= kendo.toString(kendo.parseDate(hedefTekrarFaaliyetBitTarih), "dd.MM.yyyy") #
+                                        </li>
+                            
+                                    </ul>
+                                    
+                                </div> 
+                                <hr/>
+    </script>
+
+    <script>
+
+ 
+
+                var search_="";
+                $('#lisViewSearch').on('keyup', function () {
+                    var groupIds = $("#lisViewSearch").val();
+
+                    search_ = $.trim($(this).val());
+                    console.log(search_);
+                    if (search_ != "")
+                    listViewFiltering('baslik',search_);
+                    else
+                        listViewFiltering('Etkin','1');
+                    return;
+                    });
+
+                    if(search_==""){
+                    listViewFiltering('Etkin','1');
+                    }
+
+            function listViewFiltering(field,value) {
+                         var urlColumnFilter = "";
+            var dataSource = new kendo.data.DataSource({
+
+                  transport: {
+                    read: {
+                             url: "/Admin/Etkinlikler/EtkinlikJson",
+                             processData: true,
+                             dataType: "json"
+
+                    },
+                    parameterMap: function(options) {
+
+                                    urlColumnFilter += "&kendotable.filter[0]._field="+field;
+                                    urlColumnFilter += "&kendotable.filter[0]._operator=contains";
+                                    urlColumnFilter += "&kendotable.filter[0]._value="+value;
+                                    urlColumnFilter += "&kendotable.filter[0]._ignoreCase=true";
+                                    urlColumnFilter += "&kendotable.filter[0]._logic=and";
+
+
+                            return "kendotable.page=" + options.page + "&kendotable.pageSize=" + options.pageSize + "&kendotable.skip=" + options.skip + "&kendotable.take=" + options.take + urlColumnFilter;
+
+
+                    }
+
+                },
+                    schema: {
+                    data: "data",
+                    total: "total_length"
+                    },
+                    pageSize: 7,
+                    page: 1,
+                    serverPaging: true,
+                    serverFiltering: true
+            });
+
+                              $("#pager").kendoPager({
+                                  dataSource: dataSource
+                              });
+                                if(search_!="")
+                                $('#listView').empty();
+                                $("#listView").kendoListView({
+                                  dataSource: dataSource,
+                                  dataReload:true,
+                                  dataLayout:"template",
+                                  dataModel:"dataSource",
+                                  template: kendo.template($("#template").html())
+                                 });
+        }
+
+
+
+    </script>
+
+</div>
+
+ <script> 
+
+    $(document).ready( function() {
+                    var now = new Date();
+                    var day = ("0" + now.getDate()).slice(-2);
+                    var month = ("0" + (now.getMonth() + 1)).slice(-2);
+                    var today = now.getFullYear()-1+"-"+(month)+"-"+(day);
+                    $('#from').val(today);
+                });
+ 
+         $('#calendar').fullCalendar({
+             timeZone: 'UTC',
+            initialView: 'dayGridMonth',
+            displayEventTime: false,
+            aspectRatio: 800,
+            height: 800,
+            width:500,
+            contentHeight: 800,
+            events: '/Home/GetEtkinlikTakvim',
+              loading: function (isLoading) {
+                if (isLoading) {
+                    $('#loading').show();
+                }
+                else {
+                    $('#loading').hide();
+                }
+            },
+            eventClick: function(calEvent, jsEvent, view) {
+                  var buton = $(this);
+                  var formData = new FormData();
+                  $(buton).data('url', "/Paritial/EtkinliklerModal");
+                  formData.append("ID", calEvent.id);
+            
+            ButtonExecute("partial", "", buton, formData, function () {
+                $("#mdl").modal("show");
+            }, function () { }, "false", "#dvMdlDialog");
+                // change the border color just for fun
+                $(this).css('border-color', 'red');
+                $(this).css('color', 'white');
+
+              },
+            selectable: true,
+            selectHelper: true,
+            eventRender: function(event, element){
+            element.popover({
+            animation:true,
+            delay: 300,
+            content: 'Açıklama : '+event.title+"",
+            trigger: 'hover'
+            });
+            }});
+</script>
+<style>
+    
+.post-content_{
+    height:50px !important;
+}
+</style>

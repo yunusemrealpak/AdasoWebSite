@@ -1,0 +1,160 @@
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.exe
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.deps.json
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.runtimeconfig.json
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.runtimeconfig.dev.json
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.Views.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.Views.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.csproj.AssemblyReference.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.AssemblyInfoInputs.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.AssemblyInfo.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.csproj.CoreCompileInputs.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.MvcApplicationPartsAssemblyInfo.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorAssemblyInfo.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorAssemblyInfo.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\WebUIVue.StaticWebAssets.Manifest.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\WebUIVue.StaticWebAssets.xml
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebUIVue.styles.css
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.TagHelpers.input.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.TagHelpers.output.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorCoreGenerate.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorTargetAssemblyInfo.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorTargetAssemblyInfo.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.Views.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.genruntimeconfig.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.csproj.CopyComplete
+D:\Adaso_Source\AdasoWebSiteCore_V1\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\appsettings.json
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.exe
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.deps.json
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.runtimeconfig.json
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.runtimeconfig.dev.json
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.Views.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.Views.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.csproj.AssemblyReference.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.AssemblyInfoInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.AssemblyInfo.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.csproj.CoreCompileInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.MvcApplicationPartsAssemblyInfo.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorAssemblyInfo.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorAssemblyInfo.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\WebUIVue.StaticWebAssets.Manifest.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.TagHelpers.input.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.TagHelpers.output.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorCoreGenerate.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorTargetAssemblyInfo.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorTargetAssemblyInfo.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.Views.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.genruntimeconfig.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.csproj.CopyComplete
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\WebUIVue.StaticWebAssets.Pack.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.WebUIVue.Microsoft.AspNetCore.StaticWebAssets.props
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.WebUIVue.props
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.WebUIVue.props
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.WebUIVue.props
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\appsettings.json
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.exe
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.deps.json
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.runtimeconfig.json
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.runtimeconfig.dev.json
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.dll
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.pdb
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.Views.dll
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.Views.pdb
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.csproj.AssemblyReference.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.GeneratedMSBuildEditorConfig.editorconfig
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.AssemblyInfoInputs.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.AssemblyInfo.cs
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.csproj.CoreCompileInputs.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.MvcApplicationPartsAssemblyInfo.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorAssemblyInfo.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorAssemblyInfo.cs
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\WebUIVue.StaticWebAssets.Manifest.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\WebUIVue.StaticWebAssets.Pack.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.WebUIVue.Microsoft.AspNetCore.StaticWebAssets.props
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.WebUIVue.props
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.WebUIVue.props
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.WebUIVue.props
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.TagHelpers.input.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.TagHelpers.output.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorCoreGenerate.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorTargetAssemblyInfo.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorTargetAssemblyInfo.cs
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.Views.pdb
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.dll
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.pdb
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.genruntimeconfig.cache
+D:\AdasoProjeler\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.csproj.CopyComplete
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.exe
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.deps.json
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.runtimeconfig.json
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.runtimeconfig.dev.json
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.Views.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\bin\Debug\netcoreapp3.1\WebUIVue.Views.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.AssemblyInfoInputs.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.AssemblyInfo.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.csproj.CoreCompileInputs.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorAssemblyInfo.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorAssemblyInfo.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\WebUIVue.StaticWebAssets.Manifest.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\WebUIVue.StaticWebAssets.Pack.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.WebUIVue.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.WebUIVue.props
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.WebUIVue.props
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.WebUIVue.props
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.TagHelpers.input.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.TagHelpers.output.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorCoreGenerate.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorTargetAssemblyInfo.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.RazorTargetAssemblyInfo.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.Views.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.genruntimeconfig.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\WebUIVue\obj\Debug\netcoreapp3.1\WebUIVue.csproj.CopyComplete

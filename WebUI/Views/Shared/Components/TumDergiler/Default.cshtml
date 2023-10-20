@@ -1,0 +1,195 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models.Api
+@using WebUI.Models
+@using Helper
+@model PageItem
+
+
+ 
+<div id="example">
+    <div class="input-group mb-3">
+        <input type="text" id="lisViewSearch" class="form-control text-align-right" placeholder="Sayıda Ara" aria-label="Ara" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="demo-section k-content wide">
+    <div  id="listView" data-role="listView" data-layout="template" data-model="dataSource" data-zoom="true" data-reload="true"></div>
+    <div id="pager" class="k-pager-wrap"></div>
+</div>
+
+
+    @*Template ekle*@
+    @*<p>#:kendo.toString(UnitPrice, "c")#</p>
+        <img src="../content/web/foods/#= resimUrl #.jpg" alt="#: ProductName # image" />*@
+    <script type="text/x-kendo-template" id="template">
+        <div class="product">
+             <a href="/Content/#: dosyaURL # " target="_blank"><img src="/Content/#= resimURL.replace('../Content','') #" /></a>  
+            <h3>Adaso #= sayi #.Sayı #= kendo.toString(kendo.parseDate(tarih), "dd.MM.yyyy") #</h3> 
+
+        </div>
+    </script>
+
+    <script>
+             
+        $("body").on("click", "a[data-mode]", function () {
+            var mode = $(this).data("mode");
+            var formData = new FormData();
+            var buton = $(this);
+
+            if (mode === "KendoTemplateLink") {
+                var id_ = $(buton).data("id");
+                var baslik_=$(buton).data("baslik");
+                    location.href="/Haberler/"+toSeoUrl(baslik_)+"/"+ id_;
+            }
+
+            });
+
+
+        var search_="";
+        $('#lisViewSearch').on('keyup', function () {
+            var groupIds = $("#lisViewSearch").val();            
+            
+            search_ = $.trim($(this).val());
+            console.log(search_);
+            if (search_ != "")
+            listViewFiltering('sayi',search_);
+            else{
+                 $('#listView').empty(); 
+                listViewFiltering('Etkin','1');
+                }
+            return;
+            }); 
+        
+            if(search_==""){
+                 $('#listView').empty(); 
+            listViewFiltering('Etkin','1');
+            }
+                   
+    function listViewFiltering(field,value) {
+                 var urlColumnFilter = "";
+ 
+    var dataSource = new kendo.data.DataSource({
+            
+          transport: {
+            read: {
+                     url: "/Admin/Gazeteler/GazetelerJson",
+                     processData: true,
+                     dataType: "json"
+
+            },
+            parameterMap: function(options) {
+      
+                            urlColumnFilter += "&kendotable.filter[0]._field="+field;
+                            urlColumnFilter += "&kendotable.filter[0]._operator=contains";
+                            urlColumnFilter += "&kendotable.filter[0]._value="+value;
+                            urlColumnFilter += "&kendotable.filter[0]._ignoreCase=true";
+                            urlColumnFilter += "&kendotable.filter[0]._logic=and";
+                     
+                      
+                    return "kendotable.page=" + options.page + "&kendotable.pageSize=" + options.pageSize + "&kendotable.skip=" + options.skip + "&kendotable.take=" + options.take + urlColumnFilter;
+              
+
+            }
+             
+        },
+            schema: {
+            data: "data",
+            total: "total_length"
+            },            
+            pageSize: 9,
+            page: 1,
+            serverPaging: true,
+            serverFiltering: true
+    });
+         
+                      $("#pager").kendoPager({
+                          dataSource: dataSource
+                      }); 
+                        if(search_!="")
+                        $('#listView').empty(); 
+
+                        $("#listView").kendoListView({
+                          dataSource: dataSource,
+                          dataReload:true,
+                          dataLayout:"template",
+                          dataModel:"dataSource",
+                          dataZoom:"true",
+                          template: kendo.template($("#template").html())                        
+                         }); 
+}
+           
+         
+     
+    </script>
+
+
+ <style>
+        #listView {
+        
+            margin-bottom: -1px;
+            min-height: 510px;
+            /* Avoid cutout if font or line is bigger */
+            font: inherit;
+        }
+
+        .k-listview-content {
+            overflow: hidden;
+        }
+
+        .product {
+            float: left;
+            position: relative;
+            width: 233px;
+      
+            margin: 10px 10px;
+            padding: 0;
+        }
+
+            .product img {
+ 
+            }
+
+            .product h3 {
+                margin: 0;
+                padding: 3px 5px 0 0;
+                max-width: 235px;
+                overflow: hidden;
+                line-height: 1.1em;
+                font-size: .9em;
+                font-weight: normal;
+                text-transform: uppercase;
+                color: #999;
+            }
+
+            .product p {
+                visibility: hidden;
+            }
+
+            .product:hover p {
+                visibility: visible;
+                position: absolute;
+                width: 110px;
+                height: 110px;
+                top: 0;
+                margin: 0;
+                padding: 0;
+                line-height: 110px;
+                vertical-align: middle;
+                text-align: center;
+                color: #fff;
+                background-color: rgba(0,0,0,0.75);
+                transition: background .2s linear, color .2s linear;
+                -moz-transition: background .2s linear, color .2s linear;
+                -webkit-transition: background .2s linear, color .2s linear;
+                -o-transition: background .2s linear, color .2s linear;
+            }
+
+        .k-listview:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    </style>
+
+    </div>

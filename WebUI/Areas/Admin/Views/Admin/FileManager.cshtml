@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Dosya Yönetimi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">folder</i>
+                        </div>
+                        <h4 class="card-title">Dosya Yönetimi</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="toolbar">
+                            <a class="btn btn-link" data-mode="GetDosyaYonetimiModal" data-data1="0" data-type="Kaydet"><i class="material-icons">save</i> Yeni Dosya Ekle</a>
+         
+                        </div>                          
+                        <table id="tblDosyaYonetimi"
+                        data-filter="kendotable.FileName="
+                        data-url="/Admin/Admin/FileManagerJson"
+                        data-pagesize="7"
+                        data-paging="true"
+                        data-searching="true"
+                        data-ordering="true"
+                        data-serverpaging="true"
+                        data-serversearching="true"
+                        data-serverordering="true">
+                            <thead>
+                                <tr>
+                                    <th data-column="id" data-header="ID" data-width="4%"></th>
+                                    <th data-column="status" data-header="Durum" data-width="6%"></th>
+                                    <th data-column="fileName" data-header="Dosya Adı" data-width="30%" data-filterable="true"></th>                                    
+                                    <th data-column="createDate" data-filterable="true" data-header="Oluşturma Tarihi" data-type="date" data-format="{0:dd.MMMM.yyyy dddd}"></th>
+                                    <th data-column="fileSizeStr" data-header="Dosya Boyutu" data-width="7%"></th>                                    
+                                    <th data-column="fileExtension" data-header="Dosya Adı Uzantısı" data-width="7%"></th>                                    
+                                    <th data-column="personelTc" data-header="#" data-column-type="button" data-width="200px"> 
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="İşlem Geçmişi" data-mode="GetHrkModal"><i class="fa fa-list"></i></a>
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="Dosya Linkini Kopyala" data-mode="GetDosyaYonetimiCopy"><i class="fa fa-link"></i></a>
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="Dosyayı Sil" data-mode="GetDosyaYonetimiSilModal" data-type="Sil"><i class="fa fa-remove"></i></a>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+        
+    </div>
+</div>
+
+@section AdminScripts{
+    <script>
+        datatable_init("#tblDosyaYonetimi","");
+  
+    </script>
+
+} 	

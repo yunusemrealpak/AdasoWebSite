@@ -1,0 +1,228 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@using Helper
+@model PageItem
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">Yeni Sayfa Ekle</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row" id="mdlForm">
+            <input type="hidden" ID="hdnGosterimSayisi" name="hdnGosterimSayisi" value="0" />
+            <input type="hidden" ID="hdnEkleyen" name="hdnEkleyen" value="0" />
+            <input type="hidden" ID="hdnEklemeTarihi" name="hdnEklemeTarihi" value="0" />
+            <div class="col-md-2 col-sm-3">
+                <label class="control-label">Etkin</label>
+                <input class="form-control" type="checkbox" name="chckEtkin" checked="1" />
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <label class="control-label">Sayfanın Ekleneceği Kırılımı Seçiniz</label>
+                @*<select id="selectYaziTipi" name="selectYaziTipi" class="form-control">    </select>*@
+                <select name="selectYaziTipi" class="form-control" id="">
+                    @Html.Raw(KategoriSelectGet(Convert.ToInt32(Model.SayfalarTumliste.Data.FirstOrDefault().ID), 0, 0))
+                </select>
+                @{
+                    string KategoriSelectGet(int SeciliKategoriID, int UstKategoriID, int Katman)
+                    {
+                        string result = "", bosluk = "";
+                        for (int i = 0; i < Katman; i++)
+                        {
+                            bosluk += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                        }
+
+                        if (Katman == 0)
+                        {
+                            if (SeciliKategoriID == 0)
+                            {
+                                result += "<option selected='selected' value='0'>Seçiniz</option>";
+                            }
+                            else
+                            {
+                                result += "<option value='0'>Seçiniz</option>";
+                            }
+                        }
+                        foreach (var item in Model.SayfalarTumliste.Data.Where(x => x.UstID == UstKategoriID).OrderBy(x => x.SiraNo))
+                        {
+                            if (SeciliKategoriID == item.ID)
+                            {
+                                result += "<option selected='selected' value='" + item.ID + "'>" + bosluk + item.Baslik + "</option>";
+                            }
+                            else
+                            {
+                                result += "<option value='" + item.ID + "'>" + bosluk + item.Baslik + "</option>";
+                            }
+                            if (Model.SayfalarTumliste.Data.Where(x => x.UstID == item.ID).Count() > 0)
+                            {
+                                result += KategoriSelectGet(SeciliKategoriID, item.ID, Katman + 1);
+                            }
+                        }
+
+                        return result;
+                    }
+                }
+            </div>
+                <div class="col-md-3 col-sm-6">
+                <label class="control-label">Sayfa Eki (.pdf)</label>
+                <a href="" target="_blank"><i class="fa fa-file"></i></a>
+                <input type="hidden" name="hdnDosyaUrl" value="" />
+                <input type="file" class="form-control" name="fileDosyaUrl" />
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <label class="control-label">İçerik 1</label>
+                <select  name="selectPartialTipi1" class="form-control">
+                    <option value="0">Seçiniz</option>
+                    <option value="TumHaberler/Haber">Haberler</option>
+                    <option value="TumHaberler/Duyurular">Duyurular</option>
+                    <option value="TumHaberler/Baskandan">Başkanın Mesajları</option>
+                    
+                    <option value="YonetimKurulu">Yönetim Kurulu</option>
+                    <option value="Meclis">Meclis</option>
+                    <option value="MeslekKomiteleri">Meslek Komiteleri</option>
+
+                    <option value="TumEtkinlikler">Etkinlikler</option>                    
+                    <option value="TumTebligler">Tebligler</option>
+                    <option value="TumUyeler">Üyeler</option>
+                    
+                    <option value="UyelerVNSearch">Üye Bilgi Doğrulama</option>
+                    <option value="TumDergiler">Adaso Dergi</option>
+                    <option value="TumProjeler">Projeler</option>
+                    
+                    <option value="TumSunumlar">Sunumlar</option>
+
+                    <option value="Iletisim">İletişim / Şikayet - Öneri Formu</option>
+                    <option value="BilgilendirmeFormu">Bilgilendirme Formu</option>
+                    <option value="DanismaFormu">Danışma Formu</option>
+                    
+                    <option value="TumRaporlar/1">Dış Ticaret Raporları</option>
+                    <option value="TumRaporlar/2">Ülke Raporları</option>
+                    <option value="TumRaporlar/3">Sektör Raporları</option>
+
+                    <option value="FireKararlari">Fire Kararları</option>
+                    
+                    <option value="TumRaporlar/6">Yatırım İstatislikleri</option>                    
+                    <option value="TumRaporlar/7">Rakamlarla Adana</option>
+                    <option value="TumRaporlar/8">Odamız Aylık Faaliyet Raporları</option>
+                    
+                    <option value="SiteHaritasi">Site Haritası</option>
+                    
+                </select>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <label class="control-label">İçerik 2</label>
+                <select name="selectPartialTipi2" class="form-control">
+                    <option value="0">Seçiniz</option>
+                    <option value="TumHaberler/Haber">Haberler</option>
+                    <option value="TumHaberler/Duyurular">Duyurular</option>
+                    <option value="TumHaberler/Baskandan">Başkanın Mesajları</option>
+                    
+                    <option value="YonetimKurulu">Yönetim Kurulu</option>
+                    <option value="Meclis">Meclis</option>
+                    <option value="MeslekKomiteleri">Meslek Komiteleri</option>
+
+                    <option value="TumEtkinlikler">Etkinlikler</option>                    
+                    <option value="TumTebligler">Tebligler</option>
+
+                    <option value="TumUyeler">Üyeler</option>
+                    <option value="UyelerVNSearch">Üye Bilgi Doğrulama</option>
+
+                    <option value="TumDergiler">Adaso Dergi</option>
+                    <option value="TumProjeler">Projeler</option>
+                    <option value="TumSunumlar">Sunumlar</option>
+                    
+                    <option value="Iletisim">İletişim / Şikayet - Öneri Formu</option>
+                    <option value="BilgilendirmeFormu">Bilgilendirme Formu</option>
+                    <option value="DanismaFormu">Danışma Formu</option>
+
+                    <option value="TumRaporlar/1">Dış Ticaret Raporları</option>
+                    <option value="TumRaporlar/2">Ülke Raporları</option>
+                    <option value="TumRaporlar/3">Sektör Raporları</option>
+                    
+                    <option value="TumRaporlar/6">Yatırım İstatislikleri</option>                    
+                    <option value="TumRaporlar/7">Rakamlarla Adana</option>
+                    <option value="TumRaporlar/8">Odamız Aylık Faaliyet Raporları</option>
+                    <option value="SiteHaritasi">Site Haritası</option>
+
+                </select>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <label class="control-label">İçerik 3</label>
+                <select  name="selectPartialTipi3" class="form-control">
+                    <option value="0">Seçiniz</option>
+                    <option value="TumHaberler/Haber">Haberler</option>
+                    <option value="TumHaberler/Duyurular">Duyurular</option>
+                    <option value="TumHaberler/Baskandan">Başkanın Mesajları</option>
+                    
+                    <option value="YonetimKurulu">Yönetim Kurulu</option>
+                    <option value="Meclis">Meclis</option>
+                    <option value="MeslekKomiteleri">Meslek Komiteleri</option>
+
+                    <option value="TumEtkinlikler">Etkinlikler</option>                    
+                    <option value="TumTebligler">Tebligler</option>
+                    <option value="TumUyeler">Üyeler</option>
+                    <option value="UyelerVNSearch">Üye Bilgi Doğrulama</option>
+
+                    <option value="TumDergiler">Adaso Dergi</option>
+                    <option value="TumProjeler">Projeler</option>
+                    
+                    <option value="TumSunumlar">Sunumlar</option>
+
+                    <option value="Iletisim">İletişim / Şikayet - Öneri Formu</option>
+                    <option value="BilgilendirmeFormu">Bilgilendirme Formu</option>
+                    <option value="DanismaFormu">Danışma Formu</option>
+
+                    <option value="TumRaporlar/1">Dış Ticaret Raporları</option>
+                    <option value="TumRaporlar/2">Ülke Raporları</option>
+                    <option value="TumRaporlar/3">Sektör Raporları</option>
+                    
+                    <option value="TumRaporlar/6">Yatırım İstatislikleri</option>                    
+                    <option value="TumRaporlar/7">Rakamlarla Adana</option>
+                    <option value="TumRaporlar/8">Odamız Aylık Faaliyet Raporları</option>
+                    <option value="SiteHaritasi">Site Haritası</option>
+                    
+                </select>
+            </div>
+            <div class="col-md-9 col-sm-12">
+                <label class="control-label">Başlık</label>
+                <input type="text" class="form-control" name="txtBaslik" value="" data-required='true' data-group_name='ModalForm' data-message_type='formmessage' data-error_message="Başlık Alanı Boş Geçilemez." />
+            </div>
+                        <div class="col-md-3 col-sm-6">
+                <label class="control-label">Sıra</label>
+                <input type="number" class="form-control" name="txtSira" value="1" data-required='true' data-group_name='ModalForm' data-message_type='formmessage' data-error_message="Başlık Alanı Boş Geçilemez." />
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <label class="control-label">Sayfa Url</label>
+                @*data-required='true' data-group_name='ModalForm' data-message_type='formmessage' data-error_message="SayfaUrl Alanı Boş Geçilemez."*@
+                <input type="text" class="form-control" name="txtSayfaUrl" value=""  />
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <label class="control-label">Metin</label>
+                <textarea id="ckeditor" class="form-control ckeditor" rows="7" name="txtMetin" data-required='true' data-group_name='ModalForm' data-message_type='formmessage'></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-sm" data-dismiss="modal">
+            <i class="ace-icon fa fa-times"></i>
+            Kapat
+        </button>
+        <a class="btn btn-success" data-mode="GetSayfalarIslemler" data-type="Kaydet" data-id="0" data-required='true' data-moving_scroll_bar='1' data-group_name='ModalForm'>Kaydet</a>
+    </div>
+</div>
+<script src="~/Admin/Content/js/ckeditor/ckeditor.js"></script>
+<script>
+
+    initCKEditor();
+    function initCKEditor() {
+        try {
+        var editor1 = CKEDITOR.instances["ckeditor"];
+        if (editor1) {editor1.destroy(true);}
+        CKEDITOR.replace('ckeditor');
+        } catch (e) {
+            console.log(e);
+        }
+        }
+</script>

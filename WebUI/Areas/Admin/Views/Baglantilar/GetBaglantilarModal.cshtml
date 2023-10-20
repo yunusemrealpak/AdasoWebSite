@@ -1,0 +1,55 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">Güncelle</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row" id="mdlForm">
+            <input type="hidden" ID="hdnGosterimSayisi" name="hdnGosterimSayisi" value="0" />
+            <input type="hidden" ID="hdnEkleyen" name="hdnEkleyen" value="0" />
+            <input type="hidden" ID="hdnEklemeTarihi" name="hdnEklemeTarihi" value="0" />
+            <div class="col-md-2 col-sm-3">
+                <label class="control-label">Etkin</label>
+                <input class="form-control" type="checkbox" name="chckEtkin" checked="1" />
+            </div>
+            <div class="col-md-10 col-sm-12">
+                <label class="control-label">Lütfen Bağlantı GrubunuSeçiniz</label>
+                <select id="selectYaziTipi" name="selectYaziTipi" class="form-control">
+                    <option value="0">HİZMETLERİMİZ</option>
+                    <option value="1">HIZLI BAĞLANTILAR</option>
+                    <option value="2">ADANA BAĞLANTILARI</option>
+                    <option value="3">TOBB BAĞLANTILARI</option>
+                    <option value="4">YARARLI BAĞLANTILAR</option>
+                </select>
+            </div>
+  
+            <div class="col-md-12 col-sm-12">
+                <label class="control-label">Başlık</label>
+                <input type="text" class="form-control" name="txtBaslik" value="" data-required='true' data-group_name='ModalForm' data-message_type='formmessage' data-error_message="Başlık Alanı Boş Geçilemez." />
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <label class="control-label">Web Adresi</label>
+                <input type="text" class="form-control" name="txtWebAdresi" value="" data-required='true' data-group_name='ModalForm' data-message_type='formmessage' data-error_message="Web Adresi Alanı Boş Geçilemez." />
+            </div>
+            <div class="col-md-8 col-sm-6">
+                <label class="control-label">Sıra</label>
+                <input type="number" class="form-control" name="txtSira" value="" data-required='true' data-group_name='ModalForm' data-message_type='formmessage' data-error_message="Sıra Alanı Boş Geçilemez." />
+            </div>
+                <div class="col-md-4 col-sm-6">
+                <label class="control-label">Yeni Pencerede Açılsın</label>
+                <input class="form-control" type="checkbox" name="chckYeniPencere" checked="1" />
+            </div>
+ 
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-sm" data-dismiss="modal">
+            <i class="ace-icon fa fa-times"></i>
+            Kapat
+        </button>
+
+        <a class="btn btn-success" data-mode="GetBaglantilarIslemler" data-type="Kaydet" data-id="" data-required='true' data-moving_scroll_bar='1' data-group_name='ModalForm'>Kaydet</a>
+    </div>
+</div>

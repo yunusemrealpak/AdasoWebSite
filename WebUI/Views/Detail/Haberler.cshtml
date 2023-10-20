@@ -1,0 +1,92 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@model PageItem
+
+<section class="single-post-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+
+                @await Component.InvokeAsync("MenuCategory",new {MenuID=51})
+                <!-- breadcump end-->
+                <div class="jumbotron-fluid ts-grid-box">
+                    <h5 class="display-5">@Model.Haberler.Data.Baslik</h5>
+                    <div class="container">
+                        <div class="entry-header ">
+                            <a href="#" class="post-cat bg-danger">@Model.Haberler.Data.KategoriAdi</a>
+                            <ul class="post-meta-info float-right">
+                                <li>
+                                    <i class="fa fa-clock-o"></i>
+                                    @Model.Haberler.Data.EklemeTarihi.ToString("f")
+                                </li>
+
+                                <li class="active">
+                                    <i class="fa fa-eye"></i>
+                                    @Model.Haberler.Data.GosterimSayisi
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- single post header end-->
+                        <div class="post-content-area">
+                            <div class="post-media post-featured-image">
+                                <a href="/Content/@Model.Haberler.Data.ResimUrl" class="gallery-popup">
+                                    <img src="/Content/@Model.Haberler.Data.ResimUrl" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="entry">
+                                <p class="lead">@Html.Raw(Model.Haberler.Data.Metin)</p>
+ 
+                            </div>
+                            <!-- entry content end-->
+                            @if (@Model.albumGorselleri.Data.Count > 0)
+                            {
+                                <div class="container gallery-container">
+
+                                    <div class="tz-gallery">
+
+                                        <div class="row">
+
+                                            @foreach (var item in Model.albumGorselleri.Data.OrderBy(x=>x.Sira))
+                                            {
+                                                <div class="col-sm-12 col-md-4">
+                                                    <a class="lightbox" href="/Content/@item.ResimURL">
+                                                        <img src="/Content/@item.ResimURL" alt="@item.Aciklama">
+                                                    </a>
+                                                </div>
+                                            }
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <!-- post content area-->
+                        <!-- post navigation end-->
+                    </div>
+                    @await Component.InvokeAsync("TumHaberler", new {yazitipi = @Model.YaziTipi })
+                </div>
+
+            </div>
+            <!-- col end -->
+            <div class="col-lg-3">
+                <!--RIGHT SIDE BAR-->
+                @await Component.InvokeAsync("RightSideBar", new {YazilarGrup=1,UstID=42,SayfaID=51})
+                <!--RIGHT SIDE BAR-->
+            </div>
+            <!-- right sidebar end-->
+            <!-- col end-->
+        </div>
+        <!-- row end-->
+    </div>
+    <!-- container-->
+</section>
+<noscript>
+@section Scripts{
+
+    @await Component.InvokeAsync("KendoLibrary")
+    }
+</noscript>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>

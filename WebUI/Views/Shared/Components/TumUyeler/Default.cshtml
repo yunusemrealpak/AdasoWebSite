@@ -1,0 +1,273 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models.Api
+@using WebUI.Models
+@using Helper
+
+@model PageItem
+
+
+<div id="example">
+    <div class="form-group mb-3 row">
+
+        <select id="selectMeslekGruplari" name="selectMeslekGruplari" class="form-control col-md-3">
+            <option value='0'>Tüm Meslek Gruplari</option>
+            <option value='1'>01 - Pamuk İşleme-Çırçır Ve Sawgın Prese Sanayi</option>
+            <option value='2'>02 - İnşaat Malzemeleri-Metalik Olmayan Mineral Ürünler Sanayi</option>
+            <option value='3'>03 - Gıda Sanayi</option>
+            <option value='4'>04 - Hazır Yemek Sanayi</option>
+            <option value='5'>05 - Konfeksiyon Ve Ayakkabıcılar Sanayi</option>
+            <option value='6'>06 - Maden Ve Taşocakçılığı Sanayi</option>
+            <option value='7'>07 - Tekstil Sanayi</option>
+            <option value='8'>08 - Ağaç Ürünleri Sanayi</option>
+            <option value='9'>09 - Kağıt-Ambalaj Ve Basım Sanayi</option>
+            <option value='10'>10 - Kimya Sanayi</option>
+            <option value='11'>11 - Plastik Ve Kauçuk Ürünleri Sanayi</option>
+            <option value='12'>12 - Plastik Ambalaj Sanayi</option>
+            <option value='13'>13 - Metal İşleme Ve Kaplama Sanayi</option>
+            <option value='14'>14 - Döküm-Geri Dönüşüm Ve Metal Sanayi</option>
+            <option value='15'>15 - Metal Ve Metal Yan Sanayi</option>
+            <option value='16'>16 - Elektrik-Otomasyon Ve Enerji Sanayi</option>
+            <option value='17'>17 - Makina İmalat Ve Taahhüt Sanayi</option>
+            <option value='18'>18 - Tarım Makinaları Ve Teknolojılerı Sanayi</option>
+            <option value='19'>19 - Motorlu Kara Taşıtları Ve Otomotiv Yan Sanayi</option>
+            <option value='20'>20 - Mobilya İmalat Sanayi</option>
+            <option value='21'>21 - İnşaat Müteahhitliği</option>
+            <option value='22'>22 - Özel İnşaat Faaliyetleri</option>
+            <option value='23'>23 - Otomotiv Ve Motor Yenileme Sanayi</option>
+
+        </select>
+        <select id="selectUyelikDurum" name="selectUyelikDurum" class="form-control col-md-3" disabled>
+            <option value='0' selected="selected">Tüm Üye Durumları</option>
+            @*<option value='1' >FAAL</option>
+            <option value='2'>ASKI</option>
+            <option value='3'>TERK</option>
+            <option value='4'>TASFİYE</option>*@
+        </select>
+        <input type="text" id="lisViewSearch" class="form-control text-left col-md-6" placeholder="Ünvan,Ticaret Sicil veya Vergi numarası ile Ara..." aria-label="Ünvan" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="demo-section k-content wide">
+        <div class="row">
+            <div id="listView" data-role="listView" data-layout="template" data-model="dataSource" data-zoom="true" data-reload="true"></div>
+
+        </div>
+        <div id="pager" class="k-pager-wrap" data-role="listView" data-layout="template" data-model="dataSource" data-zoom="true" data-reload="true"> </div>
+    </div>
+
+
+    @*Template ekle*@
+    @*<p>#:kendo.toString(UnitPrice, "c")#</p>
+    <img src="../content/web/foods/#= resimUrl #.jpg" alt="#: ProductName # image" />*@
+
+    <script id="template" type="text/x-kendo-template">
+
+        <div class="d-flex bd-highlight">
+            <div class="p-2 w-100 bd-highlight  mt-2">#:unvan#
+                <div class='clearfix'></div>
+                <a href='#= url_(weB_ADRESI) #' target='_blank' class='mt-10'>#:weB_ADRESI#</a>
+        @*
+                <div class='clearfix'></div>
+                <span>Vergi Durumu : </span>#:vergI_DURUMU#
+                <div class='clearfix'></div>
+                <span>Vergi Numarası : </span>#:vergI_NO#
+                <div class='clearfix'></div>
+                <span>Vergi Dairesi : </span>#:vergI_DAIRESI#
+                <div class='clearfix'></div>
+                <span>Meslek Grubu : </span>#:mesleK_GRUBU_ADI#
+                <div class='clearfix'></div>*@
+            </div>
+        </div>
+        <hr>
+
+    </script>
+    @*        <script id="template" type="text/x-kendo-template">
+    #if(uyeliK_DURUM==1){#
+    <div class="d-flex bd-highlight">
+    <div class="p-2 w-100 bd-highlight  mt-2">#:unvan#</div>
+    <div class="p-2 flex-shrink-1 bd-highlight mt-2">FAAL</div>
+
+    <div class="p-2 flex-shrink-1 bd-highlight"><a class="btn btn-link btn-sm" data-mode='uyeAramaDetayModal' data-id='#:strID#'  style='color:white !important'><i class="fa fa-list" style='color:white !important'></i></i></a></div>
+    </div>
+    #}#
+    #if(uyeliK_DURUM==2){#
+    <div class="d-flex bd-highlight bg-secondary">
+    <div class="p-2 w-100 bd-highlight mt-2">#:unvan#</div>
+    <div class="p-2 flex-shrink-1 bd-highlight mt-2">ASKI</div>
+    <div class="p-2 flex-shrink-1 bd-highlight"><a class="btn btn-link btn-sm" data-mode='uyeAramaDetayModal' data-id='#:strID#'  style='color:white !important'><i class="fa fa-list" style='color:white !important'></i></i></a></div>
+    </div>
+    #}#
+
+    #if(uyeliK_DURUM==3){#
+    <div class="d-flex bd-highligh bg-warningt bg-warning">
+    <div class="p-2 w-100 bd-highlight  mt-2">#:unvan#</div>
+    <div class="p-2 flex-shrink-1 bd-highlight mt-2">TERK</div>
+    <div class="p-2 flex-shrink-1 bd-highlight"><a class="btn btn-link btn-sm" data-mode='uyeAramaDetayModal' data-id='#:strID#' style='color:white !important'><i class="fa fa-list" style='color:white !important'></i></i></a></div>
+    </div>
+    #}#
+    #if(uyeliK_DURUM==4){#
+    <div class="d-flex bd-highlight bg-danger">
+    <div class="p-2 w-100 bd-highlight  mt-2">#:unvan#</div>
+    <div class="p-2 flex-shrink-1 bd-highlight mt-2">TASFİYE</div>
+    <div class="p-2 flex-shrink-1 bd-highlight"><a class="btn btn-link btn-sm" data-mode='uyeAramaDetayModal' data-id='#:strID#' style='color:white !important'><i class="fa fa-list" style='color:white !important'></i></i></a></div>
+    </div>
+    #}#
+    <hr>
+    </script>*@
+
+    <script>
+
+        $("body").on("click", "a[data-mode]", function() {
+            var mode = $(this).data("mode");
+            var formData = new FormData();
+            var buton = $(this);
+
+            if (mode === "KendoTemplateLink") {
+                var id_ = $(buton).data("id");
+                var baslik_ = $(buton).data("baslik");
+                location.href = "/Tebligler/" + toSeoUrl(baslik_) + "/" + id_;
+            }
+        });
+
+        var search_ = $('#lisViewSearch').val();
+        var selectTip_ = $('#selectMeslekGruplari').val();
+
+        if (selectTip_ == 0 && search_ == "") {
+            listViewFiltering(search_, selectTip_)
+        }
+
+        //meslek gruplarını seçer
+        $('#selectMeslekGruplari').on('change', function() {
+
+            var thisSelectTip_ = $(this).val();
+
+            if (thisSelectTip_ == 0) {
+                $('#listView').empty();
+                listViewFiltering($('#lisViewSearch').val(), $('#selectMeslekGruplari').val());
+            }
+
+            if (thisSelectTip_ != '0' && search_ == '') {
+
+                $('#listView').empty();
+                listViewFiltering($('#lisViewSearch').val(), $('#selectMeslekGruplari').val());
+
+            }
+
+        });
+
+        //meslek gruplarını seçer
+
+        //Üye Durumlarını Seçer
+        $('#selectUyelikDurum').on('change', function() {
+
+            var thisSelectTip_ = $(this).val();
+
+            if (thisSelectTip_ == 0) {
+                $('#listView').empty();
+                listViewFiltering($('#lisViewSearch').val(), $('#selectUyelikDurum').val());
+
+            }
+
+            if (thisSelectTip_ != '0' && search_ == '') {
+
+                $('#listView').empty();
+                listViewFiltering($('#lisViewSearch').val(), $('#selectUyelikDurum').val());
+
+            }
+
+        });
+
+        //Üye Durumlarını Seçer
+        $('#lisViewSearch').on('keyup', function() {
+
+            $('#listView').empty();
+            listViewFiltering();
+        });
+
+        function listViewFiltering() {
+
+            var dataSource = new kendo.data.DataSource({
+                transport: {
+                    read: {
+                        url: "/Admin/TumUyeler/view_Uye_BilgileriJSON",
+                        processData: false,
+                        dataType: "json"
+
+                    },
+                    parameterMap: function(options, operation) {
+                        var urlColumnFilter = '';
+                        urlColumnFilter += "&kendotable.filter[0]._field=''";
+                        urlColumnFilter += "&kendotable.filter[0]._operator=contains";
+                        urlColumnFilter += "&kendotable.filter[0]._value=''";
+                        urlColumnFilter += "&kendotable.filter[0]._ignoreCase=true";
+                        urlColumnFilter += "&kendotable.filter[0]._logic=and";
+                        urlColumnFilter += "&kendotable.unvan=" + $('#lisViewSearch').val();
+                        urlColumnFilter += "&kendotable.MESLEK_GRUBU_NO=" + $('#selectMeslekGruplari').val();
+                        urlColumnFilter += "&kendotable.UYELIK_DURUM=" + $('#selectUyelikDurum').val();
+
+                        return "kendotable.page=" + options.page + "&kendotable.pageSize=" + options.pageSize + "&kendotable.skip=" + options.skip + "&kendotable.take=" + options.take + urlColumnFilter;
+                    }
+                },
+                pageSize: 24,
+                page: 1,
+                serverPaging: true,
+                serverFiltering: false,
+                schema: {
+                    data: "data",
+                    total: "total_length"
+                }
+            });
+
+            if (search_ != "")
+                $('#listView').empty();
+
+            $("#listView").kendoListView({
+                dataSource: dataSource,
+                dataReload: true,
+                dataLayout: "template",
+                dataModel: "dataSource",
+                dataZoom: "true",
+                template: kendo.template($("#template").html())
+
+            });
+
+            $("#pager").kendoPager({
+                autoBind: false,
+                dataSource: dataSource
+            });
+
+        }
+
+        function url_(link) {
+            link_ = link.indexOf("http");            
+            if (link_==0) 
+                return link;
+            else if (link_==-1) 
+                return '//'+link;
+        }
+    </script>
+
+
+    <style>
+        #listView {
+            padding: 5px 5px;
+            margin-bottom: -1px;
+            width: 100% !important;
+        }
+
+        .p-content_ {
+            margin: 15px !important;
+        }
+
+        .k-listview-content {
+            overflow: hidden;
+        }
+
+        .k-listview:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    </style>
+</div>

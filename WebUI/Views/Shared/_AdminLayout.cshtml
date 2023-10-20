@@ -1,0 +1,390 @@
+﻿@using Helper
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@using Microsoft.AspNetCore.Mvc
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adana Sanayi Odası</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta property="og:site_name" content="Adana Sanayi Odası" />
+
+    <link rel="apple-touch-icon" sizes="76x76" href="~/Admin/Content/img/adaso.ico">
+    <link rel="shortcut icon" href="#">
+    <link rel="canonical" href="https://www.creative-tim.com/product/material-dashboard-pro" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="~/Admin/Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Admin/Content/css/material-dashboard.min6c54.css">
+    <link rel="stylesheet" href="~/Admin/Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Admin/Content/css/material-dashboard.min6c54.css">
+    <link rel="stylesheet" href="~/Admin/Content/css/kendo.default.min.css">
+    <link rel="stylesheet" href="~/Admin/Content/css/kendo.common.min.css">
+    <link rel="stylesheet" href="~/Admin/Content/css/select2.min.css">
+    <link rel="stylesheet" href="~/Admin/Content/css/kendo.default.mobile.min.css">
+    <link rel="stylesheet" href="~/Admin/Content/demo/demo.css" />
+    <link rel="stylesheet" href="~/Content/js/fullcalendar/lib/cupertino/jquery-ui.min.css" />
+    <link rel="stylesheet" href="~/Admin/Content/css/Loading.css">
+ 
+</head>
+
+<body class="">
+    <div class="loadingio-spinner-gear-irrv1uu9dwb">
+        <div class="ldio-uoog688mba">
+            <div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+    <div class="wrapper ">
+        <div class="sidebar" data-color="danger" data-background-color="red" data-image="/Admin/Content/img/sidebar-2.jpg">
+            <div class="logo">
+                <a href="#" class="simple-text logo-normal text-center">
+                    <img src="~/Admin/Content/img/ADASOLOGO.FH.png" />
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <div class="user">
+                    <div class="photo">
+                        <img src="~/Admin/Content/img/faces/avatar.jpg" />
+
+                    </div>
+                    <div class="user-info">
+                        <a data-toggle="collapse" href="#collapseExample" class="username">
+                            <span>
+                                @{
+                                    var sess = HttpContextAccessor.HttpContext.Session.GetString("SessionList");
+                                    var sesslist = JsonConvert.DeserializeObject<LoginResult>(sess);
+                                    if (sess == null)
+                                    {
+                                        HttpContextAccessor.HttpContext.Session.Clear();
+                                        HttpContextAccessor.HttpContext.Response.Redirect("admin/admin/login");
+                                    }
+                                    @*ApiCall apiCall = new ApiCall();*@
+                                    @*var result = apiCall.Get<Kullanicilar>("Kullanicilar", $"getbyid?kullanicilarId="+sesslist.personelID);*@
+                                }
+
+                                @sesslist.personelAdi @sesslist.personelSoyadi
+
+                                <b class="caret"></b>
+                            </span>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span class="sidebar-mini"> P </span>
+                                        <span class="sidebar-normal"> Profil</span>
+                                    </a>
+                                </li>
+                                @*<li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                    <span class="sidebar-mini"> PD </span>
+                                    <span class="sidebar-normal"> Profili Düzenle </span>
+                                    </a>
+                                    </li>*@
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Admin/Admin/Logout">
+                                        <span class="sidebar-mini"> Ç </span>
+                                        <span class="sidebar-normal"> Çıkış</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item @TempData["Yazilar"]">
+                        <a class="nav-link" href="/admin/admin/yazilar">
+                            <i class="material-icons">chrome_reader_mode</i>
+                            <p> Haber Yönetimi</p>
+                        </a>
+                    </li>
+                    <li class="nav-item @TempData["Tebligler"] ">
+                        <a class="nav-link" href="/admin/Tebligler/Tebligler">
+                            <i class="material-icons">notifications_active</i>
+                            <p>Mevzuat Duyuru Yönetimi</p>
+                        </a>
+                    </li>
+                    <li class="nav-item @TempData["TdHaberler"] ">
+                        <a href="/Admin/TdHaberler/TdHaberler" class="nav-link">
+                            <i class="material-icons">chrome_reader_mode</i>
+                            <p>
+                                Türkiye ve Dünyadan Haberler
+                                @*<b class="caret"></b>*@
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item @TempData["Sayfalar"]">
+                        <a class="nav-link" href="/Admin/Sayfalar/Sayfalar">
+                            <i class="material-icons">menu</i>
+                            <p> Sayfa Yönetimi </p>
+                        </a>
+                    </li>
+                <li class="nav-item @TempData["FileManager"]">
+                        <a class="nav-link" href="/Admin/Admin/GetDosyaYonetimiModal">
+                            <i class="material-icons">folder</i>
+                            <p> Dosya Yönetimi </p>
+                        </a>
+                    </li>
+                    <li class="nav-item  @TempData["Raporlar"]">
+                        <a class="nav-link" href="/Admin/Raporlar/Raporlar">
+                            <i class="material-icons">timeline</i>
+                            <p> Rapor Yönetimi </p>
+                        </a>
+                    </li>
+                    <li class="nav-item  @TempData["Gazeteler"]">
+                        <a class="nav-link" href="/Admin/Gazeteler/Gazeteler">
+                            <i class="material-icons">G</i>
+                            <p> Gazeteler </p>
+                        </a>
+                    </li>
+                    <li class="nav-item  @TempData["Projeler"]">
+                        <a class="nav-link" href="/Admin/Projeler/Projeler">
+                            <i class="material-icons">P</i>
+                            <p> Projeler </p>
+                        </a>
+                    </li>
+                    <li class="nav-item  @TempData["Sunumlar"]">
+                        <a class="nav-link" href="/Admin/Sunumlar/Sunumlar">
+                            <i class="material-icons">S</i>
+                            <p> Sunumlar </p>
+                        </a>
+                    </li>
+                    <li class="nav-item  @TempData["FireKararlari"]">
+                        <a class="nav-link" href="/Admin/FireKararlari/FireKararlari">
+                            <i class="material-icons">F</i>
+                            <p> Fire Kararları </p>
+                        </a>
+                    </li>
+                    <li class="nav-item  @TempData["MkSiralama"]">
+                        <a class="nav-link" href="/Admin/MkSiralama/MkSiralama">
+                            <i class="material-icons">sort</i>
+                            <p> MK Sıralama </p>
+                        </a>
+                    </li>
+
+                    @*                    <li class="nav-item  @TempData["Albumler"]">
+                        <a class="nav-link" href="/Admin/Albumler/Albumler">
+                        <i class="material-icons">photo_camera</i>
+                        <p> Albumler </p>
+                        </a>
+                        </li>*@
+                    <li class="nav-item @TempData["HizliIkon"]">
+                        <a class="nav-link" data-toggle="collapse" href="#ayarlar">
+                            <i class="material-icons">settings</i>
+                            <p>
+                                Ayarlar/Detaylar
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse" id="ayarlar">
+                            <ul class="nav">
+               
+                                <li class="nav-item @TempData["Youtube"]">
+                                    <a class="nav-link" href="/Admin/Youtube/Youtube">
+                                        <span class="sidebar-mini"> Y </span>
+                                        <span class="sidebar-normal"> Youtube</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Admin//HizliIkon/HizliIkon">
+                                        <span class="sidebar-mini"> HI </span>
+                                        <span class="sidebar-normal"> Hızlı İkon Yönetimi </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Admin//Kullanicilar/Kullanicilar">
+                                        <span class="sidebar-mini"> K </span>
+                                        <span class="sidebar-normal"> Kullanıcılar</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Admin/Baglantilar/Baglantilar">
+                                        <span class="sidebar-mini"> B </span>
+                                        <span class="sidebar-normal"> Bağlantılar</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Admin//Baglantilar/Baglantilar">
+                                        <span class="sidebar-mini"> A </span>
+                                        <span class="sidebar-normal"> Anketler</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/Admin//Logs/Logs">
+                                        <span class="sidebar-mini"> I </span>
+                                        <span class="sidebar-normal"> İşlem Geçmişleri</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-background" style="background-image: url('/Admin/Content/img/sidebar-1.jpg') !important"></div>
+        </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-minimize">
+                            <button id="minimizeSidebar" class="btn btn-just-icon btn-white btn-fab btn-round">
+                                <i class="material-icons text_align-center visible-on-sidebar-regular">more_vert</i>
+                                <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="javascript:;">Adaso Web Sitesi Yönetim Paneli</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <form class="navbar-form">
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Ara...">
+                                <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                    <i class="material-icons">search</i>
+                                    <div class="ripple-container"></div>
+                                </button>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/" target="_blank">
+                                    <i class="material-icons">dashboard</i>
+                                    <p class="d-lg-none d-md-block">
+                                        Stats
+                                    </p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">person</i>
+                                    <p class="d-lg-none d-md-block">
+                                        Account
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
+                                    <a class="dropdown-item" href="#">Porfil</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/Admin/Admin/Logout">Çıkış</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="clearfix"></div><br />
+
+            @*İÇERİK BURAYA GELECEK*@
+
+            @RenderBody()
+
+            @*İÇERİK BURAYA GELECEK*@
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="float-left">
+                        <ul>
+                            <li><a href="http://www.adaso.org.tr/adaso/ana-sayfa" target="_blank">Adaso</a></li>
+                            <li><a href="#" target="_blank">Site Haritası</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCzyNlte_1Gw2Y3zz-8CQhwA?view_as=subscriber" target="_blank">Youtube</a></li>
+                            <li><a href="https://www.instagram.com/adanasanayiodasi/?hl=tr" target="_blank">Instagram</a></li>
+                            <li><a href="https://twitter.com/adanasanodasi" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/adanasanodasi/home" target="_blank">Facebook</a></li>
+                        </ul>
+                    </nav>
+                    <div class="copyright float-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>, made with by
+                        <a href="http://www.adaso.org.tr/" target="_blank">Adaso</a> for a better web.
+                        <i class="material-icons">favorite</i>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <div class="modal fade" id="mdl" role="dialog">
+        <div id="dvMdlDialog" class="modal-dialog" style="max-width: 900px !important;">
+        </div>
+    </div>
+
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 900px !important;">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <img src="" id="imagepreview" style="width: 850px;">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm" data-dismiss="modal">
+                        <i class="ace-icon fa fa-times"></i>
+                        Kapat
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Admin/Content/js/core/jquery.min.js"></script>
+    <script src="~/Content/js/fullcalendar/lib/jquery-ui.min.js"></script>
+    <script src="~/Admin/Content/js/core/popper.min.js"></script>
+    <script src="~/Admin/Content/js/core/bootstrap-material-design.min.js"></script>
+    <script src="~/Admin/Content/js/KendoUI/kendo.all.min.js"></script>
+    <script src="~/Admin/Content/js/KendoUI/kendo.culture.tr-TR.min.js"></script>
+    <script src="~/Admin/Content/js/KendoUI/kendo.messages.tr-TR.min.js"></script>
+    <script src="~/Admin/Content/js/KendoUI/nvi_kendotable.js"></script>
+    <script src="~/Admin/Content/js/KendoUI/select2.min.js"></script>
+    <script src="~/Admin/Content/js/KendoUI/DropDownList.js"></script>
+    <script src="~/Admin/Content/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="~/Admin/Content/js/plugins/moment.min.js"></script>
+    <script src="~/Admin/Content/js/plugins/sweetalert2.js"></script>
+    <script src="~/Admin/Content/js/plugins/jquery.validate.min.js"></script>
+    <script src="~/Admin/Content/js/plugins/jquery.bootstrap-wizard.js"></script>
+    <script src="~/Admin/Content/js/plugins/bootstrap-selectpicker.js"></script>
+    <script src="~/Admin/Content/js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <script src="~/Admin/Content/js/plugins/jquery.dataTables.min.js"></script>
+    <script src="~/Admin/Content/js/plugins/bootstrap-tagsinput.js"></script>
+    <script src="~/Admin/Content/js/plugins/jasny-bootstrap.min.js"></script>    
+    <script src="~/Admin/Content/js/plugins/jquery-jvectormap.js"></script>
+    <script src="~/Admin/Content/js/plugins/nouislider.min.js"></script>
+    <script src="~/Admin/Content/js/core/core.js"></script>
+    <script src="~/Admin/Content/js/plugins/arrive.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script>
+    <script async defer src="~/Admin/Content/js/plugins/buttons.js"></script>
+    <script src="~/Admin/Content/js/plugins/chartist.min.js"></script>
+    <script src="~/Admin/Content/js/material-dashboard.min6c54.js" type="text/javascript"></script>
+    <script src="~/Admin/Content/js/plugins/bootstrap-notify.js"></script>
+    <script src="~/Admin/Content/demo/jquery.sharrre.js"></script>
+    <script src="~/Admin/Content/js/user/form-validation.js"></script>
+    <script src="~/Admin/Content/js/user/post_.js"></script>
+    <script src="~/Admin/Content/js/user/process-admin.js"></script>
+    @RenderSection("AdminScripts", required: false)
+    <script>
+         $(document).ready(function () {
+             // initialise Datetimepicker and Sliders
+             md.initFormExtendedDatetimepickers();
+             if ($('.slider').length != 0) {
+                 md.initSliders();
+             }
+        });
+           kendo.culture("tr-TR");
+    </script>
+</body>
+</html>

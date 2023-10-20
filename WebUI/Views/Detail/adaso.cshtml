@@ -1,0 +1,103 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@using Helper
+@model PageItem
+ 
+
+<noscript>
+    @section Scripts{
+
+        @await Component.InvokeAsync("KendoLibrary")
+    }
+</noscript>
+ 
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                @try{@await Component.InvokeAsync("MenuCategory",new {MenuID=@Model.Sayfalar.Data.ID})}
+                catch{}
+                <div class="jumbotron-fluid ts-grid-box"> 
+                    @if(@Model.Sayfalar.Data.DosyaUrl!="0"){
+                        @if (!@Model.Sayfalar.Data.DosyaUrl.Contains("uzantılı olmalıdır"))
+                        {
+                            <a href="@Model.Sayfalar.Data.DosyaUrl" class="float-right">Ek için tıklayınız. <i class="fa fa-file fa-2x"></i></a>
+                        }
+                    }
+                    <h4 class="display-4">@Model.Sayfalar.Data.Baslik</h4>
+                        <div class="container">
+                            <div class="entry-header"> 
+                            <ul class="post-meta-info float-right">
+ 
+                                <li>
+                                    <i class="fa fa-clock-o"></i>
+                                   <span class="title">@Model.Sayfalar.Data.GuncellemeTarihi.ToString("f")</span> 
+                                </li>
+                                <li class="active">
+                                    <i class="fa fa-eye"></i>
+                                    @Model.Sayfalar.Data.GosterimSayisi
+                                </li>
+ 
+                            </ul>
+                        </div>
+                        
+                        </div>
+                        
+                        <div class="content-wrapper">
+                            <div class="clearfix"></div><hr />
+                                @Html.Raw(Model.Sayfalar.Data.Metin)
+                            </div>
+                            
+                            <div class="">
+                            @if (Model.Sayfalar.Data.Icerik1.StartsWith("TumHaberler"))
+                            {
+                                string HaberTipi = Model.Sayfalar.Data.Icerik1.Substring(Model.Sayfalar.Data.Icerik1.LastIndexOf("/") + 1);
+                                @await Component.InvokeAsync("TumHaberler",new{yazitipi=HaberTipi})
+                            }
+                            else if (Model.Sayfalar.Data.Icerik1.StartsWith("mkUyeler"))
+                            {
+                                string mkUyeTipi = Model.Sayfalar.Data.Icerik1.Substring(Model.Sayfalar.Data.Icerik1.LastIndexOf("/") + 1);
+                                @await Component.InvokeAsync("mkUyeler",new{mkUyeTipi=mkUyeTipi})
+                            }
+                            else if (Model.Sayfalar.Data.Icerik1.StartsWith("TumRaporlar"))
+                            {   
+                                int RaporTipi = Model.Sayfalar.Data.Icerik1.Substring(Model.Sayfalar.Data.Icerik1.LastIndexOf("/") + 1).ToInt();
+                                @await Component.InvokeAsync("TumRaporlar",new{raporTipi=RaporTipi})
+                            }                            
+                            else
+                            {
+
+                                @if (Model.Sayfalar.Data.Icerik1 != "0")
+                                {
+                                    @await Component.InvokeAsync(@Model.Sayfalar.Data.Icerik1)
+                                }
+
+                                @if (Model.Sayfalar.Data.Icerik2 != "0")
+                                {
+                                    @await Component.InvokeAsync(@Model.Sayfalar.Data.Icerik2)
+                                }
+
+                                @if (Model.Sayfalar.Data.Icerik3 != "0")
+                                {
+                                    @await Component.InvokeAsync(@Model.Sayfalar.Data.Icerik3)
+                                }
+
+                            }
+                            </div>
+                </div>
+             
+                <!-- post content area-->
+                <!-- post navigation end-->
+            </div>
+
+            <div class="col-lg-3">
+                <!--RIGHT SIDE BAR-->
+                @await Component.InvokeAsync("RightSideBar", new {YazilarGrup=1,UstID=@Model.UstIdSec,SayfaID=@Model.Sayfalar.Data.ID})
+                <!--RIGHT SIDE BAR-->
+            </div>
+        </div>
+    </div>
+
+</section>
+ 

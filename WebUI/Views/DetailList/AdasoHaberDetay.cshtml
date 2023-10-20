@@ -1,0 +1,20 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@model PageItem
+
+
+<section class="single-post-wrapper">
+    <div class="container">
+        <div class="row">
+                  <div class="col-lg-12">
+        <div class="ts-grid-box content-wrapper">
+        @await Component.InvokeAsync("TumHaberler",new {Grup=@Model.YaziTipi})
+        @*@await Component.InvokeAsync("TumTebligler")*@
+        
+        </div>
+        </div>
+ </div>
+    </div>
+ 
+</section>

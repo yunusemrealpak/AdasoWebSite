@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@*@using AdasoWebsite.Controllers
+@using BusinessLibrary;
+@model PageItem
+@{
+Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}*@
+<!-- End Navbar -->
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">chrome_reader_mode</i>
+                        </div>
+                        <h4 class="card-title">Haberler</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="toolbar">
+                            <a class="btn btn-link" data-mode="GetHaberFormModal" data-data1="0"><i class="material-icons">save</i> Ekle</a>
+                            <a href="#" class="btn btn-link" data-data1=""><i class="material-icons">edit</i> İşlem</a>
+                        </div>
+                        <div class="material-datatables">
+                            <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+            
+
+                            </table>
+                        </div>
+                    </div>
+                    <!-- end content-->
+                </div>
+                <!--  end card  -->
+            </div>
+            <!-- end col-md-12 -->
+        </div>
+        <!-- end row -->
+    </div>
+</div>

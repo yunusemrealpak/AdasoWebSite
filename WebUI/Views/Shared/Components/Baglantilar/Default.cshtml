@@ -1,0 +1,114 @@
+﻿    @using Helper
+    @using WebApplication1.Models
+    @using WebUI.Models
+    @using WebUI.Models.Api
+
+    @model ResponseMessage<List<Baglantilar>>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2 col-md-4">
+            <div class="footer-widget">
+                <h4 class="widget-title">HİZMETLERİMİZ</h4>
+                <ul>
+                   @foreach (var bItem in Model.Data.Where(x=>x.Etkin && x.GrupKodu==0))
+                    {   
+                        
+                        <li>
+                            @if(bItem.YeniPencere){
+                                <a href="@bItem.WebAdresi" target="_blank">@bItem.Baslik</a>
+                            }else{
+                                <a href="@bItem.WebAdresi">@bItem.Baslik</a>
+                            }
+                        
+                        </li>
+                    }
+                </ul>
+            </div>
+            <!-- footer widget end-->
+        </div>
+        <!-- col end-->
+        <div class="col-lg-2 col-md-4">
+            <div class="footer-widget">
+                <h4 class="widget-title">HIZLI BAĞLANTILAR</h4>
+                <ul>
+                   @foreach (var bItem in Model.Data.Where(x=>x.Etkin && x.GrupKodu==1))
+                    {   
+                        
+                        <li>
+                            @if(bItem.YeniPencere){
+                                <a href="@bItem.WebAdresi" target="_blank">@bItem.Baslik</a>
+                            }else{
+                                <a href="@bItem.WebAdresi">@bItem.Baslik</a>
+                            }
+                        
+                        </li>
+                    }
+                </ul>
+            </div>
+            <!-- footer widget end-->
+        </div>
+        <!-- col end-->
+        <div class="col-lg-2 col-md-4">
+            <div class="footer-widget">
+                <h4 class="widget-title">ADANA BAĞLANTILARI</h4>
+                <ul>
+                   @foreach (var bItem in Model.Data.Where(x=>x.Etkin && x.GrupKodu==2))
+                    {
+                        
+                        <li>
+                            @if(bItem.YeniPencere){
+                                <a href="@bItem.WebAdresi" target="_blank">@bItem.Baslik</a>
+                            }else{
+                                <a href="@bItem.WebAdresi">@bItem.Baslik</a>
+                            }
+                        
+                        </li>
+                    }
+                </ul>
+            </div>
+            <!-- footer widget end-->
+        </div>
+        <!-- col end-->
+        <div class="col-lg-2 col-md-4">
+            <div class="footer-widget">
+                <h4 class="widget-title">TOBB BAĞLANTILARI</h4>
+                <ul>
+                   @foreach (var bItem in Model.Data.Where(x=>x.Etkin && x.GrupKodu==3))
+                    {   
+                        
+                        <li>
+                            @if(bItem.YeniPencere){
+                                <a href="@bItem.WebAdresi" target="_blank">@bItem.Baslik</a>
+                            }else{
+                                <a href="@bItem.WebAdresi">@bItem.Baslik</a>
+                            }
+                        
+                        </li>
+                    }
+                </ul>
+            </div>
+            <!-- footer widget end-->
+        </div>
+        <!-- col end-->
+        <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+                <h4 class="widget-title">YARARLI BAĞLANTILAR</h4>
+                <ul>
+                   @foreach (var bItem in Model.Data.Where(x=>x.Etkin && x.GrupKodu==4))
+                    {                        
+                        <li>
+                            @if(bItem.YeniPencere){
+                                <a href="@bItem.WebAdresi" target="_blank">@bItem.Baslik</a>
+                            }else{
+                                <a href="@bItem.WebAdresi">@bItem.Baslik</a>
+                            }
+                        
+                        </li>
+                    }
+                </ul>
+            </div>
+            <!-- footer widget end-->
+        </div>
+        <!-- col end-->
+    </div>
+</div>

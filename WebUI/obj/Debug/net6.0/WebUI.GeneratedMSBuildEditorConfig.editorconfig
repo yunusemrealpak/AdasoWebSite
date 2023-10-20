@@ -1,0 +1,649 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebUI
+build_property.RootNamespace = WebUI
+build_property.ProjectDir = C:\Repos\ismailgundogan\AdasoWebSite\WebUI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Repos\ismailgundogan\AdasoWebSite\WebUI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/Duyurular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cRHV5dXJ1bGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/FileManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cRmlsZU1hbmFnZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/GetDosyaYonetimiModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cR2V0RG9zeWFZb25ldGltaU1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/GetHaberlerModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cR2V0SGFiZXJsZXJNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/GetHaberlerUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cR2V0SGFiZXJsZXJVcGRhdGVNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/GetIslemHrkModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cR2V0SXNsZW1IcmtNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/GetYazilarSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cR2V0WWF6aWxhclNpbE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cTWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Admin/Yazilar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cWWF6aWxhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Baglantilar/Baglantilar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFnbGFudGlsYXJcQmFnbGFudGlsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Baglantilar/GetBaglantilarModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFnbGFudGlsYXJcR2V0QmFnbGFudGlsYXJNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Baglantilar/GetBaglantilarSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFnbGFudGlsYXJcR2V0QmFnbGFudGlsYXJTaWxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Baglantilar/GetBaglantilarUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFnbGFudGlsYXJcR2V0QmFnbGFudGlsYXJVcGRhdGVNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Etkinlikler/Etkinlikler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXRraW5saWtsZXJcRXRraW5saWtsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Etkinlikler/GetEtkinliklerModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXRraW5saWtsZXJcR2V0RXRraW5saWtsZXJNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Etkinlikler/GetEtkinliklerSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXRraW5saWtsZXJcR2V0RXRraW5saWtsZXJTaWxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Etkinlikler/GetEtkinliklerUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXRraW5saWtsZXJcR2V0RXRraW5saWtsZXJVcGRhdGVNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/FireKararlari/FireKararlari.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmlyZUthcmFybGFyaVxGaXJlS2FyYXJsYXJpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/FireKararlari/GetFireKararlariModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmlyZUthcmFybGFyaVxHZXRGaXJlS2FyYXJsYXJpTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/FireKararlari/GetFireKararlariSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmlyZUthcmFybGFyaVxHZXRGaXJlS2FyYXJsYXJpU2lsTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/FireKararlari/GetFireKararlariUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmlyZUthcmFybGFyaVxHZXRGaXJlS2FyYXJsYXJpVXBkYXRlTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Gazeteler/Gazeteler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2F6ZXRlbGVyXEdhemV0ZWxlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Gazeteler/GetGazetelerModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2F6ZXRlbGVyXEdldEdhemV0ZWxlck1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Gazeteler/GetGazetelerSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2F6ZXRlbGVyXEdldEdhemV0ZWxlclNpbE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Gazeteler/GetGazetelerUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2F6ZXRlbGVyXEdldEdhemV0ZWxlclVwZGF0ZU1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/MkSiralama/MkSiralama.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWtTaXJhbGFtYVxNa1NpcmFsYW1hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Projeler/GetProjelerModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVsZXJcR2V0UHJvamVsZXJNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Projeler/GetProjelerSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVsZXJcR2V0UHJvamVsZXJTaWxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Projeler/GetProjelerUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVsZXJcR2V0UHJvamVsZXJVcGRhdGVNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Projeler/Projeler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVsZXJcUHJvamVsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Raporlar/GetRaporFormModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmFwb3JsYXJcR2V0UmFwb3JGb3JtTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Raporlar/GetRaporSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmFwb3JsYXJcR2V0UmFwb3JTaWxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Raporlar/GetRaporUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmFwb3JsYXJcR2V0UmFwb3JVcGRhdGVNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Raporlar/Raporlar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmFwb3JsYXJcUmFwb3JsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Sayfalar/GetSayfalarModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2F5ZmFsYXJcR2V0U2F5ZmFsYXJNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Sayfalar/GetSayfalarSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2F5ZmFsYXJcR2V0U2F5ZmFsYXJTaWxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Sayfalar/GetSayfalarUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2F5ZmFsYXJcR2V0U2F5ZmFsYXJVcGRhdGVNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Sayfalar/Sayfalar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2F5ZmFsYXJcU2F5ZmFsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Sunumlar/GetSunumlarModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3VudW1sYXJcR2V0U3VudW1sYXJNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Sunumlar/GetSunumlarSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3VudW1sYXJcR2V0U3VudW1sYXJTaWxNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Sunumlar/GetSunumlarUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3VudW1sYXJcR2V0U3VudW1sYXJVcGRhdGVNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Sunumlar/Sunumlar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3VudW1sYXJcU3VudW1sYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/TdHaberler/GetTDHaberlerModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGRIYWJlcmxlclxHZXRUREhhYmVybGVyTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/TdHaberler/GetTDHaberlerSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGRIYWJlcmxlclxHZXRUREhhYmVybGVyU2lsTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/TdHaberler/GetTDHaberlerUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGRIYWJlcmxlclxHZXRUREhhYmVybGVyVXBkYXRlTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/TdHaberler/TDHaberler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGRIYWJlcmxlclxUREhhYmVybGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Tebligler/GetTebliglerForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVibGlnbGVyXEdldFRlYmxpZ2xlckZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Tebligler/GetTebliglerSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVibGlnbGVyXEdldFRlYmxpZ2xlclNpbE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Tebligler/GetTebliglerUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVibGlnbGVyXEdldFRlYmxpZ2xlclVwZGF0ZU1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Tebligler/Tebligler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVibGlnbGVyXFRlYmxpZ2xlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Youtube/GetYoutubeModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcWW91dHViZVxHZXRZb3V0dWJlTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Youtube/GetYoutubeSilModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcWW91dHViZVxHZXRZb3V0dWJlU2lsTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Youtube/GetYoutubeUpdateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcWW91dHViZVxHZXRZb3V0dWJlVXBkYXRlTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Admin/Views/Youtube/Youtube.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcWW91dHViZVxZb3V0dWJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/En/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xFblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/AdanaCenterForEfficiency/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xBZGFuYUNlbnRlckZvckVmZmljaWVuY3lcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/AdanaFurnitureIndustry/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xBZGFuYUZ1cm5pdHVyZUluZHVzdHJ5XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/AdanaFurnitureManufacturing/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xBZGFuYUZ1cm5pdHVyZU1hbnVmYWN0dXJpbmdcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/AdanaMachineManufacturing/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xBZGFuYU1hY2hpbmVNYW51ZmFjdHVyaW5nXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/Adana/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xBZGFuYVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/ADASO1_Support/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xBREFTTzFfU3VwcG9ydFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/ADASOGIZProject/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xBREFTT0dJWlByb2plY3RcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/Addasso_ILO/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xBZGRhc3NvX0lMT1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/Aidat/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xBaWRhdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/AnalysisTheCurrent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xBbmFseXNpc1RoZUN1cnJlbnRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/CapacityReport/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xDYXBhY2l0eVJlcG9ydFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/ConsultationServiceRegarding/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xDb25zdWx0YXRpb25TZXJ2aWNlUmVnYXJkaW5nXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/CreatingForeignTrade/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xDcmVhdGluZ0ZvcmVpZ25UcmFkZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/CurrentStusAnalysis/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xDdXJyZW50U3R1c0FuYWx5c2lzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/DomestıcGoodsDocument/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xEb21lc3TEsWNHb29kc0RvY3VtZW50XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/DutiesAndResp/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xEdXRpZXNBbmRSZXNwXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/EducationAndCareer/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xFZHVjYXRpb25BbmRDYXJlZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/GeneratingAnalytical/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xHZW5lcmF0aW5nQW5hbHl0aWNhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/History/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xIaXN0b3J5XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/ImprovementOfCorporate/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xJbXByb3ZlbWVudE9mQ29ycG9yYXRlXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/ImprovingTheParticipation/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xJbXByb3ZpbmdUaGVQYXJ0aWNpcGF0aW9uXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/Index/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xJbmRleFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/IndustirialSymbiosis/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xJbmR1c3RpcmlhbFN5bWJpb3Npc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/KaliteAkreditasyon/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xLYWxpdGVBa3JlZGl0YXN5b25cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/MahirEller1/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xNYWhpckVsbGVyMVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/OnlineService2/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xPbmxpbmVTZXJ2aWNlMlxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/OnlineService/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xPbmxpbmVTZXJ2aWNlXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/OurMission/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xPdXJNaXNzaW9uXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/OurVision/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xPdXJWaXNpb25cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/ProjectForCreatingForeign/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xQcm9qZWN0Rm9yQ3JlYXRpbmdGb3JlaWduXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/Projects/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xQcm9qZWN0c1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/ProjeDevolopingUniversty/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xQcm9qZURldm9sb3BpbmdVbml2ZXJzdHlcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/RoomRegistirationPro/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xSb29tUmVnaXN0aXJhdGlvblByb1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/TechincalSupportTrainning/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xUZWNoaW5jYWxTdXBwb3J0VHJhaW5uaW5nXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/TheProjectMarket2/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xUaGVQcm9qZWN0TWFya2V0MlxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/TheProjectMarket3/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xUaGVQcm9qZWN0TWFya2V0M1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/TheProjectMarket/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xUaGVQcm9qZWN0TWFya2V0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/TheProjectOfDeveloping/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xUaGVQcm9qZWN0T2ZEZXZlbG9waW5nXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/TheProjectofEstablishing/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xUaGVQcm9qZWN0b2ZFc3RhYmxpc2hpbmdcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/TheProjectOfExportMarket/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xUaGVQcm9qZWN0T2ZFeHBvcnRNYXJrZXRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/Turkey_Energy_Base/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xUdXJrZXlfRW5lcmd5X0Jhc2VcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/WeTakeBussines/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1xXZVRha2VCdXNzaW5lc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Areas/Lang/Views/Shared/Components/İnvestmentCertificate/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGFuZ1xWaWV3c1xTaGFyZWRcQ29tcG9uZW50c1zEsG52ZXN0bWVudENlcnRpZmljYXRlXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/DetailList/AdasoDetay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsTGlzdFxBZGFzb0RldGF5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/DetailList/AdasoHaberDetay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsTGlzdFxBZGFzb0hhYmVyRGV0YXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Detail/adaso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXGFkYXNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Detail/AdasoDuyuru.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXEFkYXNvRHV5dXJ1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Detail/adasoEskiSayfaURL.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXGFkYXNvRXNraVNheWZhVVJMLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Detail/googleIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXGdvb2dsZUluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Detail/Haberler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXEhhYmVybGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Detail/HaberlerTur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXEhhYmVybGVyVHVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Detail/Tebligler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXFRlYmxpZ2xlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Paritial/EtkinliklerModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyaXRpYWxcRXRraW5saWtsZXJNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Paritial/FireKararlariDetayModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyaXRpYWxcRmlyZUthcmFybGFyaURldGF5TW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Paritial/popupGetModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyaXRpYWxccG9wdXBHZXRNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Paritial/ProjeDetayModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyaXRpYWxcUHJvamVEZXRheU1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Paritial/sunumAraParitial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyaXRpYWxcc3VudW1BcmFQYXJpdGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Paritial/uyeAramaDetayModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFyaXRpYWxcdXllQXJhbWFEZXRheU1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/Baglantilar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmFnbGFudGlsYXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/BilgiBankasi/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmlsZ2lCYW5rYXNpXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/BilgilendirmeFormu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmlsZ2lsZW5kaXJtZUZvcm11XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/DanismaFormu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFuaXNtYUZvcm11XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/Duyurular/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRHV5dXJ1bGFyXGRlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/EtkinlikListesi/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRXRraW5saWtMaXN0ZXNpXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/FireKararlari/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmlyZUthcmFybGFyaVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/Gazeteler/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2F6ZXRlbGVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/Iletisim/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSWxldGlzaW1cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/KendoLibrary/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcS2VuZG9MaWJyYXJ5XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/Library/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGlicmFyeVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/Meclis/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVjbGlzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/MenuCategory/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudUNhdGVnb3J5XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/MeslekKomiteleri/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVzbGVrS29taXRlbGVyaVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/mkUyeler/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcbWtVeWVsZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/Raporlar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmFwb3JsYXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/RightSideBar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmlnaHRTaWRlQmFyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/SiteHaritasi/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2l0ZUhhcml0YXNpXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/TebliglerTab/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGVibGlnbGVyVGFiXGRlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/TumDergiler/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHVtRGVyZ2lsZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/TumDuyurular/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHVtRHV5dXJ1bGFyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/TumEtkinlikler/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHVtRXRraW5saWtsZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/TumHaberler/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHVtSGFiZXJsZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/TumProjeler/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHVtUHJvamVsZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/TumRaporlar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHVtUmFwb3JsYXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/TumSunumlar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHVtU3VudW1sYXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/TumTebligler/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHVtVGVibGlnbGVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/TumUyeler/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHVtVXllbGVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/UstDuyurular/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXN0RHV5dXJ1bGFyXGRlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/UyelerVNSearch/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXllbGVyVk5TZWFyY2hcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/YonetimKurulu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcWW9uZXRpbUt1cnVsdVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Components/Youtube/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcWW91dHViZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/_En_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Fbl9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/TNBKep/TNBKep.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVE5CS2VwXFROQktlcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/ismailgundogan/AdasoWebSite/WebUI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

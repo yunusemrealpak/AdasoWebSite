@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "FireKararlari";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">F</i>
+                        </div>
+                        <h4 class="card-title">Fire Kararları</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="toolbar">
+                            <a class="btn btn-link" data-mode="GetFireKararlariModal" data-data1="0" data-type="Kaydet"><i class="material-icons">save</i> Ekle</a>             
+                        </div>
+                        
+                        <table id="tblYazilar"
+                        data-filter="kendotable.Aciklama="
+                        data-url="/Admin/FireKararlari/FireKararlariJson"
+                        data-pagesize="7"
+                        data-paging="true"
+                        data-searching="true"
+                        data-ordering="true"
+                        data-serverpaging="true"
+                        data-serversearching="true"
+                        data-serverordering="true">
+                        <thead>
+                                <tr>
+                                    <th data-column="id" data-header="ID" data-width="4%"></th>
+                                    <th data-column="etkin" data-header="Etkin" data-width="4%"></th>
+                                    <th data-column="meslekGrubuKodu" data-header="Meslek Grubu" data-width="7%"></th>
+                                    <th data-column="aciklama" data-header="Açıklama" data-width="50%" data-filterable="true"></th>
+                                    <th data-column="tarih" data-filterable="true" data-header="Tarih" data-type="date" data-format="{0:dd.MMMM.yyyy dddd}"></th>                                    
+                                    
+                                    <th data-column="personelTc" data-header="#" data-column-type="button" data-width="200px"> 
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="İşlem Geçmişi" data-mode="GetHrkModal"><i class="fa fa-list"></i></a>
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="Güncelle" data-mode="GetFireKararlariUpdateModal"><i class="fa fa-edit"></i></a>
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="Video Sil" data-mode="GetFireKararlariSilModal" data-type="Sil"><i class="fa fa-remove"></i></a>
+                                    </th>
+                                </tr>
+                        </thead>
+                        </table>
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+        
+    </div>
+</div>
+
+@section AdminScripts{
+    <script>
+        datatable_init("#tblYazilar","");
+  
+    </script>
+
+} 	

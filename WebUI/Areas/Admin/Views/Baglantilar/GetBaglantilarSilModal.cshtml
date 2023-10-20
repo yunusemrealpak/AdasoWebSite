@@ -1,0 +1,15 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models.Api
+@model ResponseMessage<Baglantilar>
+
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Silme işlemi</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="modal-body"> @Model.Data.Baslik isimli Baglantilar kaydını silmek istediğinize emin misiniz?</div>
+    <div class="modal-footer">
+        <button class="btn btn-outline-secondary" type="button" data-dismiss="modal">İptal</button>
+        <a class="btn btn-danger" data-mode="GetBaglantilarIslemler" data-type="Sil" data-id="@Model.Data.ID">SİL</a>
+    </div>
+</div>

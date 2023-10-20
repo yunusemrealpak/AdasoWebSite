@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Yazilar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">keyboard</i>
+                        </div>
+                        <h4 class="card-title">Proje Yönetimi</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="toolbar">
+                            <a class="btn btn-link" data-mode="GetProjelerModal" data-data1="0" data-type="Kaydet"><i class="material-icons">save</i> Yeni Proje Ekle</a>
+                            @*<a href="#" class="btn btn-link" data-data1=""><i class="material-icons">edit</i> İşlem</a>*@
+                                <div class="form-inline">
+                                <div class="form-group col-md-12">
+                                <input type="text" class="form-control" id="baslikAra" placeholder="Ara...[Enter]" style="width:100% !important">
+                                </div>
+                                <button id="yaziGonder" type="submit" class="btn btn-danger mb-2"style="display:none" onclick="kendo_reload('#tblYazilar','&kendotable.baslik='+$('#baslikAra').val())">Ara</button>
+                                </div>
+                        </div>
+                          
+                        <table id="tblYazilar"
+                        data-filter="kendotable.baslik="
+                        data-url="/Admin/Projeler/ProjelerJson"
+                        data-pagesize="7"
+                        data-paging="true"
+                        data-searching="true"
+                        data-ordering="true"
+                        data-serverpaging="true"
+                        data-serversearching="true"
+                        data-serverordering="true"
+                        
+                        data-excelname="Excel İndir">
+                            <thead>
+                                <tr>
+                                    <th data-column="id" data-header="ID" data-width="4%"></th>
+                                    <th data-column="etkin" data-header="Etkin" data-width="4%"></th>
+                                    <th data-column="durum" data-header="Durum" data-width="5%"></th>                                    
+                                    <th data-column="baslik" data-header="Baslik" data-width="30%" data-filterable="true"></th>
+                                    <th data-column="baslangicTarihi" data-filterable="true" data-header="Bas. Tarih" data-type="date" data-format="{0:dd.MMMM.yyyy dddd }"></th>
+                                    <th data-column="bitisTarihi" data-filterable="true" data-header="Bit. Tarih" data-type="date" data-format="{0:dd.MMMM.yyyy dddd }"></th> 
+                                    <th data-column="eklemeTarihi"  data-header="Ekleme Tarihi" data-type="date" data-format="{0:dd.MMMM.yyyy dddd }"></th>
+                                    <th data-column="gosterimSayisi" data-header="Gösterim Sayısı" data-width="7%"></th>
+                                    <th data-column="personelTc" data-header="#" data-column-type="button" data-width="200px"> 
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="İşlem Geçmişi" data-mode="GetHrkModal"><i class="fa fa-list"></i></a>
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="Güncelle" data-mode="GetProjelerUpdateModal"><i class="fa fa-edit"></i></a>
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="Yazıyı Sil" data-mode="GetProjelerSilModal" data-type="Sil"><i class="fa fa-remove"></i></a>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+        
+    </div>
+</div>
+
+@section AdminScripts{
+    <script>
+        datatable_init("#tblYazilar","");
+        @*parameter_init(".card-body");*@
+          document.getElementById('baslikAra').addEventListener("keypress", function(e){
+        if(e.keyCode==13){
+            document.getElementById('yaziGonder').click();
+        }
+            });   
+                      document.getElementById('baslikAra').addEventListener("keydown", function(e){
+        if(e.keyCode==13){
+            document.getElementById('yaziGonder').click();
+        }
+            });   
+    </script>
+
+}

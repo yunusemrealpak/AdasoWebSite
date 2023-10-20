@@ -1,0 +1,97 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@model PageItem
+
+<section class="single-post-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9">
+
+				@await Component.InvokeAsync("MenuCategory",new {MenuID=51})
+				<!-- breadcump end-->
+				<div class="jumbotron-fluid ts-grid-box">
+
+					<div class="container ">
+						<div class="entry-header ">
+							<a href="#" class="post-cat bg-danger">TNB Kep</a>
+
+						</div>
+						<!-- single post header end-->
+						<div class="post-content-area">
+							<div class="col-12 container-fluid">
+
+								<h2 class="text-center">TNB TEKNOLOJİ HAKKINDA</h2>								
+					 
+								<h4 class="text-justify line-height30"> TNB Teknoloji Türkiye Noterler Birliği tarafından 2012 yılının Ocak ayındaAnkara’da kurulmuştur. Bilgi Teknolojileri ve İletişim Kurumu (BTK) lisanslı ilk özelkuruluştur. TNB Teknoloji, 2012 yılından itibaren Kayıtlı Elektronik Posta (KEP) ve e-imza hizmetleri vermektedir. Bu hizmetlerinin yanı sıra ürün yelpazesini yıllariçerisinde genişletmiş ve geldiği noktada iş ortaklarına güvenilir, sürdürebilir,kaliteli ve yeni çözüm önerileri sunmaktadır. KEP Bordro, KEP Doküman yönetimsistemi, e-dönüşüm çözümleri ve robotik uygulamalar bu çözüm önerilerindenbazılarıdır. İş ortaklarına çözüm önerilerini özel tarifeler ile sunmaktadır.</h4>
+								
+								<p><img src="~/Content/images/TNB/1.png"  class="img-fluid"/> </p>
+								<p><img src="~/Content/images/TNB/2.png"  class="img-fluid"/> </p>
+								<p><img src="~/Content/images/TNB/3.png"  class="img-fluid"/> </p>
+								<p><img src="~/Content/images/TNB/4.png"  class="img-fluid"/> </p>
+
+								<p>&nbsp;</p>
+								
+								<i>Vergi Numarası ile başvuru özelliği yapım aşamasındadır. Aşağıdaki linkten TNb Teknoloji websitesine gözatabilirsiniz.</i><br />
+								<a target="_blank" class="btn btn-dribbble float-right mt-3" href="https://www.tnbteknoloji.com.tr/noterlerimize-ozel/kullanim-kilavuzu-ve-videolar/adim-4-kep-hesabina-giris"  >TNB Teknoloji Kayıtlı Elektronik Posta (KEP)</a><br />
+								<h4>Hemen Başvur</h4>
+								<p>Vergi numaranızı ilgili alana girdikten sonra BAŞVUR butonuna basarak KEP başvurunuza başlayabilirsiniz.</p>						
+								
+
+							</div>
+
+							<div class="clearfix"></div>
+							<div class="post-media post-featured-image">
+								<a href="/Content/" class="gallery-popup">
+									<img src="/Content/" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="entry">
+								
+								<div class="form-group row">
+									
+									<label class="col-4 col-form-label" for="txtVKN">Vergi Numarası</label>
+									<div class="col-8">
+
+										@using (Html.BeginForm("FormSubmit", "TNBKep", FormMethod.Post))
+										{
+
+											<div class="form-group">
+												<div class="input-group">
+													<input id="txtVKN" name="txtVKN" type="text" aria-describedby="txtVKNHelpBlock" class="form-control" placeholder="Vergi Numaranız..." >
+													@*<input type="submit" value="Başvur" class="btn btn-default" disable="disable"/>*@
+												</div>
+
+											</div>
+
+											<div class="g-recaptcha" data-sitekey="6Lf3QFcdAAAAAFLzwfmcEQ0_RrRFSb8B1WrfWSDN"></div>
+											<div class="@TempData["MessageType"]" role="alert">
+												@TempData["Validation"]
+												@TempData["Message"]
+											</div>
+										}
+									</div>					 
+									
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- col end -->
+			<div class="col-lg-3">
+				<!--RIGHT SIDE BAR-->
+				@await Component.InvokeAsync("RightSideBar", new {YazilarGrup=1,UstID=42,SayfaID=51})
+
+				<!--RIGHT SIDE BAR-->
+			</div>
+			<!-- right sidebar end-->
+			<!-- col end-->
+		</div>
+		<!-- row end-->
+	</div>
+	<!-- container-->
+</section>
+
+<script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>

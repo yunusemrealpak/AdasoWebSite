@@ -1,0 +1,183 @@
+﻿@using Helper
+@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+
+
+@model ResponseMessage<List<Raporlar>>
+<div class="ts-grid-box most-populer-item" style="background: #e9eaea">
+    <h2 class="ts-title">İstatistiksel</h2>
+    <div class="clearfix"></div><br />
+    <div class="most-populers owl-carousel">
+
+        @*DIŞ TİCARET RAPORU*@
+        <div class="item ts-blue-light-heighlight heighlight">
+            <div class="ts-post-thumb">
+                <a href="#">
+                    <img class="img-fluid img-thumbnai" src="~/Content/images/news/tech/calisma.jpg" alt="">
+                </a>
+                <a class="post-cat" href="#">DIŞ TİCARET RAPORU</a>
+            </div>
+
+            <div class="post-content">
+                @foreach (var rItem in Model.Data.Where(x => x.Tip == 1))
+                {
+                    <div class="media-body align-self-center mt-15">
+                        <h4 class="post-title">
+                      <a href="/Content/@rItem.DosyaUrl" target="_blank">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;
+                                @rItem.Baslik
+                            </a>
+                        </h4>
+                    </div>
+                }
+
+            </div>
+            <a href="/dis-ticaret-raporlari-2076" class="btnAll">Tümünü Gör...</a>
+        </div>
+        @*DIŞ TİCARET RAPORU*@
+
+        @*ÜLKE RAPORLARI*@
+        <div class="item ts-blue-light-heighlight heighlight">
+            <div class="ts-post-thumb">
+                <a href="#">
+                    <img class="img-fluid img-thumbnai" src="~/Content/images/news/tech/calisma1.jpg" width="235" height="150" alt="ÜLKE RAPORLARI">
+                </a>
+                <a class="post-cat" href="#">ÜLKE RAPORLARI</a>
+
+            </div>
+
+            <div class="post-content">
+
+                @foreach (var rItem in Model.Data.Where(x => x.Tip == 2))
+                {
+                    <div class="media-body align-self-center mt-15">
+                        <h4 class="post-title">
+                            <a href="/Content/@rItem.DosyaUrl" target="_blank">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;
+                                @rItem.Baslik
+                            </a>
+                        </h4>
+                    </div>
+                }
+
+            </div>
+            <a href="/ulke-raporlari-6165" class="btnAll">Tümünü Gör...</a>
+        </div>
+        @*ÜLKE RAPORLARI*@
+
+
+        @*RAKAMLARLA ADANA*@
+        <div class="item ts-blue-light-heighlight heighlight">
+            <div class="ts-post-thumb">
+                <a href="#">
+                    <img class="img-fluid img-thumbnai" src="~/Content/images/news/tech/calisma2.jpg" alt="RAKAMLARLA ADANA" width="235" height="150">
+                </a>
+                <a class="post-cat" href="#">RAKAMLARLA ADANA</a>
+            </div>
+
+            <div class="post-content">
+                @foreach (var rItem in Model.Data.Where(x => x.Tip == 7))
+                {
+                    <div class="media-body align-self-center mt-15">
+                        <h4 class="post-title">
+                            <a href="/Content/@rItem.DosyaUrl" target="_blank">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;
+                                @rItem.Baslik
+                            </a>
+                        </h4>
+                    </div>
+                }
+
+            </div>
+            <a href="/rakamlarla-adana-6196" class="btnAll">Tümünü Gör...</a>
+        </div>
+        @*RAKAMLARLA ADANA*@
+
+        @*Yatırım İstatistikleri*@
+        <div class="item ts-blue-light-heighlight heighlight">
+            <div class="ts-post-thumb">
+                <a href="#">
+                    <img class="img-fluid img-thumbnai" src="~/Content/images/news/tech/calisma3.jpg" alt="Yatırım İstatistikleri" width="235" height="150">
+                </a>
+                <a class="post-cat" href="#">Yatırım İstatistikleri</a>
+            </div>
+
+            <div class="post-content">
+                @foreach (var rItem in Model.Data.Where(x => x.Tip == 6))
+                {
+                    <div class="media-body align-self-center mt-15">
+                        <h4 class="post-title">
+                            
+                      <a href="/Content/@rItem.DosyaUrl" target="_blank">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;
+                                @rItem.Baslik
+                            </a>
+                        </h4>
+                    </div>
+                }
+            </div>
+            <a href="/yatirim-tesvik-belgeli-yatirim-istatistikleri-3098" class="btnAll">Tümünü Gör...</a>
+        </div>
+        @*Yatırım İstatistikleri*@
+         
+
+        @*SEKTÖR RAPORLARI*@
+        <div class="item ts-blue-light-heighlight heighlight">
+            <div class="ts-post-thumb">
+                <a href="#">
+                    <img class="img-fluid img-thumbnai" src="~/Content/images/news/tech/calisma2.jpg" width="235" height="150" alt="SEKTÖR RAPORLARI">
+                </a>
+                <a class="post-cat" href="#">SEKTÖR RAPORLARI</a>
+            </div>
+
+            <div class="post-content">
+
+                @foreach (var rItem in Model.Data.Where(x => x.Tip == 3))
+                {
+                    <div class="media-body align-self-center mt-15">
+                        <h4 class="post-title">
+                      <a href="/Content/@rItem.DosyaUrl" target="_blank">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;
+                                @rItem.Baslik
+                            </a>
+                        </h4>
+                    </div>
+                }
+
+            </div>
+            <a href="/sektor-raporlari-2077" class="btnAll">Tümünü Gör...</a>
+        </div>
+        @*SEKTÖR RAPORLARI*@
+
+        @*AYLIK FAALİYET ADANA*@
+        <div class="item ts-blue-light-heighlight heighlight">
+            <div class="ts-post-thumb">
+                <a href="#">
+                    <img class="img-fluid img-thumbnai" src="~/Content/images/news/tech/calisma2.jpg" alt="ODAMIZIN AYLIK FAALİYET RAPORLARI" width="235" height="150">
+                </a>
+                <a class="post-cat" href="#">ODAMIZIN AYLIK FAALİYET RAPORLARI</a>
+            </div>
+
+            <div class="post-content">
+                @foreach (var rItem in Model.Data.Where(x => x.Tip == 8))
+                {
+                    <div class="media-body align-self-center mt-15">
+                        <h4 class="post-title">
+                      <a href="/Content/@rItem.DosyaUrl" target="_blank">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;
+                                @rItem.Baslik
+                            </a>
+                        </h4>
+                    </div>
+                }
+
+            </div>
+            <a href="/odamiz-aylik-faaliyet-raporlari-6199" class="btnAll">Tümünü Gör...</a>
+        </div>
+        @*AYLIK FAALİYET ADANA*@
+
+
+
+    </div>
+</div>

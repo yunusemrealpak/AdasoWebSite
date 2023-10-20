@@ -1,0 +1,58 @@
+﻿@using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@using Helper
+@model PageItem
+
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">Güncelle</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row" id="mdlForm">
+            <input type="hidden" ID="hdnGosterimSayisi" name="hdnGosterimSayisi" value="0" />
+            <input type="hidden" ID="hdnEkleyen" name="hdnEkleyen" value="0" />
+            <input type="hidden" ID="hdnEklemeTarihi" name="hdnEklemeTarihi" value="0" />
+            <div class="col-md-2 col-sm-3">
+                <label class="control-label">Etkin</label>
+                <input class="form-control" type="checkbox" name="chckEtkin" checked="@Model.Gazeteler.Data.Etkin" />
+            </div>
+            <div class="col-md-9 col-sm-9">
+                <label class="control-label">Tarih</label>
+                <input class="form-control" type="date" name="tarih" value="@Model.Gazeteler.Data.Tarih.ToString("yyyy-MM-dd")" data-group_name='ModalForm' data-message_type='formmessage' data-error_message="Tarih Alanı Boş Geçilemez." />
+            </div>
+            <div class="clearfix"></div><br /><br />
+            <div class="col-md-6 col-sm-12" style="margin-top:10px">
+                <label class="control-label">Dergi Pdf</label>
+                <a href="@Model.Gazeteler.Data.DosyaURL" target="_blank"><i class="fa fa-file"></i></a>
+                <input type="file" class="form-control" name="fileDosyaUrl" />
+            </div>
+            <div class="col-md-6 col-sm-12 " style="margin-top:10px">
+                <label class="control-label">Dergi Kapak Fotoğrafı</label>
+                <a href="@Model.Gazeteler.Data.ResimURL" target="_blank"><i class="fa fa-file"></i></a>
+                <input type="file" class="form-control" name="fileDosyaUrl" />
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <label class="control-label">Dergi Sayısı</label>
+                <input type="number" class="form-control" name="sayi" value="@Model.Gazeteler.Data.Sayi" data-required='true' data-group_name='ModalForm' data-message_type='formmessage' data-error_message="Sayı Alanı Boş Geçilemez." />
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <br />
+                <img src="@Model.Gazeteler.Data.ResimURL.Replace("..","")" width="200"/>
+                <a href="~/@Model.Gazeteler.Data.DosyaURL" target="_blank"> <img src="https://cdn3.iconfinder.com/data/icons/document-icons-2/30/647710-pdf-512.png" width="200"/></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-sm" data-dismiss="modal">
+            <i class="ace-icon fa fa-times"></i>
+            Kapat
+        </button>
+
+        <a class="btn btn-success" data-mode="GetGazetelerIslemler" data-type="Kaydet" data-id="@Model.Gazeteler.Data.ID" data-required='true' data-moving_scroll_bar='1' data-group_name='ModalForm'>Kaydet</a>
+    </div>
+</div>

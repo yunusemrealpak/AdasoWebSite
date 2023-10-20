@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Yazilar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">keyboard</i>
+                        </div>
+                        <h4 class="card-title">Sayfalar</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="toolbar">
+                            <a class="btn btn-link" data-mode="GetSayfalarModal" data-data1="0" data-type="Kaydet"><i class="material-icons">save</i> Yeni Sayfa Ekle </a>
+                        </div>
+
+                        <table id="tblYazilar"
+                               data-template=".sayfalarDetay"
+                               data-detailfunction="detailInit"
+                               data-filter="kendotable.baslik="
+                               data-url="/Admin/Sayfalar/SayfalarJson"
+                               data-pagesize="100"
+                               data-paging="true"
+                               data-searching="true"
+                               data-ordering="true"
+                               data-serverpaging="true"
+                               data-serversearching="true"
+                               data-serverordering="true">
+                            <thead>
+                                <tr>
+                                    <th data-column="id" data-header="ID" data-width="4%"></th>
+                                    <th data-column="siraNo" data-header="Sıra No" data-width="7%"></th>
+                                    <th data-column="etkin_" data-header="Etkin" data-width="7%"></th>
+                                    <th data-column="baslik" data-header="Baslik" data-width="20%" data-filterable="true"></th>
+                                    <th data-column="sayfaURL" data-header="Sayfa URL" data-width="20%"></th>
+                                    <th data-column="ustID" data-header="Üst Id" data-width="7%"></th>
+                                    <th data-column="duzey" data-header="Düzey" data-width="7%"></th>
+                                    <th data-column="eklemeTarihi" data-header="Ekleme Tarihi" data-type="date" data-width="10%" data-format="{0:dd.MMMM.yyyy dddd }"></th>
+                                    <th data-column="gosterimSayisi" data-header="Gösterim Sayısı" data-width="7%"></th>
+                                    <th data-column="personelTc" data-header="#" data-column-type="button" data-width="200px">
+                                        <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="İşlem Geçmişi" data-mode="GetHrkModal"><i class="fa fa-list"></i></a>
+                                        <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="Güncelle" data-mode="GetSayfalarUpdateModal"><i class="fa fa-edit"></i></a>
+                                        <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="Yazıyı Sil" data-mode="GetSayfalarSilModal" data-type="Sil"><i class="fa fa-remove"></i></a>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/x-kendo-template" class="sayfalarDetay">
+    <div class="tabstrip">
+        <div>
+            <div class="orders">
+                <table id="tblZiyaretler#:id#" data-id="tblZiyaretler"
+
+                               data-template=".sayfalarDetay"
+                               data-detailfunction="detailInit"
+                               data-url="/Admin/Sayfalar/SayfalarJson"
+                               data-pagesize="30"
+                               data-paging="false"
+                               data-searching="true"
+                               data-ordering="true"
+                               data-serverpaging="true"
+                               data-serversearching="true"
+                               data-serverordering="true">
+                    <thead>
+                        <tr>
+                                    <th data-column="id"   data-header="ID" data-width="4%"></th>
+                                    <th data-column="siraNo"  data-header="siraNo" data-width="7%"></th>
+                                    <th data-column="etkin_" data-header="etkin_"  data-width="7%"></th>
+                                    <th data-column="baslik" data-header="baslik"  data-width="20%" ></th>
+                                    <th data-column="sayfaURL"  data-header="sayfaURL" data-width="20%" ></th>
+                                    <th data-column="ustID"   data-header="ustID" data-width="7%"></th>
+                                    <th data-column="duzey" data-header="duzey" data-width="7%"></th>
+                                    <th data-column="eklemeTarihi" data-header="Ekleme Tarihi" data-type="date" data-width="10%" data-format="{0:dd.MMMM.yyyy dddd }"></th>
+                                    <th data-column="gosterimSayisi" data-header="Gösterim Sayısı" data-width="7%"></th>
+                                     <th data-column="personelTc"   data-header="sub" data-column-type="button" data-width="200px">
+
+                                            <a class="btn btn-outline-default btn-sm" data-id='\\#:id\\#''title="İşlem Geçmişi" data-mode="GetHrkModal"><i class="fa fa-list"></i></a>
+                                            <a class="btn btn-outline-default btn-sm" data-id='\\#:id\\#' title="Güncelle" data-mode="GetSayfalarUpdateModal"><i class="fa fa-edit"></i></a>
+                                            <a class="btn btn-outline-default btn-sm" data-id='\\#:id\\#' title="Yazıyı Sil" data-mode="GetSayfalarSilModal" data-type="Sil"><i class="fa fa-remove"></i></a>
+
+                                    </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script>
+
+    function detailInit(e) {
+        var detailRow = e.detailRow;
+            if(e.data.id>0){
+                datatable_init("#tblZiyaretler" + e.data.id,"&kendotable.ustx="+e.data.id);
+            };
+        //datatable_init("#tblZiyaretler" + e.data.id, "&SehirId=0&IlceId=" + e.data.ilceKod + "&BasTarih=01-01-2000&BitTarih=01-01-2021");
+    }
+</script>
+
+@section AdminScripts{
+<script>
+
+    datatable_init("#tblYazilar","&kendotable.ust=1&kendotable.ust_=0");
+
+</script>
+}

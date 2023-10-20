@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Baglantilar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">link</i>
+                        </div>
+                        <h4 class="card-title">Bağlantı Yönetimi</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="toolbar">
+                            <a class="btn btn-link" data-mode="GetBaglantilarModal" data-data1="0" data-type="Kaydet"><i class="material-icons">save</i> Yeni Bağlantı Ekle</a> 
+                        </div>
+                        
+                        <table id="tblYazilar"
+
+                        data-filter="kendotable.baslik="
+                        data-url="/Admin/Baglantilar/BaglantilarJson"
+                        data-pagesize="7"
+                        data-paging="true"
+                        data-searching="true"
+                        data-ordering="true"
+                        data-serverpaging="true"
+                        data-serversearching="true"
+                        data-serverordering="true"                        
+                        data-excelname="Excel İndir">
+
+                            <thead>
+                                <tr>
+                                    <th data-column="id" data-header="ID" data-width="4%"></th>
+                                    <th data-column="etkin" data-header="Etkin" data-width="4%"></th>
+                                    <th data-column="grup" data-header="Grup" data-width="15%" data-filterable="true"></th>
+                                    <th data-column="baslik" data-header="Baslik" data-width="20%" data-filterable="true"></th>
+                                    <th data-column="siraNo" data-header="Sıra" data-width="7%"></th>
+                                    <th data-column="webAdresi" data-header="WebAdresi" data-width="30%" ></th>
+                                    <th data-column="yeniPencere" data-header="YeniPencere" data-width="10%" ></th>
+                                    <th data-column="personelTc" data-header="#" data-column-type="button" data-width="200px"> 
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="İşlem Geçmişi" data-mode="GetHrkModal"><i class="fa fa-list"></i></a>
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="Güncelle" data-mode="GetBaglantilarUpdateModal"><i class="fa fa-edit"></i></a>
+                                     <a class="btn btn-outline-default btn-sm" data-id='#:id#' title="Video Sil" data-mode="GetBaglantilarSilModal" data-type="Sil"><i class="fa fa-remove"></i></a>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+        
+    </div>
+</div>
+
+@section AdminScripts{
+    <script>
+        datatable_init("#tblYazilar","");
+        @*parameter_init(".card-body");*@
+          document.getElementById('baslikAra').addEventListener("keypress", function(e){
+        if(e.keyCode==13){
+            document.getElementById('yaziGonder').click();
+        }
+            });   
+                      document.getElementById('baslikAra').addEventListener("keydown", function(e){
+        if(e.keyCode==13){
+            document.getElementById('yaziGonder').click();
+        }
+            });   
+    </script>
+}

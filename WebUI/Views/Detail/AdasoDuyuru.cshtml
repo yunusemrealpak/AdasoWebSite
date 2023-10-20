@@ -1,0 +1,264 @@
+﻿ @using WebApplication1.Models
+@using WebUI.Models
+@using WebUI.Models.Api
+@model PageItem
+
+<section class="single-post-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Lifestyle</a>
+                    </li>
+                    <li>Travel</li>
+                </ol>
+                <!-- breadcump end-->
+                <div class="ts-grid-box content-wrapper single-post">
+                    <div class="entry-header">
+                        <h2 class="post-title lg">@Model.Haberler.Data.Baslik</h2>
+                        <ul class="post-meta-info">
+                            <li>
+                                <a href="#" class="post-cat ts-yellow-bg">@Model.Haberler.Data.KategoriAdi</a>
+                            </li>
+                            <li class="author">
+                                <a href="#">
+                                    <img src="~/Admin/Content/img/default-avatar.png" alt="">
+                                    @Model.Haberler.Data.Ekleyen
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o"></i>
+                                @Model.Haberler.Data.EklemeTarihi.ToString("f")
+                            </li>
+                            <li class="active">
+                                <i class="icon-fire"></i>
+                                @Model.Haberler.Data.GosterimSayisi
+                            </li>
+                            <li class="share-post">
+                                <a href="#">
+                                    <i class="fa fa-share"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- single post header end-->
+                    <div class="post-content-area">
+                        <div class="post-media post-featured-image">
+                            <a href="~/Content/@Model.Haberler.Data.ResimUrl.Replace("..","")" class="gallery-popup">
+                                <img src="~/Content/@Model.Haberler.Data.ResimUrl.Replace("..","")" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="entry" >
+                            @Html.Raw(Model.Haberler.Data.Metin)
+                     
+                            </div>
+ 
+                        </div>
+                        <!-- entry content end-->
+                    </div>
+                    <!-- post content area-->
+      
+                    <!-- post navigation end-->
+                </div>
+
+
+            </div>
+            <!-- col end -->
+            <div class="col-lg-3">
+                <div class="right-sidebar">
+             
+
+                    <div class="widgets widget-banner">
+                        <a href="#">
+                            <img class="img-fluid" src="~/Content/images/banner/banner2.jpg" alt="">
+                        </a>
+                    </div>
+                                        <div class="ts-grid-box widgets category-widget">
+                        <h2 class="widget-title">Categories</h2>
+                        <ul class="category-list">
+                            <li>
+                                <a href="#">
+                                    Travel
+                                    <span class="ts-orange-bg">10</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Sports
+                                    <span class="ts-green-bg">25</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Travel
+                                    <span class="ts-orange-bg">10</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Fashion
+                                    <span class="ts-pink-bg">10</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Technology
+                                    <span class="ts-blue-bg">10</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Music
+                                    <span class="ts-pink-bg">10</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Food
+                                    <span class="ts-yellow-bg">10</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- widgets end-->
+
+                    <div class="widgets ts-grid-box post-tab-list ts-col-box">
+                        <h3 class="widget-title">Populer Post</h3>
+                        <div class="ts-overlay-style">
+                            <div class="item">
+                                <div class="ts-post-thumb">
+                                    <a href="#">
+                                        <img class="img-fluid" src="images/news/tech/tech3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="overlay-post-content">
+                                    <div class="post-content">
+                                        <h3 class="post-title">
+                                            <a href="#">Tourism in Dubai is boom international tourist</a>
+                                        </h3>
+                                        <ul class="post-meta-info">
+                                            <li>
+                                                <i class="fa fa-clock-o"></i>
+                                                March 21, 2019
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ts-overlay-style  end-->
+
+                        <div class="post-content media">
+                            <img class="d-flex sidebar-img" src="images/news/sports/sports2.jpg" alt="">
+                            <div class="media-body align-self-center">
+                                <h4 class="post-title">
+                                    <a href="#">18 month shoots himself by gun </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- post content end-->
+                        <div class="post-content media">
+                            <img class="d-flex sidebar-img" src="images/news/tech/tech2.jpg" alt="">
+                            <div class="media-body align-self-center">
+                                <h4 class="post-title">
+                                    <a href="#">The body is a healing system. </a>
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- post content end-->
+
+                    </div>
+
+                    <div class="ts-grid-box widgets tag-list">
+                        <h3 class="widget-title">Tags</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Tech</a>
+                            </li>
+                            <li>
+                                <a href="#">Fashion</a>
+                            </li>
+                            <li>
+                                <a href="#">Sports</a>
+                            </li>
+                            <li>
+                                <a href="#">Football</a>
+                            </li>
+                            <li>
+                                <a href="#">Styles</a>
+                            </li>
+                            <li>
+                                <a href="#">Rech</a>
+                            </li>
+                            <li>
+                                <a href="#">Lifestyle</a>
+                            </li>
+                            <li>
+                                <a href="#">Technology</a>
+                            </li>
+                            <li>
+                                <a href="#">Guide</a>
+                            </li>
+                            <li>
+                                <a href="#">Food</a>
+                            </li>
+                            <li>
+                                <a href="#">Animal</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    @*TEBLİĞLER VE DUYURULAR*@
+                    <div class="post-list-item duyurularTebligler">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation">
+                                <a href="#profile" class="active" aria-controls="profile" role="tab" data-toggle="tab">
+                                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                    DUYURULAR
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#home" class="MevzuatDuyurulari" aria-controls="home" role="tab" data-toggle="tab">
+                                    <i class="fa fa-flag" aria-hidden="true"></i>
+                                    MEVZUAT DUYURULARI
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane   ts-grid-box post-tab-list" id="home">
+                                @await Component.InvokeAsync("TebliglerTab")
+                            </div>
+                            <!--ts-grid-box end -->
+
+                            <div id="profile" role="tabpanel" class="active tab-pane  ts-grid-box post-tab-list">
+                                @await Component.InvokeAsync("Duyurular")
+                            </div>
+                            <!--ts-grid-box end -->
+
+                        </div>
+                        <!-- tab content end-->
+                    </div>
+                    @*TEBLİĞLER VE DUYURULAR*@
+                    
+
+
+                </div>
+            </div>
+            <!-- right sidebar end-->
+            <!-- col end-->
+        </div>
+        <!-- row end-->
+    </div>
+    <!-- container-->
+</section>

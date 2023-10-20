@@ -1,0 +1,29 @@
+﻿ 
+@using Helper
+    @using WebApplication1.Models
+    @using WebUI.Models
+    @using WebUI.Models.Api
+
+    @model PageItem
+
+<div id="dergi" class="widgets widgets-item owl-carousel ts-overlay-style ts-featured mt-s10" style="background-color: whitesmoke;">
+    @foreach (var Gazeteler in Model.GazetelerList.Data)
+    {
+        
+        <a href="/Content/@Gazeteler.DosyaURL" target="_blank">
+        @if(Gazeteler.Sayi>379){
+                <img src="@Gazeteler.ResimURL.Replace("..","")" class="img-thumbnail">
+@*            <div class="item c_pointer posts-ad" style="background-image: url('@Gazeteler.ResimURL.Replace("..","")')"></div>*@
+        }
+        else{
+            @*<div class="item c_pointer posts-ad" style="background-image: url('@Gazeteler.ResimURL.Replace("..","")')"></div>*@
+                <img src="@Gazeteler.ResimURL.Replace("..","")" class="img-thumbnail">
+        }
+    
+        
+        </a>
+        @*wwwroot/Content/Files/dergilerFiles/2021/10/67f9e744-21b3-4bf0-8395-2ebf5083bb28_86d39279-221e-49d2-b8b7-95044e5cc3ed-225x300.jpg*@
+        
+
+    }
+</div>

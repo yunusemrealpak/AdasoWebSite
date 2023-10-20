@@ -1,0 +1,108 @@
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\bin\Debug\netstandard2.0\snappy32.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\bin\Debug\netstandard2.0\snappy64.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\bin\Debug\netstandard2.0\libzstd.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\bin\Debug\netstandard2.0\Core.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.AssemblyReference.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+D:\Adaso_Source\AdasoWebSiteCore_V1\DataAccess\obj\Debug\netstandard2.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\snappy32.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\snappy64.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\libzstd.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Core.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.AssemblyReference.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+D:\OneDrive\OneDrive - ADASO\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+D:\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\snappy32.dll
+D:\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\snappy64.dll
+D:\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\libzstd.dll
+D:\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+D:\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+D:\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+D:\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Core.dll
+D:\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+D:\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+D:\AdasoProjeler\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+D:\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.AssemblyReference.cache
+D:\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+D:\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+D:\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+D:\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+D:\AdasoProjeler\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\snappy32.dll
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\snappy64.dll
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\libzstd.dll
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\ismail\source\repos\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\snappy32.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\snappy64.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\libzstd.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\ISMAIL\Documents\İsmailgundogan17082023\Projects\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\snappy32.dll
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\snappy64.dll
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\libzstd.dll
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Core.dll
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.AssemblyReference.cache
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

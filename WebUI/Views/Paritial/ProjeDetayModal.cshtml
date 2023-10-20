@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+@using WebApplication1.Models
+@using WebUI.Models.Api
+@using Helper
+
+@model PageItem
+
+<div class="modal-content">
+    <div class="modal-header ">
+        <h5 class="modal-title">@Model.Projeler.Data.Baslik (@Model.Projeler.Data.BaslangicTarihi.ToShortDateString() - @Model.Projeler.Data.BitisTarihi.ToShortDateString())</h5>
+        <div class="clearfix"></div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+
+        <div class="row">
+            <div class="col-12">
+          <p class="lead">
+                    @Html.Raw(Model.Projeler.Data.Metin)
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn btn-sm" data-dismiss="modal">
+                <i class="ace-icon fa fa-times"></i>
+                Kapat
+            </button>
+        </div>
+    </div>
+</div>
