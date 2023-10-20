@@ -9,7 +9,8 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"data source = 176.235.236.6; initial catalog = dbADASOWeb; persist security info = True; user id = sa; password = 2656_Tahir; MultipleActiveResultSets = True;");
+            optionsBuilder.UseSqlServer(@"data source = 172.168.110.15; initial catalog = dbADASOWeb; persist security info = True; user id = sa; password = 1;  TrustServerCertificate=True;Encrypt=True");
+            //optionsBuilder.UseSqlServer("Persist Security Info=False;User ID=sa;Initial Catalog=dbADASOWeb;Data Source=172.168.110.15; Password=1;TrustServerCertificate=True;Encrypt=True");
             //optionsBuilder.UseSqlServer(@"data source = ISMAILGUNDOGAN; initial catalog = dbADASOWeb; persist security info = True; user id = sa; password = saw; MultipleActiveResultSets = True;");
             //optionsBuilder.UseSqlServer(@"data source = 172.20.1.51; initial catalog = dbADASOWeb; persist security info = True; user id = sa; password = 2656_Tahir; MultipleActiveResultSets = True;");
             //optionsBuilder.UseSqlServer(@"data source = 176.235.236.6; initial catalog = MesajKuyrukDB; persist security info = True; user id = sa; password = 2656_Tahir; MultipleActiveResultSets = True;");
