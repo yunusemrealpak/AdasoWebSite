@@ -140,6 +140,16 @@ namespace Business.Concrete
             return new DataResult<int>(data, true);
         }
 
-
+        public IDataResult<IList<view_Sayfalar>> GetByParentId(int parentId)
+        {
+            try
+            {
+                var data = _sayfalarDal.GetByParentId(parentId);
+                return new SuccessDataResult<IList<view_Sayfalar>>(data) { DataCount = data.Count() };
+            } catch (Exception ex)
+            {
+                return new DataResult<IList<view_Sayfalar>>(null, false, ex.Message);
+            }
+        }
     }
 }

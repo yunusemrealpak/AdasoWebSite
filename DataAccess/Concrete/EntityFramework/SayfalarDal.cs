@@ -93,6 +93,17 @@ namespace DataAccess.Concrete.EntityFramework
                 return result;
             }
         }
+
+        public List<view_Sayfalar> GetByParentId(int parentId)
+        {
+            using (var context = new AdasoContext())
+            {
+                var result = context.view_Sayfalar.Where(x => x.UstID == parentId).AsQueryable();
+
+                return result.OrderBy(x => x.SiraNo).ToList();
+
+            }
+        }
     }
 }
 

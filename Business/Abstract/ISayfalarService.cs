@@ -27,6 +27,8 @@ namespace Business.Abstract
 
         IDataResult<int> GetMaxId();
 
+        IDataResult<IList<view_Sayfalar>> GetByParentId(int parentId);
+
 
     }
 }

@@ -12,5 +12,7 @@ namespace DataAccess.Abstract
 
         List<view_Sayfalar> GetListPageTitle();
         new int GetMaxId();
+
+        List<view_Sayfalar> GetByParentId(int parentId);
     }
 }

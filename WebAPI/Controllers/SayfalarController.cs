@@ -126,5 +126,15 @@ namespace WebAPI.Controllers
             return Ok(result);
 
         }
+
+        [HttpGet("getByParentId")]
+        public IActionResult GetByParentId(int parentId)
+        {
+            var result = _sayfalarService.GetByParentId(parentId);
+
+
+            return Ok(result);
+
+        }
     }
 }
