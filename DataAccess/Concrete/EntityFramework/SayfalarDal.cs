@@ -98,7 +98,7 @@ namespace DataAccess.Concrete.EntityFramework
         {
             using (var context = new AdasoContext())
             {
-                var result = context.view_Sayfalar.Where(x => x.UstID == parentId).AsQueryable();
+                var result = context.view_Sayfalar.Where(x => x.UstID == parentId && x.Etkin).AsQueryable();
 
                 return result.OrderBy(x => x.SiraNo).ToList();
 

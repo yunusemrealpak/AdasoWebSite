@@ -1,6 +1,7 @@
 using Core.Utilities.Results;
 using Entities.Dtos.Filter;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using WebApplication1.Models;
 
 namespace Business.Abstract
@@ -14,6 +15,9 @@ namespace Business.Abstract
         IDataResult<TDHaberler> GetById(int Id);
 
         IDataResult<IList<TDHaberler>> GetList();
+
+        Task<List<TDHaberler>> GetListAsync(int takeCount);
+
         IDataResult<IList<TDHaberler>> GetListWithPaging(YazilarFilter filter);
 
         int GetListWithPagingCount(YazilarFilter filter);

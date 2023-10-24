@@ -84,6 +84,14 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public List<TDHaberler> GetListWithTakeCount(int takeCount)
+        {
+            using (var context = new AdasoContext())
+            {
+                return context.TDHaberler.OrderBy(x => x.EklemeTarihi).Take(takeCount).ToList();
+            }
+        }
+
         public new int GetMaxId()
         {
             using (var context = new AdasoContext())

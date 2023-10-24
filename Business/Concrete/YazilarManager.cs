@@ -7,6 +7,7 @@ using Entities.Dtos.Filter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using WebApplication1.Models;
 
 namespace Business.Concrete
@@ -226,6 +227,19 @@ namespace Business.Concrete
                 return new DataResult<Yazilar>(null, false, ex.Message);
             }
 
+        }
+
+        public Task<List<DuyurularUI>> GetListAsync(int max)
+        {
+            try
+            {
+                var data = _yazilarDal.GetDuyurularWithSize(max);
+                return Task.FromResult(data);
+            }
+            catch
+            {
+                return Task.FromResult(new List<DuyurularUI>());
+            }
         }
     }
 }
