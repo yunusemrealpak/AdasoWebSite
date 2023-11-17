@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UMLSBM1ucYbD5UpoCAwR3y/6m+BcjaZ9v1XxmSvrMyb/AwgMdtXJtiX2N3mq1FMs63LDneDqxd289DYiL47ktQ==",
+  "dgSpecHash": "YnaTG2ZNu1p6wO3nnK51z9GCZq6MdvalaXl6YNyQdKUcvAniUeBXrM4OEfbsk2FJjgCTJmciIOY4Gkd14r+4pQ==",
   "success": true,
   "projectFilePath": "C:\\Repos\\ismailgundogan\\AdasoWebSite\\Core\\Core.csproj",
   "expectedPackageFiles": [
@@ -138,5 +138,16 @@
     "C:\\Users\\ISMAIL\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ISMAIL\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'log4net' 2.0.8 has a known critical severity vulnerability, https://github.com/advisories/GHSA-2cwj-8chv-9pp9",
+      "libraryId": "log4net",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

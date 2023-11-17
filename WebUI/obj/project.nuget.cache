@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JqlvXl3TgIzybDDlrGq3ytMBcbit4GPhfnEKZF2jf/H8MS0zTr1u09ehK4cR9oObUeTSiXV60Yh8SBTOIPeI5Q==",
+  "dgSpecHash": "aWMIDrAfCcz7bA266HJc6tGnpm6+j9VvZGlkgme8aXvd25toAEiqREXX26SZwsFCXBwNuygDChRrVGj86kDLJQ==",
   "success": true,
   "projectFilePath": "C:\\Repos\\ismailgundogan\\AdasoWebSite\\WebUI\\WebUI.csproj",
   "expectedPackageFiles": [
@@ -211,6 +211,16 @@
     "C:\\Users\\ISMAIL\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'RestSharp' 106.11.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-9pq7-rcxv-47vq",
+      "libraryId": "RestSharp",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
