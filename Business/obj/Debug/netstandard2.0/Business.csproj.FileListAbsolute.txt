@@ -118,3 +118,4 @@ C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.
 C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
 C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.dll
 C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Business\obj\Debug\netstandard2.0\Business.sourcelink.json

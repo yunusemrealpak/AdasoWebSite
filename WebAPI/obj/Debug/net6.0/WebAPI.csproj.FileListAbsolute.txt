@@ -489,3 +489,4 @@ C:\Repos\ismailgundogan\AdasoWebSite\WebAPI\bin\Debug\net6.0\runtimes\win\lib\ne
 C:\Repos\ismailgundogan\AdasoWebSite\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Repos\ismailgundogan\AdasoWebSite\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Repos\ismailgundogan\AdasoWebSite\WebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Repos\ismailgundogan\AdasoWebSite\WebAPI\obj\Debug\net6.0\WebAPI.sourcelink.json

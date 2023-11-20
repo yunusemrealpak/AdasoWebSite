@@ -456,3 +456,4 @@ C:\Repos\ismailgundogan\AdasoWebSite\WebUI\obj\Debug\net6.0\refint\WebUI.dll
 C:\Repos\ismailgundogan\AdasoWebSite\WebUI\obj\Debug\net6.0\WebUI.pdb
 C:\Repos\ismailgundogan\AdasoWebSite\WebUI\obj\Debug\net6.0\WebUI.genruntimeconfig.cache
 C:\Repos\ismailgundogan\AdasoWebSite\WebUI\obj\Debug\net6.0\ref\WebUI.dll
+C:\Repos\ismailgundogan\AdasoWebSite\WebUI\obj\Debug\net6.0\WebUI.sourcelink.json

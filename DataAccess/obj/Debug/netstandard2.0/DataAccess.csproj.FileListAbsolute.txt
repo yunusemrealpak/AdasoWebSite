@@ -106,3 +106,4 @@ C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAcc
 C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
 C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\DataAccess\obj\Debug\netstandard2.0\DataAccess.sourcelink.json

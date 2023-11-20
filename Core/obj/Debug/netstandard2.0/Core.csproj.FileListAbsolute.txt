@@ -58,3 +58,4 @@ C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.Assembly
 C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
 C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.dll
 C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Core\obj\Debug\netstandard2.0\Core.sourcelink.json

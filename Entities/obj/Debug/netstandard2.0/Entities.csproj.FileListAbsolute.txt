@@ -94,3 +94,4 @@ C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.
 C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
 C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.dll
 C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.pdb
+C:\Repos\ismailgundogan\AdasoWebSite\Entities\obj\Debug\netstandard2.0\Entities.sourcelink.json
