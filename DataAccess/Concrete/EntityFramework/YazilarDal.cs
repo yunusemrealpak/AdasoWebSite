@@ -54,6 +54,14 @@ namespace DataAccess.Concrete.EntityFramework
                     var filtre = filter.Filter.Where(x => x._field == "kategoriAdi").SingleOrDefault();
                     query = query.Where(x => x.KategoriAdi.Contains(filtre._value));
                 }
+                if (filter.Filter.Any(x => x._field == "tip"))
+                {
+                    var filtre = filter.Filter.Where(x => x._field == "tip").SingleOrDefault();
+
+                    _ = int.TryParse(filtre._value, out int tip);
+
+                    query = query.Where(x => x.Tip == tip);
+                }
             }
             return query;
         }

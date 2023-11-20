@@ -14,5 +14,6 @@ namespace DataAccess.Abstract
         new int GetMaxId();
 
         List<view_Sayfalar> GetByParentId(int parentId);
+        List<Sayfalar> GetAllMenu();
     }
 }

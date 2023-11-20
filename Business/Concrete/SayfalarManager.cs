@@ -144,12 +144,36 @@ namespace Business.Concrete
         {
             try
             {
+                _sayfalarDal.GetList();
                 var data = _sayfalarDal.GetByParentId(parentId);
                 return new SuccessDataResult<IList<view_Sayfalar>>(data) { DataCount = data.Count() };
             } catch (Exception ex)
             {
                 return new DataResult<IList<view_Sayfalar>>(null, false, ex.Message);
             }
+        }
+
+        public IDataResult<IList<Sayfalar>> GetListWithSubMenus()
+        {
+
+            List<Sayfalar> result = _sayfalarDal.GetAllMenu();
+            result.ForEach(x =>
+            {
+               x.subMenus = SetSubMenu(x, result);
+            });
+
+            return new SuccessDataResult<IList<Sayfalar>>(result);
+        }
+
+        private List<Sayfalar> SetSubMenu(Sayfalar menu, List<Sayfalar> result)
+        {
+            List<Sayfalar> subMenus = result.Where(x => x.UstID == menu.ID).ToList();
+            subMenus.ForEach(x =>
+            {
+               x.subMenus = SetSubMenu(x, result);
+            });
+
+            return subMenus;
         }
     }
 }

@@ -229,7 +229,7 @@ namespace Business.Concrete
 
         }
 
-        public Task<List<DuyurularUI>> GetListAsync(int max)
+        public Task<List<DuyurularUI>> GetDuyuruListAsync(int max)
         {
             try
             {
@@ -239,6 +239,19 @@ namespace Business.Concrete
             catch
             {
                 return Task.FromResult(new List<DuyurularUI>());
+            }
+        }
+
+        public Task<List<SliderUI>> GetHaberListAsync()
+        {
+            try
+            {
+                var result = Slider();
+                return Task.FromResult(result.Data as List<SliderUI>);
+            }
+            catch
+            {
+                return Task.FromResult(new List<SliderUI>());
             }
         }
     }

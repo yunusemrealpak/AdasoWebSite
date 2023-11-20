@@ -127,14 +127,10 @@ namespace WebAPI.Controllers
 
         }
 
-        [HttpGet("getByParentId")]
-        public IActionResult GetByParentId(int parentId)
+        [HttpGet("getListWithSubMenus")]
+        public IActionResult GetByParentId()
         {
-            var result = _sayfalarService.GetByParentId(parentId);
-
-
-            return Ok(result);
-
+            return Ok(_sayfalarService.GetListWithSubMenus());
         }
     }
 }

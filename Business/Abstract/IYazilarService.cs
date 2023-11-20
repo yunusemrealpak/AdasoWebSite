@@ -30,7 +30,9 @@ namespace Business.Abstract
 
         IDataResult<IList<DuyurularUI>> UstDuyurular();
 
-        Task<List<DuyurularUI>> GetListAsync(int max);
+        Task<List<DuyurularUI>> GetDuyuruListAsync(int max);
+
+        Task<List<SliderUI>> GetHaberListAsync();
 
         //IDataResult<IList<Yazilar>> GetListWithPagingView(int skip, int take, string baslik);
         IResult Update(Yazilar Yazilar);

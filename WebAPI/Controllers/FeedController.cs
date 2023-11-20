@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Core.Utilities.Results;
+using Entities.Dtos.Filter;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -26,8 +27,8 @@ namespace WebAPI.Controllers
         public IActionResult GetFeed()
         {
             Task<List<Etkinlikler>> etkinliklerTask = _etkinliklerService.GetListAsync(5);
-            Task<List<DuyurularUI>> duyurularTask = _yazilarService.GetListAsync(5);
-            Task<List<TDHaberler>> haberlerTask = _tDHaberlerService.GetListAsync(5);
+            Task<List<DuyurularUI>> duyurularTask = _yazilarService.GetDuyuruListAsync(5);
+            Task<List<SliderUI>> haberlerTask = _yazilarService.GetHaberListAsync();
 
             Task.WaitAll(etkinliklerTask, duyurularTask);
 
@@ -52,5 +53,5 @@ class Feed
 {
     public List<Etkinlikler> Etkinlikler { get; set; }
     public List<DuyurularUI> Duyurular { get; set; }
-    public List<TDHaberler> Haberler { get; set; }
+    public List<SliderUI> Haberler { get; set; }
 }
