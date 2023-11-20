@@ -66,6 +66,7 @@ namespace DataAccess.Concrete.EntityFramework
 
             }
         }
+
         public int GetListWithPagingCount(SayfalarFilter filter)
         {
             using (var context = new AdasoContext())
@@ -91,6 +92,28 @@ namespace DataAccess.Concrete.EntityFramework
             {
                 int result = context.Sayfalar.Select(s => s.ID).Max();
                 return result;
+            }
+        }
+
+        public List<view_Sayfalar> GetByParentId(int parentId)
+        {
+            using (var context = new AdasoContext())
+            {
+                var result = context.view_Sayfalar.Where(x => x.UstID == parentId && x.Etkin).AsQueryable();
+
+                return result.OrderBy(x => x.SiraNo).ToList();
+
+            }
+        }
+
+        public List<Sayfalar> GetAllMenu()
+        {
+            using (var context = new AdasoContext())
+            {
+                var result = context.Sayfalar.Where(x => x.Etkin).AsQueryable();
+
+                return result.ToList();
+
             }
         }
     }

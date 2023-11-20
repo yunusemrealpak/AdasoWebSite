@@ -9,6 +9,8 @@ namespace DataAccess.Abstract
     {
         List<TDHaberler> GetListWithPaging(YazilarFilter filter);
 
+        List<TDHaberler> GetListWithTakeCount(int takeCount);
+
         int GetListWithPagingCount(YazilarFilter filter);
         new int GetMaxId();
     }

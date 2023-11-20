@@ -6,6 +6,7 @@ using Entities.Dtos.Filter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using WebApplication1.Models;
 
 
@@ -129,6 +130,20 @@ namespace Business.Concrete
                 return new DataResult<TDHaberler>(null, false, ex.Message);
             }
 
+        }
+
+        public Task<List<TDHaberler>> GetListAsync(int takeCount)
+        {
+            try
+            {
+                var result = _tDHaberlerDal.GetListWithTakeCount(takeCount);
+                return Task.FromResult(result);
+            }
+            catch
+            {
+
+                throw;
+            }
         }
     }
 }

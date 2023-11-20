@@ -5,6 +5,7 @@ using Entities.Dtos.Filter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using WebApplication1.Models;
 
 namespace DataAccess.Concrete.EntityFramework
@@ -52,6 +53,14 @@ namespace DataAccess.Concrete.EntityFramework
                 {
                     var filtre = filter.Filter.Where(x => x._field == "kategoriAdi").SingleOrDefault();
                     query = query.Where(x => x.KategoriAdi.Contains(filtre._value));
+                }
+                if (filter.Filter.Any(x => x._field == "tip"))
+                {
+                    var filtre = filter.Filter.Where(x => x._field == "tip").SingleOrDefault();
+
+                    _ = int.TryParse(filtre._value, out int tip);
+
+                    query = query.Where(x => x.Tip == tip);
                 }
             }
             return query;
@@ -155,6 +164,14 @@ namespace DataAccess.Concrete.EntityFramework
 
                 return result.Where(x => x.Grup == 2 && x.Etkin == true && x.KategoriAdi == "Duyurular" && x.Popup == true).FirstOrDefault();
 
+            }
+        }
+
+        public List<DuyurularUI> GetDuyurularWithSize(int max)
+        {
+            using (var context = new AdasoContext())
+            {
+                return context.DuyurularUI.OrderBy(x => x.BaslangicTarihi).Take(max).ToList();
             }
         }
 

@@ -120,5 +120,13 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public List<Etkinlikler> GetListWithSize(int max)
+        {
+            using (var context = new AdasoContext())
+            {
+                var result = context.Etkinlikler.OrderBy(x => x.BaslangicTarihi).AsQueryable();
+                return result.Take(max).ToList();
+            }
+        }
     }
 }

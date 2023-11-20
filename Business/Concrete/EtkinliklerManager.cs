@@ -5,6 +5,7 @@ using Entities.Dtos.Filter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using WebApplication1.Models;
 
 
@@ -73,6 +74,19 @@ namespace Business.Concrete
             }
 
         }
+
+        public Task<List<Etkinlikler>> GetListAsync(int max)
+        {
+            try
+            {
+                var data = _etkinliklerDal.GetListWithSize(max);
+                return Task.FromResult(data);
+            } catch
+            {
+                return Task.FromResult(new List<Etkinlikler>());
+            }
+        }
+
         public IDataResult<IList<Etkinlikler>> GetListHomePageActives(FilterFullCalendar filter)
         {
             try

@@ -2,6 +2,7 @@ namespace WebApplication1.Models
 {
     using Core.Entities;
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
@@ -80,6 +81,9 @@ namespace WebApplication1.Models
         [NotMapped]
         public string strID { get; set; }
 
+
+        [NotMapped]
+        public List<Sayfalar> subMenus { get; set; } = new List<Sayfalar>();
 
 
     }

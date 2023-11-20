@@ -1,6 +1,7 @@
 namespace WebApplication1.Models
 {
     using Core.Entities;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations.Schema;
 
 
@@ -21,8 +22,6 @@ namespace WebApplication1.Models
 
         [NotMapped]
         public string strID { get; set; } = "";
-
-
 
     }
 }

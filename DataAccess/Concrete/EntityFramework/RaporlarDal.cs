@@ -30,7 +30,7 @@ namespace DataAccess.Concrete.EntityFramework
                 using (var context = new AdasoContext())
                 {
                     var result = context.Raporlar.AsQueryable();
-                    return  result.Where(x => x.Etkin == filter.Etkin && x.Tip == filter.Tip).OrderByDescending(s => s.ID).Take(filter.Take).ToList();
+                    return  result.Where(x => x.Etkin == filter.Etkin && x.Tip == filter.Tip).OrderByDescending(s => s.ID).Skip(filter.Skip).Take(filter.Take).ToList();
                     
                 }         
         }

@@ -126,5 +126,11 @@ namespace WebAPI.Controllers
             return Ok(result);
 
         }
+
+        [HttpGet("getListWithSubMenus")]
+        public IActionResult GetByParentId()
+        {
+            return Ok(_sayfalarService.GetListWithSubMenus());
+        }
     }
 }

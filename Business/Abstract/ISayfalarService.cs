@@ -17,6 +17,8 @@ namespace Business.Abstract
 
         IDataResult<IList<Sayfalar>> GetList();
 
+        IDataResult<IList<Sayfalar>> GetListWithSubMenus();
+
         IDataResult<IList<view_Sayfalar>> GetListPageTitle();
 
         IResult Update(Sayfalar Sayfalar);
@@ -26,6 +28,8 @@ namespace Business.Abstract
         int GetListWithPagingCount(SayfalarFilter filter);
 
         IDataResult<int> GetMaxId();
+
+        IDataResult<IList<view_Sayfalar>> GetByParentId(int parentId);
 
 
     }
