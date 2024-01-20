@@ -21,7 +21,6 @@ namespace WebApplication1.Models
         public string Ad { get; set; }
         public string Soyad { get; set; }
 
-
         public string MeslekGrubuKodu { get; set; }
 
         public string Gorev { get; set; }

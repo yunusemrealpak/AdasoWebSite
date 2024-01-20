@@ -45,7 +45,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public virtual DbSet<SliderUI> Sliders { get; set; }
         public virtual DbSet<DuyurularUI> DuyurularUI { get; set; }
         public virtual DbSet<Youtube> Youtube { get; set; }
-        public virtual DbSet<Sunumlar> Sunumlar { get; set; }
+        public virtual DbSet<Sunumlar> Sunumlar { get; set; }        
         public virtual DbSet<Crs_Sunumlar_Sonuc> Crs_Sunumlar_Sonuc { get; set; }
         public virtual DbSet<MesajKuyruklar> MesajKuyruklar { get; set; }
 
@@ -60,6 +60,6 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public virtual DbSet<View_Base_Hedef_Tekrar_Getir> View_Base_Hedef_Tekrar_Getir { get; set; }
         public DbSet<proc_Adaso_org_tr_GenelArama> proc_Adaso_org_tr_GenelArama { get; set; }
         public DbSet<view_UyeUyelikSabitTelefon> view_UyeUyelikSabitTelefon { get; set; }
-
+        public virtual DbSet<MobilVersiyonKontrol> MobilVersiyonKontrol { get; set; }
     }
 }

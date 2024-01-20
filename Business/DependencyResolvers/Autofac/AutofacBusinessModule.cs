@@ -118,6 +118,9 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<view_UyeUyelikSabitTelefonManager>().As<Iview_UyeUyelikSabitTelefonService>();
             builder.RegisterType<Efview_UyeUyelikSabitTelefonDal>().As<Iview_UyeUyelikSabitTelefonDal>();
 
+            builder.RegisterType<MobilVersiyonKontrolManager>().As<IMobilVersiyonKontrolService>();
+            builder.RegisterType<EfMobilVersiyonKontrolDal>().As<IMobilVersiyonKontrolDal>();
+
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()
